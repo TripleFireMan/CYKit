@@ -29,20 +29,10 @@ Pod::Spec.new do |s|
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See http://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
-
   s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
-
   s.author             = { "chengyan" => "ab364743113@126.com" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/TripleFireMan/CYKit.git", :tag => "0.1" }
+  s.source       = { :git => "https://github.com/TripleFireMan/CYKit.git", :tag => "0.1.1" }
   s.source_files  = "CYKit", "CYKit/**/*.{h,m}"
   s.resources     = "Resources/*.png"
   s.framework  = "UIKit"
