@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C86368F1E5988980009BCBF /* CYKitPod@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C86368E1E5988980009BCBF /* CYKitPod@2x.png */; };
 		4C8AC4281DB0F0D300BE5647 /* CYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8AC4261DB0F0D300BE5647 /* CYKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C8AC4311DB0F12000BE5647 /* NSDate+CYExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8AC42F1DB0F12000BE5647 /* NSDate+CYExtend.h */; };
 		4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AC4301DB0F12000BE5647 /* NSDate+CYExtend.m */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C86368E1E5988980009BCBF /* CYKitPod@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CYKitPod@2x.png"; sourceTree = "<group>"; };
 		4C8AC4231DB0F0D300BE5647 /* CYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8AC4261DB0F0D300BE5647 /* CYKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYKit.h; sourceTree = "<group>"; };
 		4C8AC4271DB0F0D300BE5647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C86368D1E5988980009BCBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C86368E1E5988980009BCBF /* CYKitPod@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4C8AC4191DB0F0D300BE5647 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 				4C8AC4261DB0F0D300BE5647 /* CYKit.h */,
 				4C8AC42E1DB0F0FE00BE5647 /* Categorys */,
 				4C8AC4271DB0F0D300BE5647 /* Info.plist */,
+				4C86368D1E5988980009BCBF /* Resources */,
 			);
 			path = CYKit;
 			sourceTree = "<group>";
@@ -152,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C86368F1E5988980009BCBF /* CYKitPod@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
