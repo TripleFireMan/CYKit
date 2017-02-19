@@ -11,7 +11,7 @@
 @implementation UIImage (CYAddtion)
 + (instancetype)cy_imageNamed:(NSString *)name
 {
-    NSLog(@"image = %@",[UIImage imageNamed:@"QQ20170219-154332"]);
+    NSLog(@"image = %@",[UIImage imageNamed:@"1"]);
     
     return [UIImage imageNamed:name];
 }
