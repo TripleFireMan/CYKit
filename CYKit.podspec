@@ -16,27 +16,21 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYKit"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "something useful for daily development"
-
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.homepage     = "https://github.com/TripleFireMan"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
   s.license      = "MIT"
-  s.author             = { "chengyan" => "ab364743113@126.com" }
+  s.author       = { "chengyan" => "ab364743113@126.com" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/TripleFireMan/CYKit.git", :tag => "0.1.1" }
+  s.source       = { :git => "https://github.com/TripleFireMan/CYKit.git", :tag => "0.1.2" }
+  
   s.source_files  = "CYKit", "CYKit/**/*.{h,m}"
-  s.resources     = "Resources/*.png"
-  s.framework  = "UIKit"
-  s.requires_arc = true
+  #s.resources     = "Resources/*.png"
+  s.framework     = "UIKit"
+  s.requires_arc  = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"

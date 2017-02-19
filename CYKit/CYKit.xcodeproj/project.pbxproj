@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C8636941E5990380009BCBF /* CYKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8636931E5990380009BCBF /* CYKit.xcassets */; };
-		4C86369C1E5995340009BCBF /* CYKitPod@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C86369B1E5995340009BCBF /* CYKitPod@2x.png */; };
+		4C8636A11E5998A10009BCBF /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 4C8636A01E5998A10009BCBF /* Resources */; };
+		4C8636A41E599A9C0009BCBF /* UIImage+CYAddtion.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8636A21E599A9C0009BCBF /* UIImage+CYAddtion.h */; };
+		4C8636A51E599A9C0009BCBF /* UIImage+CYAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8636A31E599A9C0009BCBF /* UIImage+CYAddtion.m */; };
 		4C8AC4281DB0F0D300BE5647 /* CYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8AC4261DB0F0D300BE5647 /* CYKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C8AC4311DB0F12000BE5647 /* NSDate+CYExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8AC42F1DB0F12000BE5647 /* NSDate+CYExtend.h */; };
 		4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AC4301DB0F12000BE5647 /* NSDate+CYExtend.m */; };
@@ -17,8 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C8636931E5990380009BCBF /* CYKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CYKit.xcassets; sourceTree = "<group>"; };
-		4C86369B1E5995340009BCBF /* CYKitPod@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CYKitPod@2x.png"; sourceTree = "<group>"; };
+		4C8636A01E5998A10009BCBF /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		4C8636A21E599A9C0009BCBF /* UIImage+CYAddtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CYAddtion.h"; sourceTree = "<group>"; };
+		4C8636A31E599A9C0009BCBF /* UIImage+CYAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CYAddtion.m"; sourceTree = "<group>"; };
 		4C8AC4231DB0F0D300BE5647 /* CYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8AC4261DB0F0D300BE5647 /* CYKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYKit.h; sourceTree = "<group>"; };
 		4C8AC4271DB0F0D300BE5647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,18 +43,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C86369A1E5995340009BCBF /* file */ = {
-			isa = PBXGroup;
-			children = (
-				4C86369B1E5995340009BCBF /* CYKitPod@2x.png */,
-			);
-			path = file;
-			sourceTree = "<group>";
-		};
 		4C8AC4191DB0F0D300BE5647 = {
 			isa = PBXGroup;
 			children = (
-				4C8636931E5990380009BCBF /* CYKit.xcassets */,
 				4C8AC4251DB0F0D300BE5647 /* CYKit */,
 				4C8AC4241DB0F0D300BE5647 /* Products */,
 				4C8AC4331DB0F14100BE5647 /* Frameworks */,
@@ -70,7 +63,7 @@
 		4C8AC4251DB0F0D300BE5647 /* CYKit */ = {
 			isa = PBXGroup;
 			children = (
-				4C86369A1E5995340009BCBF /* file */,
+				4C8636A01E5998A10009BCBF /* Resources */,
 				4C8AC4261DB0F0D300BE5647 /* CYKit.h */,
 				4C8AC42E1DB0F0FE00BE5647 /* Categorys */,
 				4C8AC4271DB0F0D300BE5647 /* Info.plist */,
@@ -83,6 +76,8 @@
 			children = (
 				4C8AC42F1DB0F12000BE5647 /* NSDate+CYExtend.h */,
 				4C8AC4301DB0F12000BE5647 /* NSDate+CYExtend.m */,
+				4C8636A21E599A9C0009BCBF /* UIImage+CYAddtion.h */,
+				4C8636A31E599A9C0009BCBF /* UIImage+CYAddtion.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -103,6 +98,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8636A41E599A9C0009BCBF /* UIImage+CYAddtion.h in Headers */,
 				4C8AC4281DB0F0D300BE5647 /* CYKit.h in Headers */,
 				4C8AC4311DB0F12000BE5647 /* NSDate+CYExtend.h in Headers */,
 			);
@@ -166,8 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C8636941E5990380009BCBF /* CYKit.xcassets in Resources */,
-				4C86369C1E5995340009BCBF /* CYKitPod@2x.png in Resources */,
+				4C8636A11E5998A10009BCBF /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */,
+				4C8636A51E599A9C0009BCBF /* UIImage+CYAddtion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
