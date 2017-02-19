@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "CYBaseObject.h"
+#import "CYModel.h"
 #import "NSDate+CYExtend.h"
 #import "UIImage+CYExtend.h"

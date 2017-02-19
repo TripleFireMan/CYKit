@@ -1,5 +1,5 @@
 //
-//  CYBaseObjct.h
+//  CYModel.h
 //  CYKit
 //
 //  Created by 成焱 on 2017/2/19.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CYBaseObjct : NSObject
+@interface CYModel : NSObject
 
 + (NSString *)className;
 

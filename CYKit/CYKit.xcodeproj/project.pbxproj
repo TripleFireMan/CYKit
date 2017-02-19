@@ -10,8 +10,8 @@
 		4C8636A11E5998A10009BCBF /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 4C8636A01E5998A10009BCBF /* Resources */; };
 		4C8636A41E599A9C0009BCBF /* UIImage+CYAddtion.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8636A21E599A9C0009BCBF /* UIImage+CYAddtion.h */; };
 		4C8636A51E599A9C0009BCBF /* UIImage+CYAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8636A31E599A9C0009BCBF /* UIImage+CYAddtion.m */; };
-		4C8636EB1E59AD530009BCBF /* CYBaseObjct.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8636E91E59AD530009BCBF /* CYBaseObjct.h */; };
-		4C8636EC1E59AD530009BCBF /* CYBaseObjct.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8636EA1E59AD530009BCBF /* CYBaseObjct.m */; };
+		4C8636EF1E59B0300009BCBF /* CYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8636ED1E59B0300009BCBF /* CYModel.h */; };
+		4C8636F01E59B0300009BCBF /* CYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8636EE1E59B0300009BCBF /* CYModel.m */; };
 		4C8AC4281DB0F0D300BE5647 /* CYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8AC4261DB0F0D300BE5647 /* CYKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C8AC4311DB0F12000BE5647 /* NSDate+CYExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8AC42F1DB0F12000BE5647 /* NSDate+CYExtend.h */; };
 		4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AC4301DB0F12000BE5647 /* NSDate+CYExtend.m */; };
@@ -23,8 +23,8 @@
 		4C8636A01E5998A10009BCBF /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		4C8636A21E599A9C0009BCBF /* UIImage+CYAddtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CYAddtion.h"; sourceTree = "<group>"; };
 		4C8636A31E599A9C0009BCBF /* UIImage+CYAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CYAddtion.m"; sourceTree = "<group>"; };
-		4C8636E91E59AD530009BCBF /* CYBaseObjct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseObjct.h; sourceTree = "<group>"; };
-		4C8636EA1E59AD530009BCBF /* CYBaseObjct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseObjct.m; sourceTree = "<group>"; };
+		4C8636ED1E59B0300009BCBF /* CYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYModel.h; sourceTree = "<group>"; };
+		4C8636EE1E59B0300009BCBF /* CYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYModel.m; sourceTree = "<group>"; };
 		4C8AC4231DB0F0D300BE5647 /* CYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8AC4261DB0F0D300BE5647 /* CYKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYKit.h; sourceTree = "<group>"; };
 		4C8AC4271DB0F0D300BE5647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,8 +50,8 @@
 		4C8636E81E59AD250009BCBF /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				4C8636E91E59AD530009BCBF /* CYBaseObjct.h */,
-				4C8636EA1E59AD530009BCBF /* CYBaseObjct.m */,
+				4C8636ED1E59B0300009BCBF /* CYModel.h */,
+				4C8636EE1E59B0300009BCBF /* CYModel.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -112,7 +112,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C8636EB1E59AD530009BCBF /* CYBaseObjct.h in Headers */,
+				4C8636EF1E59B0300009BCBF /* CYModel.h in Headers */,
 				4C8636A41E599A9C0009BCBF /* UIImage+CYAddtion.h in Headers */,
 				4C8AC4281DB0F0D300BE5647 /* CYKit.h in Headers */,
 				4C8AC4311DB0F12000BE5647 /* NSDate+CYExtend.h in Headers */,
@@ -146,7 +146,7 @@
 		4C8AC41A1DB0F0D300BE5647 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = chengyan;
 				TargetAttributes = {
 					4C8AC4221DB0F0D300BE5647 = {
@@ -189,8 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */,
-				4C8636EC1E59AD530009BCBF /* CYBaseObjct.m in Sources */,
 				4C8636A51E599A9C0009BCBF /* UIImage+CYAddtion.m in Sources */,
+				4C8636F01E59B0300009BCBF /* CYModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +215,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -238,7 +239,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -266,6 +267,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -283,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
