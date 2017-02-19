@@ -17,6 +17,7 @@
 		4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AC4301DB0F12000BE5647 /* NSDate+CYExtend.m */; };
 		4C8AC4351DB0F14100BE5647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8AC4341DB0F14100BE5647 /* Foundation.framework */; };
 		4C8AC4371DB0F14C00BE5647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8AC4361DB0F14C00BE5647 /* UIKit.framework */; };
+		4CBA91101E59BB2900AEBC30 /* CYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8AC4231DB0F0D300BE5647 /* CYKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4C8AC4301DB0F12000BE5647 /* NSDate+CYExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CYExtend.m"; sourceTree = "<group>"; };
 		4C8AC4341DB0F14100BE5647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C8AC4361DB0F14C00BE5647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CBA90F91E59B91500AEBC30 /* CYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,14 @@
 			files = (
 				4C8AC4371DB0F14C00BE5647 /* UIKit.framework in Frameworks */,
 				4C8AC4351DB0F14100BE5647 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CBA90F61E59B91500AEBC30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBA91101E59BB2900AEBC30 /* CYKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				4C8AC4231DB0F0D300BE5647 /* CYKit.framework */,
+				4CBA90F91E59B91500AEBC30 /* CYKitDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +151,23 @@
 			productReference = 4C8AC4231DB0F0D300BE5647 /* CYKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		4CBA90F81E59B91500AEBC30 /* CYKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CBA910F1E59B91500AEBC30 /* Build configuration list for PBXNativeTarget "CYKitDemo" */;
+			buildPhases = (
+				4CBA90F51E59B91500AEBC30 /* Sources */,
+				4CBA90F61E59B91500AEBC30 /* Frameworks */,
+				4CBA90F71E59B91500AEBC30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CYKitDemo;
+			productName = CYKitDemo;
+			productReference = 4CBA90F91E59B91500AEBC30 /* CYKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,6 +181,10 @@
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
+					4CBA90F81E59B91500AEBC30 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 4C8AC41D1DB0F0D300BE5647 /* Build configuration list for PBXProject "CYKit" */;
@@ -161,6 +193,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 4C8AC4191DB0F0D300BE5647;
 			productRefGroup = 4C8AC4241DB0F0D300BE5647 /* Products */;
@@ -168,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				4C8AC4221DB0F0D300BE5647 /* CYKit */,
+				4CBA90F81E59B91500AEBC30 /* CYKitDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +215,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CBA90F71E59B91500AEBC30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -191,6 +232,13 @@
 				4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */,
 				4C8636A51E599A9C0009BCBF /* UIImage+CYAddtion.m in Sources */,
 				4C8636F01E59B0300009BCBF /* CYModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CBA90F51E59B91500AEBC30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +379,30 @@
 			};
 			name = Release;
 		};
+		4CBA910D1E59B91500AEBC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CYKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chenyan.CYKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4CBA910E1E59B91500AEBC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CYKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = chenyan.CYKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -348,6 +420,15 @@
 			buildConfigurations = (
 				4C8AC42C1DB0F0D300BE5647 /* Debug */,
 				4C8AC42D1DB0F0D300BE5647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CBA910F1E59B91500AEBC30 /* Build configuration list for PBXNativeTarget "CYKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CBA910D1E59B91500AEBC30 /* Debug */,
+				4CBA910E1E59B91500AEBC30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

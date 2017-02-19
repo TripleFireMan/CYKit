@@ -1,0 +1,12 @@
+platform:ios,'7.0'
+target “CYKitDemo” do
+#pod 'SDWebImage','3.7.0'
+#pod 'AFNetworking','2.6.0'
+#pod 'CYKit',:'path => /..'
+
+
+#pod 'HUPhotoBrowser', :path => '../'
+
+pod 'CYKit',:path => '../'
+end
+

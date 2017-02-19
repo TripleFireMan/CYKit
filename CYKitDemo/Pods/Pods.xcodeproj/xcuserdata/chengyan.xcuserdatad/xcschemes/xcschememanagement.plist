@@ -6,23 +6,23 @@
 	<dict>
 		<key>CYKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>CYKitDemo.xcscheme</key>
+		<key>Pods-CYKitDemo.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4C8AC4221DB0F0D300BE5647</key>
+		<key>5A823CF0EA4DE43C329E6083EF9AC7D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4CBA90F81E59B91500AEBC30</key>
+		<key>FD01AB583E5C3C34D787B7B0803B9964</key>
 		<dict>
 			<key>primary</key>
 			<true/>

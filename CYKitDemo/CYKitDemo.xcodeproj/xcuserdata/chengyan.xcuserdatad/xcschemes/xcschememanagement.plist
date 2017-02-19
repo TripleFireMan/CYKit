@@ -4,25 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CYKit.xcscheme</key>
+		<key>CYKitDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>CYKitDemo.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4C8AC4221DB0F0D300BE5647</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4CBA90F81E59B91500AEBC30</key>
+		<key>4CBA915F1E59BE9600AEBC30</key>
 		<dict>
 			<key>primary</key>
 			<true/>
