@@ -10,6 +10,8 @@
 		4C8636A11E5998A10009BCBF /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 4C8636A01E5998A10009BCBF /* Resources */; };
 		4C8636A41E599A9C0009BCBF /* UIImage+CYAddtion.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8636A21E599A9C0009BCBF /* UIImage+CYAddtion.h */; };
 		4C8636A51E599A9C0009BCBF /* UIImage+CYAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8636A31E599A9C0009BCBF /* UIImage+CYAddtion.m */; };
+		4C8636EB1E59AD530009BCBF /* CYBaseObjct.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8636E91E59AD530009BCBF /* CYBaseObjct.h */; };
+		4C8636EC1E59AD530009BCBF /* CYBaseObjct.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8636EA1E59AD530009BCBF /* CYBaseObjct.m */; };
 		4C8AC4281DB0F0D300BE5647 /* CYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8AC4261DB0F0D300BE5647 /* CYKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C8AC4311DB0F12000BE5647 /* NSDate+CYExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8AC42F1DB0F12000BE5647 /* NSDate+CYExtend.h */; };
 		4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AC4301DB0F12000BE5647 /* NSDate+CYExtend.m */; };
@@ -21,6 +23,8 @@
 		4C8636A01E5998A10009BCBF /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		4C8636A21E599A9C0009BCBF /* UIImage+CYAddtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CYAddtion.h"; sourceTree = "<group>"; };
 		4C8636A31E599A9C0009BCBF /* UIImage+CYAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CYAddtion.m"; sourceTree = "<group>"; };
+		4C8636E91E59AD530009BCBF /* CYBaseObjct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseObjct.h; sourceTree = "<group>"; };
+		4C8636EA1E59AD530009BCBF /* CYBaseObjct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseObjct.m; sourceTree = "<group>"; };
 		4C8AC4231DB0F0D300BE5647 /* CYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8AC4261DB0F0D300BE5647 /* CYKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYKit.h; sourceTree = "<group>"; };
 		4C8AC4271DB0F0D300BE5647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C8636E81E59AD250009BCBF /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				4C8636E91E59AD530009BCBF /* CYBaseObjct.h */,
+				4C8636EA1E59AD530009BCBF /* CYBaseObjct.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		4C8AC4191DB0F0D300BE5647 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +78,7 @@
 			children = (
 				4C8636A01E5998A10009BCBF /* Resources */,
 				4C8AC4261DB0F0D300BE5647 /* CYKit.h */,
+				4C8636E81E59AD250009BCBF /* Class */,
 				4C8AC42E1DB0F0FE00BE5647 /* Categorys */,
 				4C8AC4271DB0F0D300BE5647 /* Info.plist */,
 			);
@@ -98,6 +112,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8636EB1E59AD530009BCBF /* CYBaseObjct.h in Headers */,
 				4C8636A41E599A9C0009BCBF /* UIImage+CYAddtion.h in Headers */,
 				4C8AC4281DB0F0D300BE5647 /* CYKit.h in Headers */,
 				4C8AC4311DB0F12000BE5647 /* NSDate+CYExtend.h in Headers */,
@@ -174,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */,
+				4C8636EC1E59AD530009BCBF /* CYBaseObjct.m in Sources */,
 				4C8636A51E599A9C0009BCBF /* UIImage+CYAddtion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
