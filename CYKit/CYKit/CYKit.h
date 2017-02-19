@@ -10,4 +10,4 @@
 
 #import "CYModel.h"
 #import "NSDate+CYExtend.h"
-#import "UIImage+CYExtend.h"
+#import "UIImage+CYAddtion.h"
