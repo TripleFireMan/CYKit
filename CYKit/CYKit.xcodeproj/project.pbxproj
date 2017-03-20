@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C2CC0061E7F6D6A002FFB38 /* CustomBarButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2CBFFE1E7F6D6A002FFB38 /* CustomBarButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C2CC0071E7F6D6A002FFB38 /* CustomBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CBFFF1E7F6D6A002FFB38 /* CustomBarButton.m */; };
+		4C2CC0081E7F6D6A002FFB38 /* CustomTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2CC0001E7F6D6A002FFB38 /* CustomTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C2CC0091E7F6D6A002FFB38 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0011E7F6D6A002FFB38 /* CustomTabBar.m */; };
+		4C2CC00A1E7F6D6A002FFB38 /* CustomTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2CC0021E7F6D6A002FFB38 /* CustomTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C2CC00B1E7F6D6A002FFB38 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0031E7F6D6A002FFB38 /* CustomTabBarController.m */; };
 		4C8636A11E5998A10009BCBF /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 4C8636A01E5998A10009BCBF /* Resources */; };
 		4C8636A41E599A9C0009BCBF /* UIImage+CYAddtion.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8636A21E599A9C0009BCBF /* UIImage+CYAddtion.h */; };
 		4C8636A51E599A9C0009BCBF /* UIImage+CYAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8636A31E599A9C0009BCBF /* UIImage+CYAddtion.m */; };
@@ -21,6 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C2CBFFE1E7F6D6A002FFB38 /* CustomBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBarButton.h; sourceTree = "<group>"; };
+		4C2CBFFF1E7F6D6A002FFB38 /* CustomBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBarButton.m; sourceTree = "<group>"; };
+		4C2CC0001E7F6D6A002FFB38 /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
+		4C2CC0011E7F6D6A002FFB38 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
+		4C2CC0021E7F6D6A002FFB38 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
+		4C2CC0031E7F6D6A002FFB38 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
 		4C8636A01E5998A10009BCBF /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		4C8636A21E599A9C0009BCBF /* UIImage+CYAddtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CYAddtion.h"; sourceTree = "<group>"; };
 		4C8636A31E599A9C0009BCBF /* UIImage+CYAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CYAddtion.m"; sourceTree = "<group>"; };
@@ -57,6 +69,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C2CBFFD1E7F6D6A002FFB38 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4C2CBFFE1E7F6D6A002FFB38 /* CustomBarButton.h */,
+				4C2CBFFF1E7F6D6A002FFB38 /* CustomBarButton.m */,
+				4C2CC0001E7F6D6A002FFB38 /* CustomTabBar.h */,
+				4C2CC0011E7F6D6A002FFB38 /* CustomTabBar.m */,
+				4C2CC0021E7F6D6A002FFB38 /* CustomTabBarController.h */,
+				4C2CC0031E7F6D6A002FFB38 /* CustomTabBarController.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		4C8636E81E59AD250009BCBF /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +112,7 @@
 		4C8AC4251DB0F0D300BE5647 /* CYKit */ = {
 			isa = PBXGroup;
 			children = (
+				4C2CBFFD1E7F6D6A002FFB38 /* Utils */,
 				4C8636A01E5998A10009BCBF /* Resources */,
 				4C8AC4261DB0F0D300BE5647 /* CYKit.h */,
 				4C8636E81E59AD250009BCBF /* Class */,
@@ -124,6 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8636EF1E59B0300009BCBF /* CYModel.h in Headers */,
+				4C2CC00A1E7F6D6A002FFB38 /* CustomTabBarController.h in Headers */,
+				4C2CC0081E7F6D6A002FFB38 /* CustomTabBar.h in Headers */,
+				4C2CC0061E7F6D6A002FFB38 /* CustomBarButton.h in Headers */,
 				4C8636A41E599A9C0009BCBF /* UIImage+CYAddtion.h in Headers */,
 				4C8AC4281DB0F0D300BE5647 /* CYKit.h in Headers */,
 				4C8AC4311DB0F12000BE5647 /* NSDate+CYExtend.h in Headers */,
@@ -229,8 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C2CC0071E7F6D6A002FFB38 /* CustomBarButton.m in Sources */,
 				4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */,
+				4C2CC00B1E7F6D6A002FFB38 /* CustomTabBarController.m in Sources */,
 				4C8636A51E599A9C0009BCBF /* UIImage+CYAddtion.m in Sources */,
+				4C2CC0091E7F6D6A002FFB38 /* CustomTabBar.m in Sources */,
 				4C8636F01E59B0300009BCBF /* CYModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
