@@ -16,11 +16,12 @@
 		4CBA916E1E59BE9600AEBC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA916C1E59BE9600AEBC30 /* Main.storyboard */; };
 		4CBA91701E59BE9600AEBC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA916F1E59BE9600AEBC30 /* Assets.xcassets */; };
 		4CBA91731E59BE9600AEBC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA91711E59BE9600AEBC30 /* LaunchScreen.storyboard */; };
-		9D8F1592BA4D74B94678D3A7 /* libPods-CYKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AD37658C3021729C2FCCB6 /* libPods-CYKitDemo.a */; };
+		BBA8233FF37145F266BD03FF /* libPods-CYKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16920408DAE9E2A332655E7D /* libPods-CYKitDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		49C33AB96EB932DF71192944 /* Pods-CYKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		16920408DAE9E2A332655E7D /* libPods-CYKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9FFC83CC10B8543C34B342 /* Pods-CYKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4C2CC00E1E7F6F5E002FFB38 /* CustomTabBarController+Initional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CustomTabBarController+Initional.h"; sourceTree = "<group>"; };
 		4C2CC00F1E7F6F5E002FFB38 /* CustomTabBarController+Initional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CustomTabBarController+Initional.m"; sourceTree = "<group>"; };
 		4C2CC0111E7F7071002FFB38 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -37,8 +38,7 @@
 		4CBA916F1E59BE9600AEBC30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CBA91721E59BE9600AEBC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CBA91741E59BE9600AEBC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6A777A9CE39A0C96C81A5D2 /* Pods-CYKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo.release.xcconfig"; sourceTree = "<group>"; };
-		E2AD37658C3021729C2FCCB6 /* libPods-CYKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB220DEBF9540A1CED6DCFF0 /* Pods-CYKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,28 +46,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D8F1592BA4D74B94678D3A7 /* libPods-CYKitDemo.a in Frameworks */,
+				BBA8233FF37145F266BD03FF /* libPods-CYKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07101B8886394FE9812BDE47 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E2AD37658C3021729C2FCCB6 /* libPods-CYKitDemo.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		4CBA91571E59BE9600AEBC30 = {
 			isa = PBXGroup;
 			children = (
 				4CBA91621E59BE9600AEBC30 /* CYKitDemo */,
 				4CBA91611E59BE9600AEBC30 /* Products */,
-				E1705CCD8F8357A41DE29A6D /* Pods */,
-				07101B8886394FE9812BDE47 /* Frameworks */,
+				F75FDBE12A293D8DE5417E11 /* Pods */,
+				D59C03FF8D8C93C0354E2205 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,11 +101,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E1705CCD8F8357A41DE29A6D /* Pods */ = {
+		D59C03FF8D8C93C0354E2205 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				49C33AB96EB932DF71192944 /* Pods-CYKitDemo.debug.xcconfig */,
-				D6A777A9CE39A0C96C81A5D2 /* Pods-CYKitDemo.release.xcconfig */,
+				16920408DAE9E2A332655E7D /* libPods-CYKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F75FDBE12A293D8DE5417E11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB220DEBF9540A1CED6DCFF0 /* Pods-CYKitDemo.debug.xcconfig */,
+				2F9FFC83CC10B8543C34B342 /* Pods-CYKitDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -125,13 +125,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CBA91771E59BE9600AEBC30 /* Build configuration list for PBXNativeTarget "CYKitDemo" */;
 			buildPhases = (
-				5D08EB8DFFF6A2E3A6D7987A /* 📦 Check Pods Manifest.lock */,
+				45AB697A923B5F2C19AA9D2F /* [CP] Check Pods Manifest.lock */,
 				4CBA915C1E59BE9600AEBC30 /* Sources */,
 				4CBA915D1E59BE9600AEBC30 /* Frameworks */,
 				4CBA915E1E59BE9600AEBC30 /* Resources */,
-				7F0BF46600FBFC51EA84D467 /* 📦 Embed Pods Frameworks */,
-				E65EAB58292195BBFDE4B6F3 /* 📦 Copy Pods Resources */,
-				54037474CC8B52DF20EF69F0 /* Embed Pods Frameworks */,
+				5DE088E883C0F66EFD5BA33B /* [CP] Embed Pods Frameworks */,
+				20DA14270693293D4B19CA83 /* [CP] Copy Pods Resources */,
+				75018F08C0CB5D12D1BC645F /* [CP] Copy Framework Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +148,7 @@
 		4CBA91581E59BE9600AEBC30 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CY;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = cheng.yan;
 				TargetAttributes = {
@@ -189,64 +190,64 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		54037474CC8B52DF20EF69F0 /* Embed Pods Frameworks */ = {
+		20DA14270693293D4B19CA83 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5D08EB8DFFF6A2E3A6D7987A /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7F0BF46600FBFC51EA84D467 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E65EAB58292195BBFDE4B6F3 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45AB697A923B5F2C19AA9D2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5DE088E883C0F66EFD5BA33B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75018F08C0CB5D12D1BC645F /* [CP] Copy Framework Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Framework Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash -l -c \"ruby \\\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/copy-framework-resources.rb\\\"\"";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -379,7 +380,7 @@
 		};
 		4CBA91781E59BE9600AEBC30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49C33AB96EB932DF71192944 /* Pods-CYKitDemo.debug.xcconfig */;
+			baseConfigurationReference = BB220DEBF9540A1CED6DCFF0 /* Pods-CYKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CYKitDemo/Info.plist;
@@ -391,7 +392,7 @@
 		};
 		4CBA91791E59BE9600AEBC30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6A777A9CE39A0C96C81A5D2 /* Pods-CYKitDemo.release.xcconfig */;
+			baseConfigurationReference = 2F9FFC83CC10B8543C34B342 /* Pods-CYKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CYKitDemo/Info.plist;
