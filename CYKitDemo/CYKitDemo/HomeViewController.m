@@ -33,6 +33,10 @@
     NSNumber *fileSye = [UIDevice cy_totalDeviceSize];
     NSNumber *fileFre = [UIDevice cy_freeDeviceSize];
     
+    BOOL isJailBroken = [UIDevice cy_isJailBroken];
+    if (isJailBroken==NO) {
+        NSLog(@"333");
+    }
 }
 
 - (void)didReceiveMemoryWarning {

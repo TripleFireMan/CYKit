@@ -188,7 +188,7 @@
     static BOOL isSimulator = NO;
     dispatch_once(&onceToken, ^{
         NSString *machionName = [self cy_deviceName];
-        if ([machionName isEqualToString:@"x86_84"] || [machionName isEqualToString:@"i386"]) {
+        if ([machionName isEqualToString:@"x86_64"] || [machionName isEqualToString:@"i386"]) {
             isSimulator = YES;
         }
     });
