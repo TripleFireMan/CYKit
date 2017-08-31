@@ -41,4 +41,22 @@
  @return carrier name
  */
 + (NSString *)cy_carrier;
+
+///-------------------------------------------
+/// @name device system files
+///-------------------------------------------
+
+/**
+ the file system,device total usage space
+
+ @return total device space size
+ */
++ (NSNumber *)cy_totalDeviceSize;
+
+/**
+ the file system,device free usage space
+
+ @return free device space size
+ */
++ (NSNumber *)cy_freeDeviceSize;
 @end

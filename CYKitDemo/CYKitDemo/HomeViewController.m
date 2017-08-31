@@ -8,6 +8,8 @@
 
 #import "HomeViewController.h"
 #import <CYKit/UIImage+CYAddtion.h>
+#import <CYKit/UIDevice+CYAddition.h>
+#import <CYKit/UIColor+CYAddition.h>
 @interface HomeViewController ()
 @property (nonatomic, strong) UIImageView *imageView;
 @end
@@ -18,6 +20,16 @@
     [super viewDidLoad];
     self.view.backgroundColor  = [UIColor grayColor];
     // Do any additional setup after loading the view.
+    
+    UIColor *color = [UIColor cy_randomColor];
+    
+    NSString *devicename = [UIDevice cy_deviceName];
+    NSString *macaddress = [UIDevice cy_macAddress];
+    NSString *ipaddress = [UIDevice cy_ipAddress];
+    NSString *carriername = [UIDevice cy_carrier];
+    
+    UIImage *image = [UIImage cy_imageByPureColor:[UIColor redColor] size:CGSizeMake(10, 100)];
+    
 }
 
 - (void)didReceiveMemoryWarning {

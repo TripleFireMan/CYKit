@@ -139,4 +139,16 @@
     
     return outstring;
 }
+
++ (NSNumber *)cy_totalDeviceSize
+{
+    NSDictionary *fattributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil];
+    return [fattributes objectForKey:NSFileSystemSize];
+}
+
++ (NSNumber *)cy_freeDeviceSize
+{
+    NSDictionary *fattributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil];
+    return [fattributes objectForKey:NSFileSystemFreeSize];
+}
 @end
