@@ -25,7 +25,7 @@
     
     NSString *devicename = [UIDevice cy_deviceName];
     NSString *macaddress = [UIDevice cy_macAddress];
-    NSString *ipaddress = [UIDevice cy_ipAddress];
+    NSString *ipaddress = [UIDevice cy_ipAddressCell];
     NSString *carriername = [UIDevice cy_carrier];
     
     UIImage *image = [UIImage cy_imageByPureColor:[UIColor redColor] size:CGSizeMake(10, 100)];

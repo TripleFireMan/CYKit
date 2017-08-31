@@ -21,6 +21,17 @@
 #include <arpa/inet.h>
 
 @implementation UIDevice (CYAddition)
+
++ (NSString *)cy_systemVersion
+{
+    static NSString * version;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        version = [UIDevice currentDevice].systemVersion;
+    });
+    return version;
+}
+
 + (NSString *)cy_deviceName
 {
     size_t size;
@@ -67,7 +78,7 @@
     return nil;
 }
 
-+ (NSString *)cy_ipAddress
++ (NSString *)cy_ipAddressWifi
 {
     NSString *address = @"";
     struct ifaddrs *interfaces = NULL;
@@ -91,6 +102,27 @@
     }
     freeifaddrs(interfaces);
     
+    return address;
+}
+
++ (NSString *)cy_ipAddressCell
+{
+    NSString *address = nil;
+    struct ifaddrs *addrs = NULL;
+    if (getifaddrs(&addrs) == 0) {
+        struct ifaddrs *addr = addrs;
+        while (addr != NULL) {
+            if (addr->ifa_addr->sa_family == AF_INET) {
+                if ([[NSString stringWithUTF8String:addr->ifa_name] isEqualToString:@"pdp_ip0"]) {
+                    address = [NSString stringWithUTF8String:
+                               inet_ntoa(((struct sockaddr_in *)addr->ifa_addr)->sin_addr)];
+                    break;
+                }
+            }
+            addr = addr->ifa_next;
+        }
+    }
+    freeifaddrs(addrs);
     return address;
 }
 
@@ -139,6 +171,74 @@
     
     return outstring;
 }
+
++ (BOOL)cy_isIpad
+{
+    static dispatch_once_t onceToken;
+    static BOOL isIpad = NO;
+    dispatch_once(&onceToken, ^{
+        isIpad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+    });
+    return isIpad;
+}
+
++ (BOOL)cy_isSimulator
+{
+    static dispatch_once_t onceToken;
+    static BOOL isSimulator = NO;
+    dispatch_once(&onceToken, ^{
+        NSString *machionName = [self cy_deviceName];
+        if ([machionName isEqualToString:@"x86_84"] || [machionName isEqualToString:@"i386"]) {
+            isSimulator = YES;
+        }
+    });
+    return isSimulator;
+}
+
++ (BOOL)cy_isJailBroken
+{
+    if ([self cy_isSimulator]) return NO;
+    
+    
+    NSArray *paths = @[@"/Applications/Cydia.app",
+                       @"/private/var/lib/apt/",
+                       @"/private/var/lib/cydia",
+                       @"/private/var/stash"];
+    for (NSString *path in paths) {
+        if ([[NSFileManager defaultManager] fileExistsAtPath:path]) return YES;
+    }
+    
+    FILE *bash = fopen("/bin/bash", "r");
+    if (bash != NULL) {
+        fclose(bash);
+        return YES;
+    }
+    
+    NSString *bridgeUUID;
+    CFUUIDRef uuid = CFUUIDCreate(NULL);
+    CFStringRef string = CFUUIDCreateString(NULL, uuid);
+    CFRelease(uuid);
+    bridgeUUID = (__bridge_transfer NSString *)string;
+    
+    NSString *path = [NSString stringWithFormat:@"/private/%@", bridgeUUID];
+    if ([@"test" writeToFile : path atomically : YES encoding : NSUTF8StringEncoding error : NULL]) {
+        [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
+        return YES;
+    }
+    
+    return NO;
+}
+
++ (BOOL)cy_canMakePhoneCall
+{
+    static dispatch_once_t onceToken;
+    static BOOL canMakePhoneCall = NO;
+    dispatch_once(&onceToken, ^{
+        canMakePhoneCall = [[UIApplication sharedApplication]canOpenURL:[NSURL URLWithString:@"tel://"]];
+    });
+    return canMakePhoneCall;
+}
+
 
 + (NSNumber *)cy_totalDeviceSize
 {
