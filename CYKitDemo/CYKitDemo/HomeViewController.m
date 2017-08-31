@@ -30,6 +30,9 @@
     
     UIImage *image = [UIImage cy_imageByPureColor:[UIColor redColor] size:CGSizeMake(10, 100)];
     
+    NSNumber *fileSye = [UIDevice cy_totalDeviceSize];
+    NSNumber *fileFre = [UIDevice cy_freeDeviceSize];
+    
 }
 
 - (void)didReceiveMemoryWarning {
