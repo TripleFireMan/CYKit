@@ -10,6 +10,37 @@
 
 @interface UIImage (CYAddtion)
 
-+ (instancetype)cy_imageNamed:(NSString *)name;
 
+///-------------------------------------------
+/// @name colors
+///-------------------------------------------
+
+/**
+ create a pure color image with specialed color and size
+
+ @param color the specialed color,cannot been nil
+ @param size the specialed size,default is CGSizeZero
+ @return a image with user assigned color and size
+ */
++ (instancetype)cy_imageByPureColor:(UIColor *)color size:(CGSize)size;
+
+///-------------------------------------------
+/// @name scales
+///-------------------------------------------
+
+/**
+ scale current image to destination size
+
+ @param size destination size
+ @return sized image
+ */
+- (instancetype)cy_imageScaleToSize:(CGSize)size;
+
+/**
+ scale current image with a specialed factor
+
+ @param factor scaled factor, must larger than 0
+ @return scaled image
+ */
+- (instancetype)cy_imageScaleByFactor:(CGFloat)factor;
 @end

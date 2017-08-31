@@ -7,9 +7,9 @@
 //
 
 #import "HomeViewController.h"
-
+#import <CYKit/UIImage+CYAddtion.h>
 @interface HomeViewController ()
-
+@property (nonatomic, strong) UIImageView *imageView;
 @end
 
 @implementation HomeViewController

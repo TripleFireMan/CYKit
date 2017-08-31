@@ -18,15 +18,6 @@
     NSTimeInterval nowoffset = [destimezoon secondsFromGMTForDate:self];
     NSTimeInterval interval = nowoffset - offset;
     NSDate *now = [NSDate dateWithTimeInterval:interval sinceDate:self];
-    
-    
-    
-    
-    
-    
-    
-    
-    
     return now;
 }
 @end
