@@ -32,6 +32,16 @@
     return version;
 }
 
++ (NSString *)cy_appVersion
+{
+    static NSString *appversion;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        appversion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    });
+    return appversion;
+}
+
 + (NSString *)cy_deviceName
 {
     size_t size;

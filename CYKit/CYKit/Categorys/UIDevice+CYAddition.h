@@ -22,6 +22,13 @@
 + (NSString *)cy_systemVersion;
 
 /**
+ get cuttrrent app version
+
+ @return current app version
+ */
++ (NSString *)cy_appVersion;
+
+/**
  machine name ,eg. iPhone2,1 => iPhone3GS iPhone3,1 => iPhone4
 
  @return machine name, not iPhone 4,iPhone 3GS, otherwise iPhone2,1 iPhone3,1
