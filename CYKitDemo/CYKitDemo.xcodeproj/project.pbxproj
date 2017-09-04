@@ -125,7 +125,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CBA91771E59BE9600AEBC30 /* Build configuration list for PBXNativeTarget "CYKitDemo" */;
 			buildPhases = (
-				ADC9CD37A646F84FF2C25AFD /* 📦 Check Pods Manifest.lock */,
+				ADC9CD37A646F84FF2C25AFD /* [CP] Check Pods Manifest.lock */,
 				45AB697A923B5F2C19AA9D2F /* [CP] Check Pods Manifest.lock */,
 				4CBA915C1E59BE9600AEBC30 /* Sources */,
 				4CBA915D1E59BE9600AEBC30 /* Frameworks */,
@@ -265,22 +265,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#bash -l -c \"ruby \\\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/copy-framework-resources.rb\\\"\"";
+			shellScript = "bash -l -c \"ruby \\\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/copy-framework-resources.rb\\\"\"";
 			showEnvVarsInLog = 0;
 		};
-		ADC9CD37A646F84FF2C25AFD /* 📦 Check Pods Manifest.lock */ = {
+		ADC9CD37A646F84FF2C25AFD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E580478B08855E9A171FD1C2 /* 📦 Embed Pods Frameworks */ = {

@@ -17,6 +17,10 @@
 		4C67709B1F58183400E3E5C7 /* UIColor+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6770971F58183400E3E5C7 /* UIColor+CYAddition.m */; };
 		4C67709C1F58183400E3E5C7 /* UIDevice+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6770981F58183400E3E5C7 /* UIDevice+CYAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C67709D1F58183400E3E5C7 /* UIDevice+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6770991F58183400E3E5C7 /* UIDevice+CYAddition.m */; };
+		4C82AE831F5CFEF800D3CF00 /* NSString+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C82AE811F5CFEF800D3CF00 /* NSString+CYAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C82AE841F5CFEF800D3CF00 /* NSString+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C82AE821F5CFEF800D3CF00 /* NSString+CYAddition.m */; };
+		4C82AE8B1F5D085300D3CF00 /* NSData+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C82AE891F5D085300D3CF00 /* NSData+CYAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C82AE8C1F5D085300D3CF00 /* NSData+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C82AE8A1F5D085300D3CF00 /* NSData+CYAddition.m */; };
 		4C8636A11E5998A10009BCBF /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 4C8636A01E5998A10009BCBF /* Resources */; };
 		4C8636A41E599A9C0009BCBF /* UIImage+CYAddtion.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8636A21E599A9C0009BCBF /* UIImage+CYAddtion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C8636A51E599A9C0009BCBF /* UIImage+CYAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8636A31E599A9C0009BCBF /* UIImage+CYAddtion.m */; };
@@ -41,6 +45,10 @@
 		4C6770971F58183400E3E5C7 /* UIColor+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CYAddition.m"; sourceTree = "<group>"; };
 		4C6770981F58183400E3E5C7 /* UIDevice+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+CYAddition.h"; sourceTree = "<group>"; };
 		4C6770991F58183400E3E5C7 /* UIDevice+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+CYAddition.m"; sourceTree = "<group>"; };
+		4C82AE811F5CFEF800D3CF00 /* NSString+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CYAddition.h"; sourceTree = "<group>"; };
+		4C82AE821F5CFEF800D3CF00 /* NSString+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CYAddition.m"; sourceTree = "<group>"; };
+		4C82AE891F5D085300D3CF00 /* NSData+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CYAddition.h"; sourceTree = "<group>"; };
+		4C82AE8A1F5D085300D3CF00 /* NSData+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CYAddition.m"; sourceTree = "<group>"; };
 		4C8636A01E5998A10009BCBF /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		4C8636A21E599A9C0009BCBF /* UIImage+CYAddtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CYAddtion.h"; sourceTree = "<group>"; };
 		4C8636A31E599A9C0009BCBF /* UIImage+CYAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CYAddtion.m"; sourceTree = "<group>"; };
@@ -141,6 +149,10 @@
 				4C6770971F58183400E3E5C7 /* UIColor+CYAddition.m */,
 				4C6770981F58183400E3E5C7 /* UIDevice+CYAddition.h */,
 				4C6770991F58183400E3E5C7 /* UIDevice+CYAddition.m */,
+				4C82AE811F5CFEF800D3CF00 /* NSString+CYAddition.h */,
+				4C82AE821F5CFEF800D3CF00 /* NSString+CYAddition.m */,
+				4C82AE891F5D085300D3CF00 /* NSData+CYAddition.h */,
+				4C82AE8A1F5D085300D3CF00 /* NSData+CYAddition.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -166,8 +178,10 @@
 				4C8636A41E599A9C0009BCBF /* UIImage+CYAddtion.h in Headers */,
 				4C67709C1F58183400E3E5C7 /* UIDevice+CYAddition.h in Headers */,
 				4C8636EF1E59B0300009BCBF /* CYModel.h in Headers */,
+				4C82AE8B1F5D085300D3CF00 /* NSData+CYAddition.h in Headers */,
 				4C8AC4311DB0F12000BE5647 /* NSDate+CYExtend.h in Headers */,
 				4C2CC0081E7F6D6A002FFB38 /* CustomTabBar.h in Headers */,
+				4C82AE831F5CFEF800D3CF00 /* NSString+CYAddition.h in Headers */,
 				4C2CC0061E7F6D6A002FFB38 /* CustomBarButton.h in Headers */,
 				4C8AC4281DB0F0D300BE5647 /* CYKit.h in Headers */,
 			);
@@ -272,10 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C82AE8C1F5D085300D3CF00 /* NSData+CYAddition.m in Sources */,
 				4C2CC0071E7F6D6A002FFB38 /* CustomBarButton.m in Sources */,
 				4C67709D1F58183400E3E5C7 /* UIDevice+CYAddition.m in Sources */,
 				4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */,
 				4C2CC00B1E7F6D6A002FFB38 /* CustomTabBarController.m in Sources */,
+				4C82AE841F5CFEF800D3CF00 /* NSString+CYAddition.m in Sources */,
 				4C67709B1F58183400E3E5C7 /* UIColor+CYAddition.m in Sources */,
 				4C8636A51E599A9C0009BCBF /* UIImage+CYAddtion.m in Sources */,
 				4C2CC0091E7F6D6A002FFB38 /* CustomTabBar.m in Sources */,
