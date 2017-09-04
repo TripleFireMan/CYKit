@@ -11,6 +11,7 @@
 #import <CYKit/UIDevice+CYAddition.h>
 #import <CYKit/UIColor+CYAddition.h>
 #import <CYKit/NSString+CYAddition.h>
+#import <CYKit/NSData+CYAddition.h>
 @interface HomeViewController ()
 @property (nonatomic, strong) UIImageView *imageView;
 @end
