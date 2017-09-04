@@ -170,4 +170,46 @@
  @return crc32 hash
  */
 - (uint32_t)cy_crc32Data;
+
+
+///-------------------------------------------
+/// @name encrypt&decrypt
+///-------------------------------------------
+
+/**
+ an encrypt NSData using AES.
+
+ @param key a key length of 16,24 or 32 (128,192 or 256bits).
+ @param iv an initialization vector length of 16(128bits),pass nil when you don't want to use iv.
+ @return An NSData encrypted,or nil if an error occurs.
+ */
+- (nullable NSData *)cy_aes256EncryptWithKey:(nullable NSData *)key iv:(nullable NSData *)iv;
+
+/**
+ an decrypt NSData using AES
+
+ @param key a key length of 16,24 or 32 (128,192 or 256bits).
+ @param iv iv an initialization vector length of 16(128bits),pass nil when you don't want to use iv.
+ @return an NSData decrypted, or nil if an error occurs.
+ */
+- (nullable NSData *)cy_aes256DecryptWithKey:(nullable NSData *)key iv:(nullable NSData *)iv;
+
+///-------------------------------------------
+/// @name encode&decode
+///-------------------------------------------
+
+/**
+ a lowercase NSString for base64
+ 
+ @return a lower NSString for base64
+ */
+- (nullable NSString *)cy_base64String;
+
+/**
+ a NSData from base64 encoded string
+
+ @param base64EncodedString the encoded string
+ @return a NSData from base64 encoded string
+ */
++ (nullable NSData *)cy_dataWithBase64EncodeedString:(nullable NSString *)base64EncodedString;
 @end
