@@ -10,6 +10,7 @@
 		4C2CC0101E7F6F5E002FFB38 /* CustomTabBarController+Initional.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC00F1E7F6F5E002FFB38 /* CustomTabBarController+Initional.m */; };
 		4C2CC0131E7F7071002FFB38 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0121E7F7071002FFB38 /* HomeViewController.m */; };
 		4C2CC0161E7F707C002FFB38 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0151E7F707C002FFB38 /* MeViewController.m */; };
+		4C633FCE1F78A3F400D235D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C633FCD1F78A3F400D235D2 /* libz.tbd */; };
 		4CBA91651E59BE9600AEBC30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA91641E59BE9600AEBC30 /* main.m */; };
 		4CBA91681E59BE9600AEBC30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA91671E59BE9600AEBC30 /* AppDelegate.m */; };
 		4CBA916B1E59BE9600AEBC30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA916A1E59BE9600AEBC30 /* ViewController.m */; };
@@ -28,6 +29,7 @@
 		4C2CC0121E7F7071002FFB38 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		4C2CC0141E7F707C002FFB38 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		4C2CC0151E7F707C002FFB38 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		4C633FCD1F78A3F400D235D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4CBA91601E59BE9600AEBC30 /* CYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBA91641E59BE9600AEBC30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CBA91661E59BE9600AEBC30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C633FCE1F78A3F400D235D2 /* libz.tbd in Frameworks */,
 				BBA8233FF37145F266BD03FF /* libPods-CYKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +107,7 @@
 		D59C03FF8D8C93C0354E2205 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C633FCD1F78A3F400D235D2 /* libz.tbd */,
 				16920408DAE9E2A332655E7D /* libPods-CYKitDemo.a */,
 			);
 			name = Frameworks;

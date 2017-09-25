@@ -4,6 +4,9 @@ target “CYKitDemo” do
 #pod 'AFNetworking','2.6.0'
 #pod 'CYKit',:'path => /..'
 
+pod 'Masonry',             '~> 1.0.2'
+pod 'BlocksKit',           '~> 2.2.5'
+pod 'CocoaLumberjack',     '~> 3.0.0'
 
 #pod 'HUPhotoBrowser', :path => '../'
 

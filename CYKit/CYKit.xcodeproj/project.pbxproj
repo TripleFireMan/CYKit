@@ -13,6 +13,9 @@
 		4C2CC0091E7F6D6A002FFB38 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0011E7F6D6A002FFB38 /* CustomTabBar.m */; };
 		4C2CC00A1E7F6D6A002FFB38 /* CustomTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2CC0021E7F6D6A002FFB38 /* CustomTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C2CC00B1E7F6D6A002FFB38 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0031E7F6D6A002FFB38 /* CustomTabBarController.m */; };
+		4C633FC91F78A1DD00D235D2 /* CYTailBubbleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C633FC71F78A1DD00D235D2 /* CYTailBubbleView.h */; };
+		4C633FCA1F78A1DD00D235D2 /* CYTailBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C633FC81F78A1DD00D235D2 /* CYTailBubbleView.m */; };
+		4C633FCC1F78A38A00D235D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C633FCB1F78A38A00D235D2 /* libz.tbd */; };
 		4C67709A1F58183400E3E5C7 /* UIColor+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6770961F58183400E3E5C7 /* UIColor+CYAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C67709B1F58183400E3E5C7 /* UIColor+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6770971F58183400E3E5C7 /* UIColor+CYAddition.m */; };
 		4C67709C1F58183400E3E5C7 /* UIDevice+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6770981F58183400E3E5C7 /* UIDevice+CYAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +44,9 @@
 		4C2CC0011E7F6D6A002FFB38 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
 		4C2CC0021E7F6D6A002FFB38 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
 		4C2CC0031E7F6D6A002FFB38 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
+		4C633FC71F78A1DD00D235D2 /* CYTailBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTailBubbleView.h; sourceTree = "<group>"; };
+		4C633FC81F78A1DD00D235D2 /* CYTailBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTailBubbleView.m; sourceTree = "<group>"; };
+		4C633FCB1F78A38A00D235D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4C6770961F58183400E3E5C7 /* UIColor+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CYAddition.h"; sourceTree = "<group>"; };
 		4C6770971F58183400E3E5C7 /* UIColor+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CYAddition.m"; sourceTree = "<group>"; };
 		4C6770981F58183400E3E5C7 /* UIDevice+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+CYAddition.h"; sourceTree = "<group>"; };
@@ -69,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C633FCC1F78A38A00D235D2 /* libz.tbd in Frameworks */,
 				4C8AC4371DB0F14C00BE5647 /* UIKit.framework in Frameworks */,
 				4C8AC4351DB0F14100BE5647 /* Foundation.framework in Frameworks */,
 			);
@@ -96,6 +103,15 @@
 				4C2CC0031E7F6D6A002FFB38 /* CustomTabBarController.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		4C633FC61F78A1DD00D235D2 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4C633FC71F78A1DD00D235D2 /* CYTailBubbleView.h */,
+				4C633FC81F78A1DD00D235D2 /* CYTailBubbleView.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		4C8636E81E59AD250009BCBF /* Class */ = {
@@ -128,6 +144,7 @@
 		4C8AC4251DB0F0D300BE5647 /* CYKit */ = {
 			isa = PBXGroup;
 			children = (
+				4C633FC61F78A1DD00D235D2 /* UIKit */,
 				4C2CBFFD1E7F6D6A002FFB38 /* Utils */,
 				4C8636A01E5998A10009BCBF /* Resources */,
 				4C8AC4261DB0F0D300BE5647 /* CYKit.h */,
@@ -160,6 +177,7 @@
 		4C8AC4331DB0F14100BE5647 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C633FCB1F78A38A00D235D2 /* libz.tbd */,
 				4C8AC4361DB0F14C00BE5647 /* UIKit.framework */,
 				4C8AC4341DB0F14100BE5647 /* Foundation.framework */,
 			);
@@ -174,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2CC00A1E7F6D6A002FFB38 /* CustomTabBarController.h in Headers */,
+				4C633FC91F78A1DD00D235D2 /* CYTailBubbleView.h in Headers */,
 				4C67709A1F58183400E3E5C7 /* UIColor+CYAddition.h in Headers */,
 				4C8636A41E599A9C0009BCBF /* UIImage+CYAddtion.h in Headers */,
 				4C67709C1F58183400E3E5C7 /* UIDevice+CYAddition.h in Headers */,
@@ -289,6 +308,7 @@
 				4C82AE8C1F5D085300D3CF00 /* NSData+CYAddition.m in Sources */,
 				4C2CC0071E7F6D6A002FFB38 /* CustomBarButton.m in Sources */,
 				4C67709D1F58183400E3E5C7 /* UIDevice+CYAddition.m in Sources */,
+				4C633FCA1F78A1DD00D235D2 /* CYTailBubbleView.m in Sources */,
 				4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */,
 				4C2CC00B1E7F6D6A002FFB38 /* CustomTabBarController.m in Sources */,
 				4C82AE841F5CFEF800D3CF00 /* NSString+CYAddition.m in Sources */,
