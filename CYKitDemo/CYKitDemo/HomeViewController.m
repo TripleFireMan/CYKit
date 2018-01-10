@@ -12,6 +12,11 @@
 #import <CYKit/UIColor+CYAddition.h>
 #import <CYKit/NSString+CYAddition.h>
 #import <CYKit/NSData+CYAddition.h>
+
+#import <CYKit/YCFMDB.h>
+#import <CYKit/YCDBVideo.h>
+#import "CYHistory.h"
+
 @interface HomeViewController ()
 @property (nonatomic, strong) UIImageView *imageView;
 @end
@@ -39,6 +44,42 @@
     if (isJailBroken==NO) {
         NSLog(@"333");
     }
+    
+    NSDate *date1 = [NSDate date];
+
+    for(int i = 0; i < 1000; i++){
+        CYHistory *history = [CYHistory entity];
+        history.name = @(i).stringValue;
+        history.desc = [@(i).stringValue stringByAppendingString:@"历史记录"];
+//        [history save];
+    }
+
+    NSDate *date2 = [NSDate date];
+    NSTimeInterval time = [date2 timeIntervalSinceDate:date1] * 1000.f;
+    NSLog(@"%s 消耗时间为 %.2f 毫秒",__func__,time);
+
+//    NSDate *date1 = [NSDate date];
+//
+//    NSArray *historys = [CYHistory findAll];
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name == '7'"];
+//    NSArray *result = [historys filteredArrayUsingPredicate:predicate];
+//    NSLog(@"result = %@",result);
+//    if (result.count!=0){
+//        CYHistory *history = [result firstObject];
+//        history.desc = @"10086";
+//        for (int i = 0; i < 1000; i++){
+//        [history save];
+//        }
+//
+//    }
+//
+//
+//
+//    NSDate *date2 = [NSDate date];
+//    NSTimeInterval time = [date2 timeIntervalSinceDate:date1] * 1000.f;
+//    NSLog(@"%s 消耗时间为 %.2f 毫秒",__func__,time);
+    
+//    [YCDBVideo dropTable];
 }
 
 - (void)didReceiveMemoryWarning {

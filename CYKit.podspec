@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYKit"
-  s.version      = "0.1.7"
+  s.version      = "0.1.8"
   s.summary      = "something useful for daily development"
   s.homepage     = "https://github.com/TripleFireMan"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "chengyan" => "ab364743113@126.com" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/TripleFireMan/CYKit.git", :tag => "0.1.7" }
+  s.source       = { :git => "https://github.com/TripleFireMan/CYKit.git", :tag => "0.1.8" }
   
   s.source_files  = "CYKit", "CYKit/**/*.{h,m}"
   #s.resources     = "Resources/*.png"
@@ -33,6 +33,6 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "FMDB", '2.7.2'
 
 end
