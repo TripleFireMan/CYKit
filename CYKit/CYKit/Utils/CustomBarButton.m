@@ -82,6 +82,9 @@
     _redPointImgView.backgroundColor = [UIColor redColor];
     _redPointImgView.layer.masksToBounds = YES;
     [self addSubview:_redPointImgView];
+    [_redPointImgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.insets(UIEdgeInsetsZero);
+    }];
 }
 
 - (void)setTitle:(NSString *)title
