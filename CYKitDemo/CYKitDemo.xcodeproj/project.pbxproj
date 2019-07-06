@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C1D53BC2004F02300721115 /* CYHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D53BB2004F02300721115 /* CYHistory.m */; };
 		4C2CC0101E7F6F5E002FFB38 /* CustomTabBarController+Initional.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC00F1E7F6F5E002FFB38 /* CustomTabBarController+Initional.m */; };
 		4C2CC0131E7F7071002FFB38 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0121E7F7071002FFB38 /* HomeViewController.m */; };
 		4C2CC0161E7F707C002FFB38 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0151E7F707C002FFB38 /* MeViewController.m */; };
@@ -22,8 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C1D53BA2004F02300721115 /* CYHistory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYHistory.h; sourceTree = "<group>"; };
-		4C1D53BB2004F02300721115 /* CYHistory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYHistory.m; sourceTree = "<group>"; };
 		4C2CC00E1E7F6F5E002FFB38 /* CustomTabBarController+Initional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CustomTabBarController+Initional.h"; sourceTree = "<group>"; };
 		4C2CC00F1E7F6F5E002FFB38 /* CustomTabBarController+Initional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CustomTabBarController+Initional.m"; sourceTree = "<group>"; };
 		4C2CC0111E7F7071002FFB38 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -88,8 +85,6 @@
 				4C2CC00F1E7F6F5E002FFB38 /* CustomTabBarController+Initional.m */,
 				4C2CC0111E7F7071002FFB38 /* HomeViewController.h */,
 				4C2CC0121E7F7071002FFB38 /* HomeViewController.m */,
-				4C1D53BA2004F02300721115 /* CYHistory.h */,
-				4C1D53BB2004F02300721115 /* CYHistory.m */,
 				4C2CC0141E7F707C002FFB38 /* MeViewController.h */,
 				4C2CC0151E7F707C002FFB38 /* MeViewController.m */,
 				4CBA916C1E59BE9600AEBC30 /* Main.storyboard */,
@@ -228,7 +223,6 @@
 			files = (
 				4C2CC0161E7F707C002FFB38 /* MeViewController.m in Sources */,
 				4CBA916B1E59BE9600AEBC30 /* ViewController.m in Sources */,
-				4C1D53BC2004F02300721115 /* CYHistory.m in Sources */,
 				4CBA91681E59BE9600AEBC30 /* AppDelegate.m in Sources */,
 				4C2CC0101E7F6F5E002FFB38 /* CustomTabBarController+Initional.m in Sources */,
 				4C2CC0131E7F7071002FFB38 /* HomeViewController.m in Sources */,

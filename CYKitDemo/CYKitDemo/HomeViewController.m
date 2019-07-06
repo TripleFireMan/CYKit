@@ -13,9 +13,6 @@
 #import <CYKit/NSString+CYAddition.h>
 #import <CYKit/NSData+CYAddition.h>
 
-#import <CYKit/YCFMDB.h>
-#import <CYKit/YCDBVideo.h>
-#import "CYHistory.h"
 
 @interface HomeViewController ()
 @property (nonatomic, strong) UIImageView *imageView;
@@ -47,12 +44,7 @@
     
     NSDate *date1 = [NSDate date];
 
-    for(int i = 0; i < 1000; i++){
-        CYHistory *history = [CYHistory entity];
-        history.name = @(i).stringValue;
-        history.desc = [@(i).stringValue stringByAppendingString:@"历史记录"];
-//        [history save];
-    }
+
 
     NSDate *date2 = [NSDate date];
     NSTimeInterval time = [date2 timeIntervalSinceDate:date1] * 1000.f;
