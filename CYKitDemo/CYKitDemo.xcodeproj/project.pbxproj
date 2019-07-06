@@ -139,8 +139,6 @@
 				4CBA915C1E59BE9600AEBC30 /* Sources */,
 				4CBA915D1E59BE9600AEBC30 /* Frameworks */,
 				4CBA915E1E59BE9600AEBC30 /* Resources */,
-				5DE088E883C0F66EFD5BA33B /* [CP] Embed Pods Frameworks */,
-				20DA14270693293D4B19CA83 /* [CP] Copy Pods Resources */,
 				75018F08C0CB5D12D1BC645F /* [CP] Copy Framework Resources */,
 				E580478B08855E9A171FD1C2 /* 📦 Embed Pods Frameworks */,
 				58D98F26DF1075FE941ED981 /* 📦 Copy Pods Resources */,
@@ -175,6 +173,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -202,21 +201,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20DA14270693293D4B19CA83 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		45AB697A923B5F2C19AA9D2F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,21 +231,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5DE088E883C0F66EFD5BA33B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		75018F08C0CB5D12D1BC645F /* [CP] Copy Framework Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,7 +243,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "bash -l -c \"ruby \\\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/copy-framework-resources.rb\\\"\"";
+			shellScript = "bash -l -c \"ruby \\\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/copy-framework-resources.rb\\\"\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ADC9CD37A646F84FF2C25AFD /* [CP] Check Pods Manifest.lock */ = {
@@ -283,13 +252,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CYKitDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E580478B08855E9A171FD1C2 /* 📦 Embed Pods Frameworks */ = {
