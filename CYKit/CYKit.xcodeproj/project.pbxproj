@@ -32,12 +32,9 @@
 		4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AC4301DB0F12000BE5647 /* NSDate+CYExtend.m */; };
 		4C8AC4351DB0F14100BE5647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8AC4341DB0F14100BE5647 /* Foundation.framework */; };
 		4C8AC4371DB0F14C00BE5647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8AC4361DB0F14C00BE5647 /* UIKit.framework */; };
-		4CBA91101E59BB2900AEBC30 /* CYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8AC4231DB0F0D300BE5647 /* CYKit.framework */; };
-		EE2BA94D26E03CA750FF1412 /* libPods-CYKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D358DF145888078F43BE2FD /* libPods-CYKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1FD88E87340F913EAA648410 /* Pods-CYKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKit.release.xcconfig"; path = "Target Support Files/Pods-CYKit/Pods-CYKit.release.xcconfig"; sourceTree = "<group>"; };
 		4C2CBFFE1E7F6D6A002FFB38 /* CustomBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBarButton.h; sourceTree = "<group>"; };
 		4C2CBFFF1E7F6D6A002FFB38 /* CustomBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBarButton.m; sourceTree = "<group>"; };
 		4C2CC0001E7F6D6A002FFB38 /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
@@ -58,16 +55,14 @@
 		4C8636A31E599A9C0009BCBF /* UIImage+CYAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CYAddtion.m"; sourceTree = "<group>"; };
 		4C8636ED1E59B0300009BCBF /* CYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYModel.h; sourceTree = "<group>"; };
 		4C8636EE1E59B0300009BCBF /* CYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYModel.m; sourceTree = "<group>"; };
-		4C8AC4231DB0F0D300BE5647 /* CYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C8AC4231DB0F0D300BE5647 /* CYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CYKit.framework; path = "/Users/chengyan/Documents/CYKit/CYKit/CYKit/build/Debug-iphoneos/CYKit.framework"; sourceTree = "<absolute>"; };
 		4C8AC4261DB0F0D300BE5647 /* CYKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYKit.h; sourceTree = "<group>"; };
 		4C8AC4271DB0F0D300BE5647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C8AC42F1DB0F12000BE5647 /* NSDate+CYExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CYExtend.h"; sourceTree = "<group>"; };
 		4C8AC4301DB0F12000BE5647 /* NSDate+CYExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CYExtend.m"; sourceTree = "<group>"; };
 		4C8AC4341DB0F14100BE5647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C8AC4361DB0F14C00BE5647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4CBA90F91E59B91500AEBC30 /* CYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D358DF145888078F43BE2FD /* libPods-CYKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C066B36979C57D39EE7DE82A /* Pods-CYKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKit.debug.xcconfig"; path = "Target Support Files/Pods-CYKit/Pods-CYKit.debug.xcconfig"; sourceTree = "<group>"; };
+		4CBA90F91E59B91500AEBC30 /* CYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = CYKitDemo.app; path = "/Users/chengyan/Documents/CYKit/CYKit/CYKit/build/Debug-iphoneos/CYKitDemo.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +73,6 @@
 				4C633FCC1F78A38A00D235D2 /* libz.tbd in Frameworks */,
 				4C8AC4371DB0F14C00BE5647 /* UIKit.framework in Frameworks */,
 				4C8AC4351DB0F14100BE5647 /* Foundation.framework in Frameworks */,
-				EE2BA94D26E03CA750FF1412 /* libPods-CYKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CBA91101E59BB2900AEBC30 /* CYKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,19 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				4C8AC4251DB0F0D300BE5647 /* CYKit */,
-				4C8AC4241DB0F0D300BE5647 /* Products */,
 				4C8AC4331DB0F14100BE5647 /* Frameworks */,
-				B9BFD03DBABBD51CBD5189B8 /* Pods */,
 			);
-			sourceTree = "<group>";
-		};
-		4C8AC4241DB0F0D300BE5647 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4C8AC4231DB0F0D300BE5647 /* CYKit.framework */,
-				4CBA90F91E59B91500AEBC30 /* CYKitDemo.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4C8AC4251DB0F0D300BE5647 /* CYKit */ = {
@@ -172,18 +154,8 @@
 				4C633FCB1F78A38A00D235D2 /* libz.tbd */,
 				4C8AC4361DB0F14C00BE5647 /* UIKit.framework */,
 				4C8AC4341DB0F14100BE5647 /* Foundation.framework */,
-				4D358DF145888078F43BE2FD /* libPods-CYKit.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B9BFD03DBABBD51CBD5189B8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C066B36979C57D39EE7DE82A /* Pods-CYKit.debug.xcconfig */,
-				1FD88E87340F913EAA648410 /* Pods-CYKit.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +186,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C8AC42B1DB0F0D300BE5647 /* Build configuration list for PBXNativeTarget "CYKit" */;
 			buildPhases = (
-				E9CAF530ED6DB7A3823825E9 /* [CP] Check Pods Manifest.lock */,
 				4C8AC41E1DB0F0D300BE5647 /* Sources */,
 				4C8AC41F1DB0F0D300BE5647 /* Frameworks */,
 				4C8AC4201DB0F0D300BE5647 /* Headers */,
@@ -275,7 +246,7 @@
 				Base,
 			);
 			mainGroup = 4C8AC4191DB0F0D300BE5647;
-			productRefGroup = 4C8AC4241DB0F0D300BE5647 /* Products */;
+			productRefGroup = 4C8AC4191DB0F0D300BE5647;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -302,31 +273,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E9CAF530ED6DB7A3823825E9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CYKit-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C8AC41E1DB0F0D300BE5647 /* Sources */ = {
@@ -456,7 +402,6 @@
 		};
 		4C8AC42C1DB0F0D300BE5647 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C066B36979C57D39EE7DE82A /* Pods-CYKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -475,7 +420,6 @@
 		};
 		4C8AC42D1DB0F0D300BE5647 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FD88E87340F913EAA648410 /* Pods-CYKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
