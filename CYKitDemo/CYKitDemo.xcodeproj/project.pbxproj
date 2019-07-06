@@ -18,12 +18,10 @@
 		4CBA916E1E59BE9600AEBC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA916C1E59BE9600AEBC30 /* Main.storyboard */; };
 		4CBA91701E59BE9600AEBC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA916F1E59BE9600AEBC30 /* Assets.xcassets */; };
 		4CBA91731E59BE9600AEBC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA91711E59BE9600AEBC30 /* LaunchScreen.storyboard */; };
-		BBA8233FF37145F266BD03FF /* libPods-CYKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16920408DAE9E2A332655E7D /* libPods-CYKitDemo.a */; };
+		7DF3FE013BAD84D52FCBC28F /* libPods-CYKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1AD689932BA930006EBA9B /* libPods-CYKitDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16920408DAE9E2A332655E7D /* libPods-CYKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F9FFC83CC10B8543C34B342 /* Pods-CYKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4C1D53BA2004F02300721115 /* CYHistory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYHistory.h; sourceTree = "<group>"; };
 		4C1D53BB2004F02300721115 /* CYHistory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYHistory.m; sourceTree = "<group>"; };
 		4C2CC00E1E7F6F5E002FFB38 /* CustomTabBarController+Initional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CustomTabBarController+Initional.h"; sourceTree = "<group>"; };
@@ -43,7 +41,9 @@
 		4CBA916F1E59BE9600AEBC30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CBA91721E59BE9600AEBC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CBA91741E59BE9600AEBC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB220DEBF9540A1CED6DCFF0 /* Pods-CYKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		680ECBDAFB5A5653E1A02C28 /* Pods-CYKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKitDemo.release.xcconfig"; path = "Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AD1AD689932BA930006EBA9B /* libPods-CYKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F322A3D63E992986CAA619 /* Pods-CYKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C633FCE1F78A3F400D235D2 /* libz.tbd in Frameworks */,
-				BBA8233FF37145F266BD03FF /* libPods-CYKitDemo.a in Frameworks */,
+				7DF3FE013BAD84D52FCBC28F /* libPods-CYKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +64,8 @@
 			children = (
 				4CBA91621E59BE9600AEBC30 /* CYKitDemo */,
 				4CBA91611E59BE9600AEBC30 /* Products */,
-				F75FDBE12A293D8DE5417E11 /* Pods */,
 				D59C03FF8D8C93C0354E2205 /* Frameworks */,
+				D1C0DB1F01B946E2E701916A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,22 +109,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D1C0DB1F01B946E2E701916A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0F322A3D63E992986CAA619 /* Pods-CYKitDemo.debug.xcconfig */,
+				680ECBDAFB5A5653E1A02C28 /* Pods-CYKitDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D59C03FF8D8C93C0354E2205 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				4C633FCD1F78A3F400D235D2 /* libz.tbd */,
-				16920408DAE9E2A332655E7D /* libPods-CYKitDemo.a */,
+				AD1AD689932BA930006EBA9B /* libPods-CYKitDemo.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F75FDBE12A293D8DE5417E11 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BB220DEBF9540A1CED6DCFF0 /* Pods-CYKitDemo.debug.xcconfig */,
-				2F9FFC83CC10B8543C34B342 /* Pods-CYKitDemo.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,14 +134,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CBA91771E59BE9600AEBC30 /* Build configuration list for PBXNativeTarget "CYKitDemo" */;
 			buildPhases = (
-				ADC9CD37A646F84FF2C25AFD /* [CP] Check Pods Manifest.lock */,
-				45AB697A923B5F2C19AA9D2F /* [CP] Check Pods Manifest.lock */,
+				5CCDC979DE969291E0C604CF /* [CP] Check Pods Manifest.lock */,
 				4CBA915C1E59BE9600AEBC30 /* Sources */,
 				4CBA915D1E59BE9600AEBC30 /* Frameworks */,
 				4CBA915E1E59BE9600AEBC30 /* Resources */,
-				75018F08C0CB5D12D1BC645F /* [CP] Copy Framework Resources */,
-				E580478B08855E9A171FD1C2 /* 📦 Embed Pods Frameworks */,
-				58D98F26DF1075FE941ED981 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,82 +197,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		45AB697A923B5F2C19AA9D2F /* [CP] Check Pods Manifest.lock */ = {
+		5CCDC979DE969291E0C604CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		58D98F26DF1075FE941ED981 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75018F08C0CB5D12D1BC645F /* [CP] Copy Framework Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Framework Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "bash -l -c \"ruby \\\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/copy-framework-resources.rb\\\"\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ADC9CD37A646F84FF2C25AFD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CYKitDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E580478B08855E9A171FD1C2 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -410,7 +350,7 @@
 		};
 		4CBA91781E59BE9600AEBC30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB220DEBF9540A1CED6DCFF0 /* Pods-CYKitDemo.debug.xcconfig */;
+			baseConfigurationReference = D0F322A3D63E992986CAA619 /* Pods-CYKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CYKitDemo/Info.plist;
@@ -422,7 +362,7 @@
 		};
 		4CBA91791E59BE9600AEBC30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F9FFC83CC10B8543C34B342 /* Pods-CYKitDemo.release.xcconfig */;
+			baseConfigurationReference = 680ECBDAFB5A5653E1A02C28 /* Pods-CYKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CYKitDemo/Info.plist;
