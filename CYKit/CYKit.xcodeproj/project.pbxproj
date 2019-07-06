@@ -13,14 +13,6 @@
 		4C2CC0091E7F6D6A002FFB38 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0011E7F6D6A002FFB38 /* CustomTabBar.m */; };
 		4C2CC00A1E7F6D6A002FFB38 /* CustomTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2CC0021E7F6D6A002FFB38 /* CustomTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C2CC00B1E7F6D6A002FFB38 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0031E7F6D6A002FFB38 /* CustomTabBarController.m */; };
-		4C460F3622D07034002D4141 /* YCDBVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C460F3022D07034002D4141 /* YCDBVideo.h */; };
-		4C460F3722D07034002D4141 /* YCDBModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C460F3122D07034002D4141 /* YCDBModel.h */; };
-		4C460F3822D07034002D4141 /* YCDataBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C460F3222D07034002D4141 /* YCDataBaseManager.h */; };
-		4C460F3922D07034002D4141 /* YCDBVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C460F3322D07034002D4141 /* YCDBVideo.m */; };
-		4C460F3A22D07034002D4141 /* YCFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C460F3422D07034002D4141 /* YCFMDB.h */; };
-		4C460F3B22D07034002D4141 /* YCDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C460F3522D07034002D4141 /* YCDataBaseManager.m */; };
-		4C633FC91F78A1DD00D235D2 /* CYTailBubbleView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C633FC71F78A1DD00D235D2 /* CYTailBubbleView.h */; };
-		4C633FCA1F78A1DD00D235D2 /* CYTailBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C633FC81F78A1DD00D235D2 /* CYTailBubbleView.m */; };
 		4C633FCC1F78A38A00D235D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C633FCB1F78A38A00D235D2 /* libz.tbd */; };
 		4C67709A1F58183400E3E5C7 /* UIColor+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6770961F58183400E3E5C7 /* UIColor+CYAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C67709B1F58183400E3E5C7 /* UIColor+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6770971F58183400E3E5C7 /* UIColor+CYAddition.m */; };
@@ -52,14 +44,6 @@
 		4C2CC0011E7F6D6A002FFB38 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
 		4C2CC0021E7F6D6A002FFB38 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
 		4C2CC0031E7F6D6A002FFB38 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
-		4C460F3022D07034002D4141 /* YCDBVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCDBVideo.h; sourceTree = "<group>"; };
-		4C460F3122D07034002D4141 /* YCDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCDBModel.h; sourceTree = "<group>"; };
-		4C460F3222D07034002D4141 /* YCDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCDataBaseManager.h; sourceTree = "<group>"; };
-		4C460F3322D07034002D4141 /* YCDBVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCDBVideo.m; sourceTree = "<group>"; };
-		4C460F3422D07034002D4141 /* YCFMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCFMDB.h; sourceTree = "<group>"; };
-		4C460F3522D07034002D4141 /* YCDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCDataBaseManager.m; sourceTree = "<group>"; };
-		4C633FC71F78A1DD00D235D2 /* CYTailBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTailBubbleView.h; sourceTree = "<group>"; };
-		4C633FC81F78A1DD00D235D2 /* CYTailBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTailBubbleView.m; sourceTree = "<group>"; };
 		4C633FCB1F78A38A00D235D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4C6770961F58183400E3E5C7 /* UIColor+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CYAddition.h"; sourceTree = "<group>"; };
 		4C6770971F58183400E3E5C7 /* UIColor+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CYAddition.m"; sourceTree = "<group>"; };
@@ -122,28 +106,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		4C460F2F22D07034002D4141 /* FMDBAddition */ = {
-			isa = PBXGroup;
-			children = (
-				4C460F3022D07034002D4141 /* YCDBVideo.h */,
-				4C460F3122D07034002D4141 /* YCDBModel.h */,
-				4C460F3222D07034002D4141 /* YCDataBaseManager.h */,
-				4C460F3322D07034002D4141 /* YCDBVideo.m */,
-				4C460F3422D07034002D4141 /* YCFMDB.h */,
-				4C460F3522D07034002D4141 /* YCDataBaseManager.m */,
-			);
-			path = FMDBAddition;
-			sourceTree = "<group>";
-		};
-		4C633FC61F78A1DD00D235D2 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				4C633FC71F78A1DD00D235D2 /* CYTailBubbleView.h */,
-				4C633FC81F78A1DD00D235D2 /* CYTailBubbleView.m */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
 		4C8636E81E59AD250009BCBF /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,8 +137,6 @@
 		4C8AC4251DB0F0D300BE5647 /* CYKit */ = {
 			isa = PBXGroup;
 			children = (
-				4C460F2F22D07034002D4141 /* FMDBAddition */,
-				4C633FC61F78A1DD00D235D2 /* UIKit */,
 				4C2CBFFD1E7F6D6A002FFB38 /* Utils */,
 				4C8636A01E5998A10009BCBF /* Resources */,
 				4C8AC4261DB0F0D300BE5647 /* CYKit.h */,
@@ -223,7 +183,6 @@
 				C066B36979C57D39EE7DE82A /* Pods-CYKit.debug.xcconfig */,
 				1FD88E87340F913EAA648410 /* Pods-CYKit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -235,16 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2CC00A1E7F6D6A002FFB38 /* CustomTabBarController.h in Headers */,
-				4C633FC91F78A1DD00D235D2 /* CYTailBubbleView.h in Headers */,
 				4C67709A1F58183400E3E5C7 /* UIColor+CYAddition.h in Headers */,
-				4C460F3A22D07034002D4141 /* YCFMDB.h in Headers */,
 				4C8636A41E599A9C0009BCBF /* UIImage+CYAddtion.h in Headers */,
 				4C67709C1F58183400E3E5C7 /* UIDevice+CYAddition.h in Headers */,
-				4C460F3622D07034002D4141 /* YCDBVideo.h in Headers */,
 				4C8636EF1E59B0300009BCBF /* CYModel.h in Headers */,
 				4C82AE8B1F5D085300D3CF00 /* NSData+CYAddition.h in Headers */,
-				4C460F3822D07034002D4141 /* YCDataBaseManager.h in Headers */,
-				4C460F3722D07034002D4141 /* YCDBModel.h in Headers */,
 				4C8AC4311DB0F12000BE5647 /* NSDate+CYExtend.h in Headers */,
 				4C2CC0081E7F6D6A002FFB38 /* CustomTabBar.h in Headers */,
 				4C82AE831F5CFEF800D3CF00 /* NSString+CYAddition.h in Headers */,
@@ -382,15 +336,12 @@
 				4C82AE8C1F5D085300D3CF00 /* NSData+CYAddition.m in Sources */,
 				4C2CC0071E7F6D6A002FFB38 /* CustomBarButton.m in Sources */,
 				4C67709D1F58183400E3E5C7 /* UIDevice+CYAddition.m in Sources */,
-				4C460F3922D07034002D4141 /* YCDBVideo.m in Sources */,
-				4C633FCA1F78A1DD00D235D2 /* CYTailBubbleView.m in Sources */,
 				4C8AC4321DB0F12000BE5647 /* NSDate+CYExtend.m in Sources */,
 				4C2CC00B1E7F6D6A002FFB38 /* CustomTabBarController.m in Sources */,
 				4C82AE841F5CFEF800D3CF00 /* NSString+CYAddition.m in Sources */,
 				4C67709B1F58183400E3E5C7 /* UIColor+CYAddition.m in Sources */,
 				4C8636A51E599A9C0009BCBF /* UIImage+CYAddtion.m in Sources */,
 				4C2CC0091E7F6D6A002FFB38 /* CustomTabBar.m in Sources */,
-				4C460F3B22D07034002D4141 /* YCDataBaseManager.m in Sources */,
 				4C8636F01E59B0300009BCBF /* CYModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
