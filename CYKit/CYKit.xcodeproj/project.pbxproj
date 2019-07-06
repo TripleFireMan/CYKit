@@ -55,14 +55,14 @@
 		4C8636A31E599A9C0009BCBF /* UIImage+CYAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CYAddtion.m"; sourceTree = "<group>"; };
 		4C8636ED1E59B0300009BCBF /* CYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYModel.h; sourceTree = "<group>"; };
 		4C8636EE1E59B0300009BCBF /* CYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYModel.m; sourceTree = "<group>"; };
-		4C8AC4231DB0F0D300BE5647 /* CYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CYKit.framework; path = "/Users/chengyan/Documents/CYKit/CYKit/CYKit/build/Debug-iphoneos/CYKit.framework"; sourceTree = "<absolute>"; };
 		4C8AC4261DB0F0D300BE5647 /* CYKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYKit.h; sourceTree = "<group>"; };
 		4C8AC4271DB0F0D300BE5647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C8AC42F1DB0F12000BE5647 /* NSDate+CYExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CYExtend.h"; sourceTree = "<group>"; };
 		4C8AC4301DB0F12000BE5647 /* NSDate+CYExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CYExtend.m"; sourceTree = "<group>"; };
 		4C8AC4341DB0F14100BE5647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C8AC4361DB0F14C00BE5647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4CBA90F91E59B91500AEBC30 /* CYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = CYKitDemo.app; path = "/Users/chengyan/Documents/CYKit/CYKit/CYKit/build/Debug-iphoneos/CYKitDemo.app"; sourceTree = "<absolute>"; };
+		4C9520A122D081D0000C5CB2 /* CYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9520A222D081D0000C5CB2 /* CYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = CYKitDemo.app; path = "/Users/chengyan/Documents/CYKit/CYKit/CYKit/build/Debug-iphoneos/CYKitDemo.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +113,7 @@
 			children = (
 				4C8AC4251DB0F0D300BE5647 /* CYKit */,
 				4C8AC4331DB0F14100BE5647 /* Frameworks */,
+				4C9520A122D081D0000C5CB2 /* CYKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,7 +198,7 @@
 			);
 			name = CYKit;
 			productName = CYKit;
-			productReference = 4C8AC4231DB0F0D300BE5647 /* CYKit.framework */;
+			productReference = 4C9520A122D081D0000C5CB2 /* CYKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4CBA90F81E59B91500AEBC30 /* CYKitDemo */ = {
@@ -214,7 +215,7 @@
 			);
 			name = CYKitDemo;
 			productName = CYKitDemo;
-			productReference = 4CBA90F91E59B91500AEBC30 /* CYKitDemo.app */;
+			productReference = 4C9520A222D081D0000C5CB2 /* CYKitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
