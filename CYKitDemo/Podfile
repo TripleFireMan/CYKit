@@ -9,8 +9,8 @@ target 'CYKitDemo' do
 
 pod 'Masonry',             '~> 1.0.2'
 pod 'BlocksKit',           '~> 2.2.5'
-pod 'CocoaLumberjack',     '~> 3.0.0'
-pod 'FMDB','~> 2.7'
+#pod 'CocoaLumberjack',     '~> 3.0.0'
+#pod 'FMDB','~> 2.7'
 
 
 pod 'CYKit',:path => '../'
