@@ -62,7 +62,7 @@
 		4C8AC4341DB0F14100BE5647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C8AC4361DB0F14C00BE5647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4C9520A122D081D0000C5CB2 /* CYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C9520A222D081D0000C5CB2 /* CYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = CYKitDemo.app; path = "/Users/chengyan/Documents/CYKit/CYKit/CYKit/build/Debug-iphoneos/CYKitDemo.app"; sourceTree = "<absolute>"; };
+		4CE71C372302E87A00D7D00D /* CYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = CYKitDemo.app; path = "/Users/chengyan/Documents/CYKit/CYKit/build/Debug-iphoneos/CYKitDemo.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +215,7 @@
 			);
 			name = CYKitDemo;
 			productName = CYKitDemo;
-			productReference = 4C9520A222D081D0000C5CB2 /* CYKitDemo.app */;
+			productReference = 4CE71C372302E87A00D7D00D /* CYKitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
