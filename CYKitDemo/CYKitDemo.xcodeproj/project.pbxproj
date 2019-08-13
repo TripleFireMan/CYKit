@@ -43,7 +43,7 @@
 		4CBA91741E59BE9600AEBC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CE71C312302E6CF00D7D00D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		4CE71C322302E6CF00D7D00D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
-		4CE71C332302E6D000D7D00D /* CYKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CYKit.podspec; path = ../../CYKit.podspec; sourceTree = "<group>"; };
+		4CE71C332302E6D000D7D00D /* CYKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CYKit.podspec; path = ../../CYKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		680ECBDAFB5A5653E1A02C28 /* Pods-CYKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKitDemo.release.xcconfig"; path = "Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		AD1AD689932BA930006EBA9B /* libPods-CYKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F322A3D63E992986CAA619 /* Pods-CYKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
