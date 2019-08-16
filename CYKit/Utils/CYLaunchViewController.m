@@ -32,7 +32,7 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
 /// 下载类
 @property (nonatomic, strong) AFURLSessionManager *sessionManager;
 
-
+@property (nonatomic, assign) BOOL hasJumpToHome;
 
 
 @end
@@ -99,7 +99,7 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
     [self.view bringSubviewToFront:self.closeBtn];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if (!self.timer) {
+        if (!self.hasJumpToHome && !self.timer) {
             [self jumpToHomePage];
         }
     });
@@ -235,6 +235,7 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
 
 - (void) jumpToHomePage
 {
+    self.hasJumpToHome = YES;
     [self.timer invalidate];
     self.timer = nil;
     [[NSNotificationCenter defaultCenter] postNotificationName:k_DidFinishLaunchNotification object:nil];
