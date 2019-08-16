@@ -43,4 +43,8 @@
  @return scaled image
  */
 - (instancetype)cy_imageScaleByFactor:(CGFloat)factor;
+
+// 图片置灰
+- (void)grayscaleImageForImage:(UIImage *)image
+                      complete:(void(^)(UIImage *complete))complete;
 @end
