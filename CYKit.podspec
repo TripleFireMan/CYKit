@@ -40,17 +40,14 @@ Pod::Spec.new do |s|
   s.dependency "ReactiveObjC"
   
   s.subspec 'Categorys' do |ss|
-    ss.source_files = 'files'
-    ss.frameworks = 'frameworks'
+    ss.source_files = "*.{h,m}"
   end
 
   s.subspec 'Class' do |ss|
-    ss.source_files = 'files'
-    ss.frameworks = 'frameworks'
+    ss.source_files = "*.{h,m}"
   end
   
   s.subspec 'Utils' do |ss|
-    ss.source_files = 'files'
-    ss.frameworks = 'frameworks'
+    ss.source_files = "*.{h,m}"
   end
 end
