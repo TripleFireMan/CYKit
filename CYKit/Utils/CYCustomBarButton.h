@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomBarButton : UIControl
+@interface CYCustomBarButton : UIControl
 
 /// 用于接收外部传给tabbarController的模型数据
 @property (nonatomic, strong) UITabBarItem      *item;

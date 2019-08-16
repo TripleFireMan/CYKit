@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CustomBarButton.h"
+#import "CYCustomBarButton.h"
 
 /// 按钮在TabBar上的Tag偏移位
 extern const int customTabBarTagOffset;
 
-@protocol CustomTabBarDelegate <NSObject>
+@protocol CYCustomTabBarDelegate <NSObject>
 
 @optional
 
@@ -20,7 +20,7 @@ extern const int customTabBarTagOffset;
 
 @end
 
-@interface CustomTabBar : UIView
+@interface CYCustomTabBar : UIView
 {
     @public
     NSInteger _selectedIndex;
@@ -28,7 +28,7 @@ extern const int customTabBarTagOffset;
 
 
 @property (nonatomic, assign) NSInteger selectedIndex;
-@property (nonatomic, assign) id <CustomTabBarDelegate> delegateed;
+@property (nonatomic, assign) id <CYCustomTabBarDelegate> delegateed;
 
 /// 暂未实现，留作以后扩展，可以实现添加中间view之后显示在TabBar最中间
 @property (nonatomic, strong) UIView *centerView;
@@ -42,8 +42,8 @@ extern const int customTabBarTagOffset;
 - (void)handleButtonAction:(UIButton *)button;
 
 /// 根据Index值获取按钮
-- (CustomBarButton *)barButtonAtIndex:(NSInteger)index;
+- (CYCustomBarButton *)barButtonAtIndex:(NSInteger)index;
 
 /// 设置文本标题，是否用动画
-- (void)setTabBarButton:(CustomBarButton *)barButton title:(NSString *)title animated:(BOOL)animated;
+- (void)setTabBarButton:(CYCustomBarButton *)barButton title:(NSString *)title animated:(BOOL)animated;
 @end

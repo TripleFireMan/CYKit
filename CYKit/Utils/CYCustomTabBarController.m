@@ -6,26 +6,26 @@
 //  Copyright © 2017年 Youku.inc. All rights reserved.
 //
 
-#import "CustomTabBarController.h"
+#import "CYCustomTabBarController.h"
 
 //#define TransformAnimation
 
-@interface CustomTabBarController ()<CustomTabBarDelegate>
+@interface CYCustomTabBarController ()<CYCustomTabBarDelegate>
 
 @property (nonatomic, strong) NSMutableArray *listener;
 
 
 @end
 
-@implementation CustomTabBarController
+@implementation CYCustomTabBarController
 
 + (instancetype)shareInstance
 {
-    static CustomTabBarController *tabbarCtl = nil;
+    static CYCustomTabBarController *tabbarCtl = nil;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        tabbarCtl = [[CustomTabBarController alloc]init];
+        tabbarCtl = [[CYCustomTabBarController alloc]init];
     });
     return tabbarCtl;
 }
@@ -77,10 +77,10 @@
     [super viewWillAppear:animated];
 }
 
-- (CustomTabBar *)customTabBar
+- (CYCustomTabBar *)customTabBar
 {
     if (!_customTabBar) {
-        _customTabBar = [[CustomTabBar alloc]initWithFrame:CGRectZero];
+        _customTabBar = [[CYCustomTabBar alloc]initWithFrame:CGRectZero];
         _customTabBar.frame = CGRectMake(0, -0.5, self.tabBar.frame.size.width, self.tabBar.frame.size.height + 0.5);
     }
     _customTabBar.delegateed = self;
@@ -122,8 +122,8 @@
     if (selectedIndex != self.customTabBar.selectedIndex) {
         
         // 只是为了换图片，因为个人中心消息页面有需求直接从第4个tab点击到第2个tab。这个时候，无法触发按钮换图功能
-        CustomBarButton *preButton = [self.customTabBar viewWithTag:self.customTabBar.selectedIndex + customTabBarTagOffset];
-        CustomBarButton *curButton = [self.customTabBar viewWithTag:selectedIndex + customTabBarTagOffset];
+        CYCustomBarButton *preButton = [self.customTabBar viewWithTag:self.customTabBar.selectedIndex + customTabBarTagOffset];
+        CYCustomBarButton *curButton = [self.customTabBar viewWithTag:selectedIndex + customTabBarTagOffset];
         
         preButton.isSelected = NO;
         curButton.isSelected = YES;
@@ -159,7 +159,7 @@
                              index:(NSInteger)index
 {
     /// 刷新下自定义的按钮
-    CustomBarButton *barButton = [self.customTabBar viewWithTag:customTabBarTagOffset + index];
+    CYCustomBarButton *barButton = [self.customTabBar viewWithTag:customTabBarTagOffset + index];
     UITabBarItem *barItem = [[UITabBarItem alloc]initWithTitle:title image:image selectedImage:selectedImage];
     [barButton setItem:barItem];
     [barButton setNormalColor:color];
@@ -170,7 +170,7 @@
 
 - (void)setTitle:(NSString *)title index:(NSInteger)index animation:(BOOL)animated
 {
-    CustomBarButton *barButton = [self.customTabBar viewWithTag:customTabBarTagOffset + index];
+    CYCustomBarButton *barButton = [self.customTabBar viewWithTag:customTabBarTagOffset + index];
     [barButton setTitle:title animated:animated];
 }
 
@@ -189,7 +189,7 @@
 - (NSString *)titleForIndex:(NSInteger)index
 {
     if ([self.viewControllers count] > index) {
-        CustomBarButton *barButton = [self.customTabBar viewWithTag:customTabBarTagOffset + index];
+        CYCustomBarButton *barButton = [self.customTabBar viewWithTag:customTabBarTagOffset + index];
         return barButton.title;
     }else{
         return nil;

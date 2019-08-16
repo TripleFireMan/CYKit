@@ -10,7 +10,7 @@
 #import "HomeViewController.h"
 #import "MeViewController.h"
 
-@implementation CustomTabBarController (Initional)
+@implementation CYCustomTabBarController (Initional)
 
 - (void)setUp
 {

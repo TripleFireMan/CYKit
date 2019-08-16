@@ -17,6 +17,7 @@
 #import <CYKit/UIDevice+CYAddition.h>
 #import <CYKit/NSString+CYAddition.h>
 #import <CYKit/NSData+CYAddition.h>
+#import <CYKit/CYKitDefines.h>
 #else
 
 #import "CYModel.h"
@@ -26,4 +27,5 @@
 #import "UIColor+CYAddition.h"
 #import "NSString+CYAddition.h"
 #import "NSData+CYAddition.h"
+#import "CYKitDefines.h"
 #endif

@@ -6,9 +6,9 @@
 //  Copyright © 2017年 cheng.yan. All rights reserved.
 //
 
-#import <CYKit/CustomTabBarController.h>
+#import <CYKit/CYCustomTabBarController.h>
 
-@interface CustomTabBarController (Initional)
+@interface CYCustomTabBarController (Initional)
 
 /// 初始化
 - (void)setUp;

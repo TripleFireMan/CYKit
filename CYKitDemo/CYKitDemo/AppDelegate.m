@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    CustomTabBarController *tabbalCtl = [CustomTabBarController new];
+    CYCustomTabBarController *tabbalCtl = [CYCustomTabBarController new];
     [tabbalCtl setUp];
     
     self.window.rootViewController = tabbalCtl;

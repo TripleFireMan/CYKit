@@ -6,17 +6,17 @@
 //  Copyright © 2017年 Youku.inc. All rights reserved.
 //
 
-#import "CustomTabBar.h"
+#import "CYCustomTabBar.h"
 static int Tag = 10;
 const  int customTabBarTagOffset = 10;
 const  int centerTag = 100;
 
-@interface CustomTabBar ()
+@interface CYCustomTabBar ()
 @property (nonatomic, strong) UIView *line;
 @end
 
 
-@implementation CustomTabBar
+@implementation CYCustomTabBar
 @synthesize selectedIndex = _selectedIndex;
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -83,7 +83,7 @@ const  int centerTag = 100;
     
     for (UIView *cosView  in self.subviews) {
         if (cosView.tag >= customTabBarTagOffset && cosView.tag < centerTag) {
-            CustomBarButton *button = (CustomBarButton *)cosView;
+            CYCustomBarButton *button = (CYCustomBarButton *)cosView;
             if (i < buttonCount / 2) {
                 buttonX = i * buttonWidth;
             }else{
@@ -118,8 +118,8 @@ const  int centerTag = 100;
 
 - (void)setSelectedIndex:(NSInteger)selectedIndex
 {
-    CustomBarButton *preButton = [self viewWithTag:_selectedIndex + customTabBarTagOffset];
-    CustomBarButton *curButton = [self viewWithTag:selectedIndex + customTabBarTagOffset];
+    CYCustomBarButton *preButton = [self viewWithTag:_selectedIndex + customTabBarTagOffset];
+    CYCustomBarButton *curButton = [self viewWithTag:selectedIndex + customTabBarTagOffset];
     
     preButton.isSelected = NO;
     curButton.isSelected = YES;
@@ -134,7 +134,7 @@ const  int centerTag = 100;
 
 - (void)addChildTabBarButton:(UITabBarItem *)item
 {
-    CustomBarButton *button = [[CustomBarButton alloc]initWithFrame:CGRectMake(10, 0, 45, 45)
+    CYCustomBarButton *button = [[CYCustomBarButton alloc]initWithFrame:CGRectMake(10, 0, 45, 45)
                                                                item:item
                                                       selectedColor:[UIColor colorWithRed:255.f/255.f green:153.f/255.f blue:68.f/255.f alpha:1]
                                                         normalColor:[UIColor colorWithRed:153.f/255.f green:153.f/255.f blue:153.f/255.f alpha:1]];
@@ -148,7 +148,7 @@ const  int centerTag = 100;
 
 - (void)addChildTabBarButton:(UITabBarItem *)item color:(UIColor *)color selectedColor:(UIColor *)selectedColor
 {
-    CustomBarButton *button = [[CustomBarButton alloc]initWithFrame:CGRectMake(10, 0, 45, 45)
+    CYCustomBarButton *button = [[CYCustomBarButton alloc]initWithFrame:CGRectMake(10, 0, 45, 45)
                                                                item:item
                                                       selectedColor:selectedColor
                                                         normalColor:color];
@@ -166,14 +166,14 @@ const  int centerTag = 100;
     self.selectedIndex = button.tag - customTabBarTagOffset;
 }
 
-- (CustomBarButton *)barButtonAtIndex:(NSInteger)index
+- (CYCustomBarButton *)barButtonAtIndex:(NSInteger)index
 {
-    CustomBarButton *barButton = [self viewWithTag:customTabBarTagOffset + index];
+    CYCustomBarButton *barButton = [self viewWithTag:customTabBarTagOffset + index];
     
     return barButton;
 }
 
-- (void)setTabBarButton:(CustomBarButton *)barButton title:(NSString *)title animated:(BOOL)animated
+- (void)setTabBarButton:(CYCustomBarButton *)barButton title:(NSString *)title animated:(BOOL)animated
 {
     [barButton  setTitle:title animated:animated];
 }

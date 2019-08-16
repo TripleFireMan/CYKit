@@ -6,11 +6,11 @@
 //  Copyright © 2017年 Youku.inc. All rights reserved.
 //
 
-#import "CustomBarButton.h"
-#import <Masonry/Masonry.h>
+#import "CYCustomBarButton.h"
+#import "Masonry.h"
 #define ANIMATION_DURATION 0.35f
 
-@interface CustomBarButton ()
+@interface CYCustomBarButton ()
 
 @property (nonatomic, strong) UIImageView   *imgView;
 @property (nonatomic, strong) UILabel       *textLabel;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation CustomBarButton
+@implementation CYCustomBarButton
 
 - (id)initWithFrame:(CGRect)frame
 {

@@ -7,22 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CustomTabBar.h"
-#import "CustomBarButton.h"
+#import "CYCustomTabBar.h"
+#import "CYCustomBarButton.h"
 
 @protocol CustomTabBarControllerDelegate <NSObject>
 
 @optional
 /// 回调方法
 - (void)customTabBarControllerDidSelectAtIndex:(NSInteger)index
-                                  customTabBar:(CustomTabBar *)tabBar
+                                  customTabBar:(CYCustomTabBar *)tabBar
                             theSameToProAction:(BOOL)theSame;
 @end
 
-@interface CustomTabBarController : UITabBarController
+@interface CYCustomTabBarController : UITabBarController
 
 /// 提供对外访问的接口
-@property (nonatomic, strong) CustomTabBar *customTabBar;
+@property (nonatomic, strong) CYCustomTabBar *customTabBar;
 
 /// 单例
 + (instancetype)shareInstance;
