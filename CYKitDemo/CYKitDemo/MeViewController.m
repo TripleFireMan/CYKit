@@ -7,9 +7,11 @@
 //
 
 #import "MeViewController.h"
+#import "CYMeModel.h"
 
-@interface MeViewController ()
-
+@interface MeViewController () <UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataSource;
 @end
 
 @implementation MeViewController
@@ -17,22 +19,81 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
-    // Do any additional setup after loading the view.
+    self.dataSource = [NSMutableArray array];
+    
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.offset(CY_Height_NavBar);
+        make.left.right.offset(0);
+        make.bottom.offset(0);
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)loadData
+{
+    
+    NSArray *titles = @[@"H5容器"];
+    
+    for (int i = 0; i < titles.count; i++) {
+        CYMeModel *model = [CYMeModel new];
+        model.title = titles[i];
+        [self.dataSource addObject:model];
+    }
+    
+    [self.tableView reloadData];
+    
 }
-*/
+
+#pragma mark - tableViewDelegates
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *identifier = @"DefaultCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell==nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    
+    CYMeModel *model = [self.dataSource objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = model.title;
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataSource.count;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CYMeModel *model = [self.dataSource objectAtIndex:indexPath.row];
+    
+    if (model) {
+        
+    }
+}
+
 
 @end
+
+
+
+
+
+
+
+
+
+

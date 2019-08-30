@@ -28,8 +28,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/TripleFireMan/CYKit.git", :tag => s.version.to_s }
   
   s.source_files  = "CYKit", "CYKit/*.{h,m}"
-  #s.resources     = "Resources/*.png"
-  s.framework     = "UIKit"
+  s.resources     = "CYKit/Resources/*.png"
+  s.framework     = "UIKit","WebKit"
   s.requires_arc  = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
