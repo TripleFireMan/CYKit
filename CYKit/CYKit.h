@@ -19,6 +19,7 @@
 #import <CYKit/NSData+CYAddition.h>
 #import <CYKit/CYKitDefines.h>
 #import <CYKit/CYBaseViewController.h>
+#import <CYKit/CYH5ViewController.h>
 #else
 
 #import "CYModel.h"
@@ -30,7 +31,7 @@
 #import "NSData+CYAddition.h"
 #import "CYKitDefines.h"
 #import "CYBaseViewController.h"
-#import "CYBaseViewController.h"
+#import "CYH5ViewController.h"
 
 
 #endif

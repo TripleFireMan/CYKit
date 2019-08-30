@@ -8,6 +8,7 @@
 
 #import "MeViewController.h"
 #import "CYMeModel.h"
+#import "CYH5ViewController.h"
 
 @interface MeViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -24,6 +25,7 @@
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
     [self.view addSubview:self.tableView];
     
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -31,6 +33,8 @@
         make.left.right.offset(0);
         make.bottom.offset(0);
     }];
+    
+    [self loadData];
 
 }
 
@@ -62,6 +66,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell==nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
     CYMeModel *model = [self.dataSource objectAtIndex:indexPath.row];
@@ -80,8 +85,9 @@
 {
     CYMeModel *model = [self.dataSource objectAtIndex:indexPath.row];
     
-    if (model) {
-        
+    if ([model.title isEqualToString:@"H5容器"]) {
+        CYH5ViewController *h5 = [[CYH5ViewController alloc] initWithURL:[NSURL URLWithString:@"https://www.baidu.com"]];
+        [self.navigationController pushViewController:h5 animated:YES];
     }
 }
 
