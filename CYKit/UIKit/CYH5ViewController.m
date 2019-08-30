@@ -10,7 +10,7 @@
 #import "Masonry.h"
 #import "CYKitDefines.h"
 #import "BlocksKit.h"
-#import <BlocksKit+UIKit.h>
+#import "BlocksKit+UIKit.h"
 #import "ReactiveObjC.h"
 
 

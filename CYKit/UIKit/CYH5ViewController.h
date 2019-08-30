@@ -9,7 +9,7 @@
 
 static NSString * _Nullable const k_DidRegisteSuccessNotification = @"k_DidRegisteSuccessNotification";
 
-typedef void(^JSBlock)(NSString *jsName);
+typedef void(^JSBlock)(NSString * _Nullable jsName);
 
 NS_ASSUME_NONNULL_BEGIN
 
