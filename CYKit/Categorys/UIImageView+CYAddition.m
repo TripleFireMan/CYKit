@@ -19,7 +19,7 @@
               placeholder:[UIImage imageNamed:placeHolder] options:YYWebImageOptionAllowInvalidSSLCertificates
                completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
                    if (stage == YYWebImageStageFinished) {
-                       if (error) {
+                       if (!error) {
                            if (success) {
                                success(image);
                            }
