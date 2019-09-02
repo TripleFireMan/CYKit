@@ -44,7 +44,7 @@ static inline void cy_swizzleSelector(Class theClass, SEL originalSelector, SEL 
 
 - (NSString *)cy_descriptionWithLocale:(id)locale indent:(NSUInteger)level
 {
-    return self.description.unicodeString;;
+    return [self cy_descriptionWithLocale:locale indent:level].unicodeString;
 }
 
 
