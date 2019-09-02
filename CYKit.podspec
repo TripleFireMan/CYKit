@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYKit"
-  s.version      = "0.3.9"
+  s.version      = "0.4.0"
   s.summary      = "something useful for daily development"
   s.homepage     = "https://github.com/TripleFireMan"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -38,6 +38,7 @@ Pod::Spec.new do |s|
   s.dependency "BlocksKit"
   s.dependency "AFNetworking"
   s.dependency "ReactiveObjC"
+  s.dependency "YYKit"
   
   s.subspec 'Categorys' do |ss|
     ss.source_files = "CYKit/Categorys/*.{h,m}"

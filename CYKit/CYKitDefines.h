@@ -25,4 +25,16 @@
 #define CY_Height_TabBar (CY_IS_PhoneXAll ? 83.0 : 49.0)
 #define CY_Height_Bottom_SafeArea (CY_IS_PhoneXAll ? 34.0 : 0)
 
+typedef void(^CYVoidBlock)(void);
+typedef void(^CYBoolBlock)(BOOL yesno);
+typedef void(^CYNumberBlock)(NSNumber *num);
+typedef void(^CYErrorBlock)(NSError *error);
+typedef void(^CYIDBlock)(id obj);
+typedef void(^CYArrayBlock)(NSArray *array);
+typedef void(^CYDictionaryBlock)(NSDictionary *dictionary);
+typedef void(^CYSetBlock)(NSSet *set);
+typedef void(^CYStringBlock)(NSString *string);
+typedef void(^CYSuccessBlock)(BOOL success, id obj);
+typedef void(^CYFailureBlock)(NSError *error, id obj);
+typedef void(^CYImageBlock)(UIImage *img);
 #endif /* CYKitDefines_h */

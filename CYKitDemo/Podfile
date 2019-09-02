@@ -14,7 +14,7 @@ pod 'BlocksKit',           '~> 2.2.5'
 
 pod 'AFNetworking'
 pod 'ReactiveObjC'
-
+pod 'YYKit'
 pod 'CYKit',:path => '../'
 
 end
