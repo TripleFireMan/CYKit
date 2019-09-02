@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYKit"
-  s.version      = "0.4.1"
+  s.version      = "0.4.2"
   s.summary      = "something useful for daily development"
   s.homepage     = "https://github.com/TripleFireMan"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -41,14 +41,14 @@ Pod::Spec.new do |s|
   s.dependency "YYKit"
   
   s.subspec 'Categorys' do |ss|
-    ss.source_files = "CYKit/Categorys/*.{h,m}"
+    ss.source_files = "CYKit/Categorys/*.{h,m}","CYKit/UIKit/CYKitDefines.h"
   end
 
   s.subspec 'Class' do |ss|
-    ss.source_files = "CYKit/Class/*.{h,m}"
+    ss.source_files = "CYKit/Class/*.{h,m}","CYKit/UIKit/CYKitDefines.h"
   end
   
   s.subspec 'UIKit' do |ss|
-    ss.source_files = "CYKit/UIKit/*.{h,m}"
+    ss.source_files = "CYKit/UIKit/*.{h,m}","CYKit/UIKit/CYKitDefines.h"
   end
 end
