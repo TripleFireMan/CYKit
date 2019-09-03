@@ -276,21 +276,23 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo-resources.sh",
-				"${PODS_ROOT}/../../CYKit/Resources/1.png",
 				"${PODS_ROOT}/../../CYKit/Resources/back@2x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/back@3x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/image_navigation_close@2x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/image_navigation_close@3x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_mine_camera@2x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_mine_camera@3x.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/1.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/image_navigation_close@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/image_navigation_close@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_mine_camera@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_mine_camera@3x.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

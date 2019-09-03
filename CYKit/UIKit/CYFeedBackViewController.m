@@ -19,10 +19,6 @@
 #define k_Color_CustomRed   RGBColor(250, 77, 57)
 #define SY_MAX_INPUT 150
 
-NSString * const k_TextFeedBackKey = @"k_TextFeedBackKey";
-NSString * const k_PicUrlFeedBackKey = @"k_PicUrlFeedBackKey";
-NSString * const k_MobilePhoneKey = @"k_MobilePhoneKey";
-
 @interface CYFeedBackViewController ()<UITextFieldDelegate,UITextViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 @property (nonatomic, strong) UIScrollView *scrollView;

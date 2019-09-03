@@ -11,9 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-extern NSString * const k_TextFeedBackKey;
-extern NSString * const k_PicUrlFeedBackKey;
-extern NSString * const k_MobilePhoneKey;
+static NSString * const k_CYTextFeedBackKey = @"k_CYTextFeedBackKey";
+static NSString * const k_CYPicUrlFeedBackKey = @"k_CYPicUrlFeedBackKey";
+static NSString * const k_CYMobilePhoneKey = @"k_CYMobilePhoneKey";
 
 @interface CYFeedBackViewController : CYBaseViewController
 
