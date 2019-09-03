@@ -16,6 +16,6 @@ pod 'AFNetworking'
 pod 'ReactiveObjC'
 pod 'YYKit'
 pod 'CYKit',:path => '../'
-
+pod 'XHToast'
 end
 
