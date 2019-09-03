@@ -307,9 +307,9 @@
         
         if (self.confirmBlock) {
             NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-            [dic setObject:content forKey:k_TextFeedBackKey];
-            [dic setObject:phoneNum forKey:k_MobilePhoneKey];
-            [dic setObject:picUrl?:@"" forKey:k_PicUrlFeedBackKey];
+            [dic setObject:content forKey:k_CYTextFeedBackKey];
+            [dic setObject:phoneNum forKey:k_CYMobilePhoneKey];
+            [dic setObject:picUrl?:@"" forKey:k_CYPicUrlFeedBackKey];
             self.confirmBlock(dic);
         }
     } forControlEvents:UIControlEventTouchUpInside];
