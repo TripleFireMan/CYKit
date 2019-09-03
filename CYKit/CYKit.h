@@ -20,6 +20,10 @@
 #import <CYKit/CYKitDefines.h>
 #import <CYKit/CYBaseViewController.h>
 #import <CYKit/CYH5ViewController.h>
+#import <CYKit/UIButton+CYAddition.h>
+#import <CYKit/UIView+CYAddition.h>
+#import <CYKit/UIView+CYAddition.h>
+#import <CYKit/CYFeedBackViewController.h>
 #else
 
 #import "CYModel.h"
@@ -32,6 +36,7 @@
 #import "CYKitDefines.h"
 #import "CYBaseViewController.h"
 #import "CYH5ViewController.h"
-
-
+#import "UIButton+CYAddition.h"
+#import "UIView+CYAddition.h"
+#import "CYFeedBackViewController.h"
 #endif
