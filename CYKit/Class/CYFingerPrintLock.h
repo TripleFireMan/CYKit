@@ -28,8 +28,7 @@ typedef void (^CYUnlockResultBlock)(CYUnlockResult, NSString *errMsg);
 /// 检测支持的登录方式
 + (CYUnlockSupportType)checkUnlockSupportType;
 /// 解锁
-+ (void)
-:(CYUnlockResultBlock)block;
++ (void)unlockWithResultBlock:(CYUnlockResultBlock)block;
 @end
 
 NS_ASSUME_NONNULL_END

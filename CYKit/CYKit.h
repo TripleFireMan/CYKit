@@ -24,6 +24,7 @@
 #import <CYKit/UIView+CYAddition.h>
 #import <CYKit/UIView+CYAddition.h>
 #import <CYKit/CYFeedBackViewController.h>
+#import <CYKit/CYFingerPrintLock.h>
 #else
 
 #import "CYModel.h"
@@ -39,4 +40,5 @@
 #import "UIButton+CYAddition.h"
 #import "UIView+CYAddition.h"
 #import "CYFeedBackViewController.h"
+#import "CYFingerPrintLock.h"
 #endif
