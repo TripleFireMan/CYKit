@@ -9,6 +9,7 @@
 #import "MeViewController.h"
 #import "CYMeModel.h"
 #import "CYH5ViewController.h"
+#import "CYFeedBackViewController.h"
 
 @interface MeViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -46,7 +47,7 @@
 - (void)loadData
 {
     
-    NSArray *titles = @[@"H5容器"];
+    NSArray *titles = @[@"H5容器",@"用户反馈"];
     
     for (int i = 0; i < titles.count; i++) {
         CYMeModel *model = [CYMeModel new];
@@ -88,6 +89,10 @@
     if ([model.title isEqualToString:@"H5容器"]) {
         CYH5ViewController *h5 = [[CYH5ViewController alloc] initWithURL:[NSURL URLWithString:@"https://www.baidu.com"]];
         [self.navigationController pushViewController:h5 animated:YES];
+    }
+    else if ([model.title isEqualToString:@"用户反馈"]){
+        CYFeedBackViewController *feedback = [[CYFeedBackViewController alloc] init];
+        [self.navigationController pushViewController:feedback animated:YES];
     }
 }
 

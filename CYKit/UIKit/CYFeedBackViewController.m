@@ -54,7 +54,7 @@
 - (void) viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
-//    [self.confirmBtn sy_gradientLayer];
+    
 }
 
 - (void) setupSubview
@@ -161,6 +161,7 @@
     [self.confirmBtn setTitle:@"提交" forState:UIControlStateNormal];
     self.confirmBtn.layer.cornerRadius = 20.f;
     self.confirmBtn.layer.masksToBounds = YES;
+    self.confirmBtn.backgroundColor = [UIColor redColor];
     [self.scrollView addSubview:self.confirmBtn];
     
 }
