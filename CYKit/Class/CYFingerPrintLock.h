@@ -3,7 +3,7 @@
 //  CYKit
 //
 //  Created by 成焱 on 2019/9/5.
-//
+//  指纹识别对象
 
 #import <Foundation/Foundation.h>
 

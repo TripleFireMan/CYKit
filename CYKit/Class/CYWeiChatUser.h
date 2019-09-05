@@ -4,7 +4,7 @@
 //
 //  Created by 成焱 on 2019/8/22.
 //  Copyright © 2019 sy. All rights reserved.
-//
+//  微信授权登录对象
 
 #import <Foundation/Foundation.h>
 
