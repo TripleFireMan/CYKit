@@ -280,8 +280,21 @@
 				"${PODS_ROOT}/../../CYKit/Resources/back@3x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/image_navigation_close@2x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/image_navigation_close@3x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_login_avator@2x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_login_avator@3x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_login_header@2x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_login_header@3x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_login_logo@2x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_login_logo@3x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_login_password@2x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_login_password@3x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_login_phone@2x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_login_phone@3x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_login_scan@2x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/sy_login_scan@3x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/sy_mine_camera@2x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/sy_mine_camera@3x.png",
+				"${PODS_ROOT}/../../CYKit/Resources/CYKit.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
@@ -291,8 +304,21 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/image_navigation_close@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/image_navigation_close@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_login_avator@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_login_avator@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_login_header@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_login_header@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_login_logo@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_login_logo@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_login_password@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_login_password@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_login_phone@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_login_phone@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_login_scan@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_login_scan@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_mine_camera@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_mine_camera@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CYKit.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

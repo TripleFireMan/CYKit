@@ -26,6 +26,9 @@
 #import <CYKit/CYFeedBackViewController.h>
 #import <CYKit/CYFingerPrintLock.h>
 #import <CYKit/CYEvaluate.h>
+#import <CYKit/CYWeixinLoginViewController.h>
+#import <CYKit/CYForgotPasswordViewController.h>
+#import <CYKit/CYChangePasswordViewController.h>
 #else
 
 #import "CYModel.h"
@@ -43,4 +46,7 @@
 #import "CYFeedBackViewController.h"
 #import "CYFingerPrintLock.h"
 #import "CYEvaluate.h"
+#import "CYWeixinLoginViewController.h"
+#import "CYForgotPasswordViewController.h"
+#import "CYChangePasswordViewController.h"
 #endif

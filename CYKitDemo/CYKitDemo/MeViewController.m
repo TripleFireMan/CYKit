@@ -10,6 +10,9 @@
 #import "CYMeModel.h"
 #import "CYH5ViewController.h"
 #import "CYFeedBackViewController.h"
+#import "CYWeixinLoginViewController.h"
+#import "CYForgotPasswordViewController.h"
+#import "CYChangePasswordViewController.h"
 
 @interface MeViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -47,7 +50,7 @@
 - (void)loadData
 {
     
-    NSArray *titles = @[@"H5容器",@"用户反馈"];
+    NSArray *titles = @[@"H5容器",@"用户反馈",@"登录"];
     
     for (int i = 0; i < titles.count; i++) {
         CYMeModel *model = [CYMeModel new];
@@ -93,6 +96,26 @@
     else if ([model.title isEqualToString:@"用户反馈"]){
         CYFeedBackViewController *feedback = [[CYFeedBackViewController alloc] init];
         [self.navigationController pushViewController:feedback animated:YES];
+    }
+    else if ([model.title isEqualToString:@"登录"]){
+        CYWeixinLoginViewController *login = [[CYWeixinLoginViewController alloc] init];
+        login.loginBlock = ^(CYWexinLoginType type) {
+            switch (type) {
+                case CYWexinLoginType_FogetPassword:
+                {
+                    
+                    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"CYKit" ofType:@"bundle"];
+                    NSLog(@"bundlePath =%@",bundlePath);
+                    CYChangePasswordViewController *forget =  [[CYChangePasswordViewController alloc] initWithNibName:@"CYChangePasswordViewController" bundle:[NSBundle bundleWithPath:bundlePath]];
+                    [self.navigationController pushViewController:forget animated:YES];
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+        };
+        [self.navigationController pushViewController:login animated:YES];
     }
 }
 

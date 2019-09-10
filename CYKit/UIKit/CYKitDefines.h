@@ -25,6 +25,9 @@
 #define CY_Height_TabBar (CY_IS_PhoneXAll ? 83.0 : 49.0)
 #define CY_Height_Bottom_SafeArea (CY_IS_PhoneXAll ? 34.0 : 0)
 
+#define CY_Sigle_Line_Height             (1/[UIScreen mainScreen].scale)
+#define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
 typedef void(^CYVoidBlock)(void);
 typedef void(^CYBoolBlock)(BOOL yesno);
 typedef void(^CYNumberBlock)(NSNumber *num);
