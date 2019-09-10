@@ -10,8 +10,6 @@
 #import "CYH5ViewController.h"
 #import "CYLaunchViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
-#import "CYFingerPrintLock.h"
-#import "CYEvaluate.h"
 #import "Masonry.h"
 #import "CYKitDefines.h"
 #import "ReactiveObjC.h"
@@ -294,19 +292,6 @@
     [self.loginBtn bk_addEventHandler:^(id sender) {
         @strongify(self);
         // 登录
-        
-        NSString *account = self.phoneTextField.text;
-        NSString *password = self.passwordTextField.text;
-        
-        if ([CYEvaluate validateMobile:account]  == NO) {
-            [XHToast showBottomWithText:@"手机号格式错误"];
-            return;
-        }
-        
-        if ([CYEvaluate validatePassword:password] == NO) {
-            [XHToast showBottomWithText:@"密码错误"];
-            return;
-        }
         
         self.loginBlock?self.loginBlock(CYWexinLoginType_Login):nil;
         
