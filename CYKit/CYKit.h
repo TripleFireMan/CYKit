@@ -29,6 +29,8 @@
 #import <CYKit/CYWeixinLoginViewController.h>
 #import <CYKit/CYForgotPasswordViewController.h>
 #import <CYKit/CYChangePasswordViewController.h>
+#import <CYKit/NSObject+CYAddition.h>
+#import <CYKit/CYCustomTabBarController.h>
 #else
 
 #import "CYModel.h"
@@ -49,4 +51,6 @@
 #import "CYWeixinLoginViewController.h"
 #import "CYForgotPasswordViewController.h"
 #import "CYChangePasswordViewController.h"
+#import "NSObject+CYAddition.h"
+#import "CYCustomTabBarController.h"
 #endif
