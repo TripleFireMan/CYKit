@@ -25,7 +25,6 @@
     self.window.rootViewController = tabbalCtl;
     [self.window makeKeyAndVisible];
     
-    
     return YES;
 }
 
