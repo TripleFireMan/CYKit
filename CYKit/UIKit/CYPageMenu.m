@@ -198,7 +198,12 @@ static const CGFloat kGradientImageWidth = 32;
         
         if (height > 0 && colorHexStr) {
             _selectedView.frame = CGRectMake(0.0, 0.0, 0, height);
-            _selectedView.backgroundColor = [UIColor cy_colorWithHexRGBString:colorHexStr];
+            if (!self.showSelectedView) {
+                _selectedView.backgroundColor = [[UIColor cy_colorWithHexRGBString:colorHexStr] colorWithAlphaComponent:0];
+            }
+            else{
+                _selectedView.backgroundColor = [UIColor cy_colorWithHexRGBString:colorHexStr];
+            }
             _selectedView.layer.cornerRadius = height/2.0;
         }
         
@@ -252,7 +257,7 @@ static const CGFloat kGradientImageWidth = 32;
         //菜单项
         UIColor *toColor = (_itemButtons.count > 1) ? _selectedColor : _unselectedColor; //只有一个菜单项时无选中状态
         [toItemButton setTitleColor:toColor forState:UIControlStateNormal];
-        toItemButton.titleLabel.font = [UIFont boldSystemFontOfSize:[self p_fontSize]];
+        toItemButton.titleLabel.font = [self p_selectedFont];
         
         //滑块
         CGRect frame = _selectedView.frame;
@@ -273,8 +278,8 @@ static const CGFloat kGradientImageWidth = 32;
         UIColor *toColor = (_itemButtons.count > 1) ? _selectedColor : _unselectedColor; //只有一个菜单项时无选中状态
         [toItemButton setTitleColor:toColor forState:UIControlStateNormal];
         [fromItemButton setTitleColor:_unselectedColor forState:UIControlStateNormal];
-        fromItemButton.titleLabel.font = [UIFont systemFontOfSize:[self p_fontSize]];
-        toItemButton.titleLabel.font = [UIFont boldSystemFontOfSize:[self p_fontSize]];
+        fromItemButton.titleLabel.font = [self p_normalFont];
+        toItemButton.titleLabel.font = [self p_selectedFont];
         
         //滑块
         CGRect frame = _selectedView.frame;
@@ -372,8 +377,8 @@ static const CGFloat kGradientImageWidth = 32;
         if (progress >= 0.999) { //完成切换
             [UIView animateWithDuration:0.2 animations:^{
                 _selectedView.frame = frame;
-                fromItemButton.titleLabel.font = [UIFont systemFontOfSize:[self p_fontSize]];
-                toItemButton.titleLabel.font = [UIFont boldSystemFontOfSize:[self p_fontSize]];
+                fromItemButton.titleLabel.font = [self p_normalFont];
+                toItemButton.titleLabel.font = [self p_selectedFont];
 
                 [self scrollToSelectedIndex]; //滚动并显示滑块视图
                 [self p_updateRedDotOnButton:toItemButton];//消除频道右上角小红点 lijian 2017-08-31
@@ -388,6 +393,21 @@ static const CGFloat kGradientImageWidth = 32;
 
 -(CGFloat) p_fontSize {
     return [self.delegate fontSizeForHomeMenu];
+}
+
+- (CGFloat) p_selectedFontSize
+{
+    return [self.delegate fontSizeForSelectMenu];
+}
+
+- (UIFont *) p_normalFont
+{
+    return [self.delegate normalFont];
+}
+
+- (UIFont *) p_selectedFont
+{
+    return [self.delegate selectedFont];
 }
 
 -(CGFloat) p_padding {
@@ -431,22 +451,14 @@ static const CGFloat kGradientImageWidth = 32;
             [self.itemButtons addObject:itemButton];
         }
         
-        itemButton.titleLabel.font = [UIFont systemFontOfSize:[self p_fontSize]];
+        itemButton.titleLabel.font = [self p_normalFont];
 
         // 更新标题
         itemButton.tag = i;
         [itemButton setTitle:menuItem.title forState:UIControlStateNormal];
         [itemButton setTitleColor:self.unselectedColor forState:UIControlStateNormal];
         
-//#ifdef DEBUG
-//        itemButton.backgroundColor = [UIColor yellowColor];
-//#endif
-        
         [self.scrollView addSubview:itemButton];
-        
-//        if (i == 0) {
-//            itemButton.titleLabel.font = PingFangSCMediumFont([self p_fontSize]);
-//        }
         
         // 更新frame
         CGSize titleSize = [itemButton.titleLabel sizeThatFits:CGSizeMake(MAXFLOAT, MAXFLOAT)];

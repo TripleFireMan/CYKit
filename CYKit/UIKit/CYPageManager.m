@@ -199,6 +199,23 @@
     return 15.0;
 }
 
+- (UIFont *) normalFont
+{
+    if ([self.delegate respondsToSelector:@selector(menuFont)]) {
+        return [self.delegate menuFont];
+    }
+    return CYPingFangSCRegular(16);
+}
+
+- (UIFont *) selectedFont
+{
+    if ([self.delegate respondsToSelector:@selector(menuSelectFont)]) {
+        return [self.delegate menuSelectFont];
+    }
+    return CYPingFangSCMedium(18);
+}
+
+
 #pragma mark-UIScrollViewDelegate
 
 -(void) scrollViewDidScroll:(UIScrollView *)scrollView {

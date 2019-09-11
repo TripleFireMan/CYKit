@@ -46,7 +46,9 @@
 -(CYPageMenuItem *) pageManager:(CYPageManager *)pageManager menuItemForPageAtIndex:(NSInteger)index;
 
 // title字体大小
--(CGFloat) fontSizeForMenuItem;
+-(CGFloat) fontSizeForMenuItem DEPRECATED_MSG_ATTRIBUTE("已废弃, 使用menuFont代替");
+- (UIFont *) menuFont;
+- (UIFont *) menuSelectFont;
 
 // 页面激活
 -(void) pageManager:(CYPageManager *)pageManager didActivatePage:(UIViewController *)page AtIndex:(NSInteger)index;

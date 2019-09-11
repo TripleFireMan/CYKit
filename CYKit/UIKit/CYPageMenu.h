@@ -12,7 +12,10 @@
 @class CYPageMenu;
 @protocol CYPageMenuDelegate <NSObject>
 // 字体大小
--(CGFloat) fontSizeForHomeMenu;
+-(CGFloat) fontSizeForHomeMenu DEPRECATED_MSG_ATTRIBUTE("已废弃，使用normalFont代替");
+-(CGFloat) fontSizeForSelectMenu DEPRECATED_MSG_ATTRIBUTE("已废弃，使用selectedFont代替");
+-(UIFont *)normalFont;
+-(UIFont *)selectedFont;
 
 @optional
 // 将要点击菜单项
@@ -45,7 +48,7 @@ typedef NS_ENUM(NSInteger, CYPageMenuLevel) {
 // 主题样式
 @property (nonatomic, assign) CYPageMenuThemeType themeType;
 @property (nonatomic, assign) CYPageMenuLevel levelType;
-
+@property (nonatomic, assign) BOOL showSelectedView;
 @property (nonatomic, weak) id<CYPageMenuDelegate>delegate;
 @property (nonatomic, strong, readonly) NSArray<CYPageMenuItem *> *menuItems;
 // 选中项的index
