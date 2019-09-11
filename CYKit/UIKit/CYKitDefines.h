@@ -28,6 +28,14 @@
 #define CY_Sigle_Line_Height             (1/[UIScreen mainScreen].scale)
 #define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
+#ifndef CY_CLAMP // return the clamped value
+#define CY_CLAMP(_x_, _low_, _high_)  (((_x_) > (_high_)) ? (_high_) : (((_x_) < (_low_)) ? (_low_) : (_x_)))
+#endif
+
+#ifndef CY_SWAP // swap two value
+#define CY_SWAP(_a_, _b_)  do { __typeof__(_a_) _tmp_ = (_a_); (_a_) = (_b_); (_b_) = _tmp_; } while (0)
+#endif
+
 typedef void(^CYVoidBlock)(void);
 typedef void(^CYBoolBlock)(BOOL yesno);
 typedef void(^CYNumberBlock)(NSNumber *num);

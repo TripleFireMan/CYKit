@@ -7,6 +7,9 @@
 //
 
 #import "CYCustomTabBar.h"
+#import "UIColor+CYAddition.h"
+#import "Masonry.h"
+#import "CYKitDefines.h"
 static int Tag = 10;
 const  int customTabBarTagOffset = 10;
 const  int centerTag = 100;
@@ -33,14 +36,15 @@ const  int centerTag = 100;
         [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
         self.backgroundColor = [UIColor whiteColor];
         self.selectedIndex = 0;
-//        self.line = [UIView new];
-//        self.line.backgroundColor = [UIColor colorWithHexRGB:@"#ececec"];
-//        [self addSubview:self.line];
-//        CGFloat toplineHeight = 0.5f;
-//        [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.left.right.top.with.offset(0);
-//            make.height.offset(toplineHeight);
-//        }];
+        self.line = [UIView new];
+        
+        self.line.backgroundColor = [UIColor cy_colorWithHexRGBString:@"#ececec"];
+        [self addSubview:self.line];
+        CGFloat toplineHeight = CY_Sigle_Line_Height;
+        [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.top.with.offset(0);
+            make.height.offset(toplineHeight);
+        }];
     }
     return self;
 }
