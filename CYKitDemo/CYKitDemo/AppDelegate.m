@@ -24,7 +24,6 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     self.window.rootViewController = tabbalCtl;
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 
