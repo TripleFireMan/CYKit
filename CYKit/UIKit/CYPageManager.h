@@ -23,7 +23,7 @@
 
 
 @class CYPageManager;
-@protocol TDHomePageManagerDelegate <NSObject>
+@protocol CYHomePageManagerDelegate <NSObject>
 // 设置页数
 -(NSInteger) numberOfPagesInPageManager:(CYPageManager *)pageManager;
 // 页面复用id
@@ -111,7 +111,7 @@
 - (void)reloadMenuItems;
 
 
-@property (nonatomic, weak) id<TDHomePageManagerDelegate>delegate;
+@property (nonatomic, weak) id<CYHomePageManagerDelegate>delegate;
 
 // 页数
 @property (nonatomic, assign, readonly) NSInteger numberOfPages;
