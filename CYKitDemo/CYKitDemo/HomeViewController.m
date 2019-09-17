@@ -15,11 +15,11 @@
 
 #import "CYNetworkCommand.h"
 #import "ReactiveObjC.h"
-
+#import "CYSPlashCommand.h"
 
 @interface HomeViewController ()
 @property (nonatomic, strong) UIImageView *imageView;
-@property (nonatomic, strong) CYNetworkCommand *command;
+@property (nonatomic, strong) CYSPlashCommand *command;
 @end
 
 @implementation HomeViewController
@@ -77,11 +77,14 @@
     
     
 //    [self.command.getCommand execute:@{k_CY_URL:url,k_CY_PARAMS:param}];
-    [self.command.postCommand execute:@{k_CY_URL:url,k_CY_PARAMS:param}];
+//    [self.command.postCommand execute:@{k_CY_URL:url,k_CY_PARAMS:param}];
+    [self.command.postCommand execute:nil];
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.command.postCommand execute:@{k_CY_URL:url,k_CY_PARAMS:param}];
     });
     
+
 //    NSDate *date1 = [NSDate date];
 //
 //    NSArray *historys = [CYHistory findAll];
@@ -122,10 +125,10 @@
 }
 */
 
-- (CYNetworkCommand *)command
+- (CYSPlashCommand *)command
 {
     if (!_command) {
-        _command = [CYNetworkCommand new];
+        _command = [CYSPlashCommand new];
     }
     return _command;
 }

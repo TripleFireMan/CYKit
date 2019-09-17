@@ -6,7 +6,8 @@
 //  基于RACCommand对网络请求的封装
 
 #import <Foundation/Foundation.h>
-#import "ReactiveObjC.h"
+
+@class RACCommand;
 
 typedef NS_ENUM(NSInteger, CYNetworkStatus){
     /// 请求开始
@@ -33,6 +34,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) NSError *error;
 /// 请求结果
 @property (nonatomic, strong, nullable) id data;
+/// 请求地址
+@property (nonatomic, strong, readonly) NSString *url;
+/// 请求参数
+@property (nonatomic, strong, readonly) NSDictionary *params;
+
 @end
 
 NS_ASSUME_NONNULL_END

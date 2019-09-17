@@ -98,7 +98,7 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
     
     [self.view bringSubviewToFront:self.closeBtn];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.countDown * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if (!self.hasJumpToHome && !self.timer) {
             [self jumpToHomePage];
         }

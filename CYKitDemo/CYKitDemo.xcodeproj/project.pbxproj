@@ -11,6 +11,7 @@
 		4C2CC0131E7F7071002FFB38 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0121E7F7071002FFB38 /* HomeViewController.m */; };
 		4C2CC0161E7F707C002FFB38 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0151E7F707C002FFB38 /* MeViewController.m */; };
 		4C633FCE1F78A3F400D235D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C633FCD1F78A3F400D235D2 /* libz.tbd */; };
+		4C782D882330D06B00F4EEED /* CYSPlashCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C782D872330D06B00F4EEED /* CYSPlashCommand.m */; };
 		4CBA91651E59BE9600AEBC30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA91641E59BE9600AEBC30 /* main.m */; };
 		4CBA91681E59BE9600AEBC30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA91671E59BE9600AEBC30 /* AppDelegate.m */; };
 		4CBA916B1E59BE9600AEBC30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA916A1E59BE9600AEBC30 /* ViewController.m */; };
@@ -33,6 +34,8 @@
 		4C2CC0141E7F707C002FFB38 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		4C2CC0151E7F707C002FFB38 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		4C633FCD1F78A3F400D235D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4C782D862330D06B00F4EEED /* CYSPlashCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYSPlashCommand.h; sourceTree = "<group>"; };
+		4C782D872330D06B00F4EEED /* CYSPlashCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYSPlashCommand.m; sourceTree = "<group>"; };
 		4CBA91601E59BE9600AEBC30 /* CYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBA91641E59BE9600AEBC30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CBA91661E59BE9600AEBC30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 			children = (
 				4CFE2ECD2318AF1C005AD4C4 /* CYMeModel.h */,
 				4CFE2ECE2318AF1C005AD4C4 /* CYMeModel.m */,
+				4C782D862330D06B00F4EEED /* CYSPlashCommand.h */,
+				4C782D872330D06B00F4EEED /* CYSPlashCommand.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -334,6 +339,7 @@
 			files = (
 				4C2CC0161E7F707C002FFB38 /* MeViewController.m in Sources */,
 				4CBA916B1E59BE9600AEBC30 /* ViewController.m in Sources */,
+				4C782D882330D06B00F4EEED /* CYSPlashCommand.m in Sources */,
 				4CBA91681E59BE9600AEBC30 /* AppDelegate.m in Sources */,
 				4C2CC0101E7F6F5E002FFB38 /* CustomTabBarController+Initional.m in Sources */,
 				4CFE2ECF2318AF1C005AD4C4 /* CYMeModel.m in Sources */,

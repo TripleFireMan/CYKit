@@ -8,6 +8,8 @@
 #import "CYNetworkCommand.h"
 #import "AFNetworking.h"
 #import "CYKitDefines.h"
+#import "ReactiveObjC.h"
+
 NSString *k_CY_URL = @"url";
 NSString *k_CY_PARAMS = @"params";
 
@@ -36,6 +38,14 @@ NSString *k_CY_PARAMS = @"params";
             @strongify(self);
             NSString *url = [input objectForKey:k_CY_URL];
             NSDictionary *parasm = [input objectForKey:k_CY_PARAMS];
+            //供子类覆盖
+            if (!url) {
+                url = [self url];
+            }
+            if (!parasm) {
+                parasm = [self params];
+            }
+            
             NSAssert(url, @"url不能为空");
             return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
                 [self getUrl:url params:parasm successBlock:^(BOOL success, id obj) {
@@ -59,6 +69,13 @@ NSString *k_CY_PARAMS = @"params";
             @strongify(self);
             NSString *url = [input objectForKey:k_CY_URL];
             NSDictionary *parasm = [input objectForKey:k_CY_PARAMS];
+            //供子类覆盖
+            if (!url) {
+                url = [self url];
+            }
+            if (!parasm) {
+                parasm = [self params];
+            }
             NSAssert(url, @"url不能为空");
             return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
                 [self postUrl:url params:parasm successBlock:^(BOOL success, id obj) {
