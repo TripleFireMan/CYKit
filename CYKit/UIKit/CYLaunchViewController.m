@@ -239,7 +239,7 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
     self.hasJumpToHome = YES;
     [self.timer invalidate];
     self.timer = nil;
-    [[NSNotificationCenter defaultCenter] postNotificationName:k_DidFinishLaunchNotification object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:k_DidFinishLaunchNotification object:self];
 }
 
 - (void) finishLaunch
