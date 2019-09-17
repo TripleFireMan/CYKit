@@ -12,7 +12,6 @@
 #import "BlocksKit+UIKit.h"
 #import "CYKitDefines.h"
 #import "ReactiveObjC.h"
-#import "UIImage+CYAddtion.h"
 #define k_UserDefault_LaunchImageKey    @"k_UserDefault_LaunchImageKey"
 #define k_UserDefault_LaunchImageInvalidTimeKey @"k_UserDefault_LaunchImageInvalidTimeKey"
 
@@ -207,7 +206,7 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
         NSDate *today = [NSDate date];
         //图片过期了
         if ([today timeIntervalSinceDate:invalidDate] >= 0) {
-            return [UIImage cy_LauchImage];
+            return [[self class] getLaunchImage];
         }
         else{
             //未过期，有图片
@@ -220,18 +219,35 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
                     return image;
                 }
                 else{
-                    return [UIImage cy_LauchImage];
+                    return [[self class] getLaunchImage];
                 }
                 
             }
             else{
-                return [UIImage cy_LauchImage];
+                return [[self class] getLaunchImage];
             }
         }
     }
     else{
-        return [UIImage cy_LauchImage];
+        return [[self class] getLaunchImage];
     }
+}
+
++ (UIImage *)getLaunchImage{
+    
+    CGSize viewSize = [UIScreen mainScreen].bounds.size;
+    NSString *viewOr = @"Portrait";//垂直
+    NSString *launchImage = nil;
+    NSArray *launchImages =  [[[NSBundle mainBundle] infoDictionary] valueForKey:@"UILaunchImages"];
+    
+    for (NSDictionary *dict in launchImages) {
+        CGSize imageSize = CGSizeFromString(dict[@"UILaunchImageSize"]);
+        
+        if (CGSizeEqualToSize(viewSize, imageSize) && [viewOr isEqualToString:dict[@"UILaunchImageOrientation"]]) {
+            launchImage = dict[@"UILaunchImageName"];
+        }
+    }
+    return [UIImage imageNamed:launchImage];
 }
 
 - (void) jumpToHomePage
