@@ -8,8 +8,11 @@
 
 #import "ViewController.h"
 #import "CYKit.h"
-@interface ViewController ()
+#import "CYNetworkCommand.h"
+#import "ReactiveObjC.h"
 
+@interface ViewController ()
+@property (nonatomic, strong) CYNetworkCommand *command;
 @end
 
 @implementation ViewController
@@ -18,7 +21,26 @@
     [super viewDidLoad];
     
     NSLog(@"name = %@",[CYModel className]);
+    
+    NSString *url = @"https://paytest.sooyie.cn/Controller/service/Client2.ashx?action=GetSplashScreen";
+    NSDictionary *param = @{@"scale":@"16_9"};
+    
+    
+    
+    [RACObserve(self.command, data) subscribeNext:^(id  _Nullable x) {
+        DDLogInfo(@"x = %@",x);
+    }];
+    
+    [self.command.getCommand execute:@{k_CY_URL:url,k_CY_PARAMS:param}];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (CYNetworkCommand *)command
+{
+    if (!_command) {
+        _command = [CYNetworkCommand new];
+    }
+    return _command;
 }
 
 

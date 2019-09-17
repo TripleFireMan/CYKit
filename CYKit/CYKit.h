@@ -31,6 +31,7 @@
 #import <CYKit/CYChangePasswordViewController.h>
 #import <CYKit/NSObject+CYAddition.h>
 #import <CYKit/CYCustomTabBarController.h>
+#import <CYKit/CYNetworkCommand.h>
 #else
 
 #import "CYModel.h"
@@ -53,4 +54,5 @@
 #import "CYChangePasswordViewController.h"
 #import "NSObject+CYAddition.h"
 #import "CYCustomTabBarController.h"
+#import "CYNetworkCommand.h"
 #endif
