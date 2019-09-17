@@ -12,6 +12,7 @@
 #import "BlocksKit+UIKit.h"
 #import "CYKitDefines.h"
 #import "ReactiveObjC.h"
+#import "UIImage+CYAddtion.h"
 #define k_UserDefault_LaunchImageKey    @"k_UserDefault_LaunchImageKey"
 #define k_UserDefault_LaunchImageInvalidTimeKey @"k_UserDefault_LaunchImageInvalidTimeKey"
 
@@ -206,7 +207,7 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
         NSDate *today = [NSDate date];
         //图片过期了
         if ([today timeIntervalSinceDate:invalidDate] >= 0) {
-            return [UIImage imageNamed:@"LaunchImage"];
+            return [UIImage cy_LauchImage];
         }
         else{
             //未过期，有图片
@@ -219,17 +220,17 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
                     return image;
                 }
                 else{
-                    return [UIImage imageNamed:@"LaunchImage"];
+                    return [UIImage cy_LauchImage];
                 }
                 
             }
             else{
-                return [UIImage imageNamed:@"LaunchImage"];
+                return [UIImage cy_LauchImage];
             }
         }
     }
     else{
-        return [UIImage imageNamed:@"LaunchImage"];
+        return [UIImage cy_LauchImage];
     }
 }
 

@@ -103,7 +103,6 @@
             switch (type) {
                 case CYWexinLoginType_FogetPassword:
                 {
-                    
                     NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"CYKit" ofType:@"bundle"];
                     NSLog(@"bundlePath =%@",bundlePath);
                     CYChangePasswordViewController *forget =  [[CYChangePasswordViewController alloc] initWithNibName:@"CYChangePasswordViewController" bundle:[NSBundle bundleWithPath:bundlePath]];

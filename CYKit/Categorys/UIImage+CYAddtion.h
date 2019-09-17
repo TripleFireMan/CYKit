@@ -47,4 +47,12 @@
 // 图片置灰
 - (void)grayscaleImageForImage:(UIImage *)image
                       complete:(void(^)(UIImage *complete))complete;
+
+
+/**
+ 从Asset中获取app启动图
+
+ @return 图片
+ */
++ (instancetype) cy_LauchImage;
 @end

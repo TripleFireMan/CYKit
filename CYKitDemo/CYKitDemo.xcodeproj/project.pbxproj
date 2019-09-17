@@ -25,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C0A6F45232A050500492DFC /* CYKitDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYKitDemo.pch; sourceTree = "<group>"; };
 		4C2CC00E1E7F6F5E002FFB38 /* CustomTabBarController+Initional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CustomTabBarController+Initional.h"; sourceTree = "<group>"; };
 		4C2CC00F1E7F6F5E002FFB38 /* CustomTabBarController+Initional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CustomTabBarController+Initional.m"; sourceTree = "<group>"; };
 		4C2CC0111E7F7071002FFB38 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		4CE71C332302E6D000D7D00D /* CYKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CYKit.podspec; path = ../../CYKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4CFE2ECD2318AF1C005AD4C4 /* CYMeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYMeModel.h; sourceTree = "<group>"; };
 		4CFE2ECE2318AF1C005AD4C4 /* CYMeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYMeModel.m; sourceTree = "<group>"; };
-		4CFE2ED02318AFD4005AD4C4 /* CYKitDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYKitDemo.pch; sourceTree = "<group>"; };
 		680ECBDAFB5A5653E1A02C28 /* Pods-CYKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKitDemo.release.xcconfig"; path = "Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		AD1AD689932BA930006EBA9B /* libPods-CYKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CYKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F322A3D63E992986CAA619 /* Pods-CYKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +88,7 @@
 		4CBA91621E59BE9600AEBC30 /* CYKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4C0A6F45232A050500492DFC /* CYKitDemo.pch */,
 				4CBA91661E59BE9600AEBC30 /* AppDelegate.h */,
 				4CBA91671E59BE9600AEBC30 /* AppDelegate.m */,
 				4CBA91691E59BE9600AEBC30 /* ViewController.h */,
@@ -98,7 +99,6 @@
 				4C2CC0121E7F7071002FFB38 /* HomeViewController.m */,
 				4C2CC0141E7F707C002FFB38 /* MeViewController.h */,
 				4C2CC0151E7F707C002FFB38 /* MeViewController.m */,
-				4CFE2ED02318AFD4005AD4C4 /* CYKitDemo.pch */,
 				4CFE2ECA2318AEE1005AD4C4 /* Me */,
 				4CBA916C1E59BE9600AEBC30 /* Main.storyboard */,
 				4CBA916F1E59BE9600AEBC30 /* Assets.xcassets */,

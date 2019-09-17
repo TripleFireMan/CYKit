@@ -13,7 +13,6 @@
 #import <CYKit/NSString+CYAddition.h>
 #import <CYKit/NSData+CYAddition.h>
 
-
 @interface HomeViewController ()
 @property (nonatomic, strong) UIImageView *imageView;
 @end
@@ -49,7 +48,8 @@
     NSDate *date2 = [NSDate date];
     NSTimeInterval time = [date2 timeIntervalSinceDate:date1] * 1000.f;
     NSLog(@"%s 消耗时间为 %.2f 毫秒",__func__,time);
-
+    DDLogInfo(@"110");
+    DDLogError(@"2220");
 //    NSDate *date1 = [NSDate date];
 //
 //    NSArray *historys = [CYHistory findAll];
@@ -73,6 +73,7 @@
     
 //    [YCDBVideo dropTable];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

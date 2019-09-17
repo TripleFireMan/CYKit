@@ -8,7 +8,14 @@
 
 #ifndef CYKitDemo_h
 #define CYKitDemo_h
-
+#import "CocoaLumberjack.h"
 #import <Masonry.h>
-#import "CYKitDefines.h"
+#define LOG_LEVEL_DEF ddLogLevel
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
 #endif /* CYKitDemo_h */

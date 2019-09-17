@@ -17,5 +17,6 @@ pod 'ReactiveObjC'
 pod 'YYKit'
 pod 'CYKit',:path => '../'
 pod 'XHToast'
+pod 'CocoaLumberjack'
 end
 

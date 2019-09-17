@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "CustomTabBarController+Initional.h"
+
 @interface AppDelegate ()
 
 @end
@@ -24,7 +25,22 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     self.window.rootViewController = tabbalCtl;
     [self.window makeKeyAndVisible];
+    
+    [self addFileLogger];
+    
     return YES;
+}
+
+- (void) addFileLogger
+{
+    [DDTTYLogger sharedInstance].colorsEnabled = YES;
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    //    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
+    fileLogger.maximumFileSize = 10 * 1024 * 1024;
+    fileLogger.rollingFrequency = 24 * 60 * 60;
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+    [DDLog addLogger:fileLogger];
 }
 
 
