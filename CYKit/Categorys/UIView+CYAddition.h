@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (id  ) cy_loadCurrentViewFromNib;
 - (void) cy_showEmptyImage:(NSString *)name clickRefresh:(void(^)(void))complete;
 - (void) cy_hideImages;
+/// 做圆角
+- (void) cy_cornerRound:(UIRectCorner)corner size:(CGSize)size;
 @end
 
 NS_ASSUME_NONNULL_END

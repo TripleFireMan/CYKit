@@ -16,6 +16,7 @@
 #import "CYNetworkCommand.h"
 #import "ReactiveObjC.h"
 #import "CYSPlashCommand.h"
+#import "UIView+CYAddition.h"
 
 @interface HomeViewController ()
 @property (nonatomic, strong) UIImageView *imageView;
@@ -56,6 +57,14 @@
     DDLogInfo(@"110");
     DDLogError(@"2220");
     
+    UIView *view = [UIView new];
+    [self.view addSubview:view];
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.offset(0);
+        make.height.with.width.offset(100);
+    }];
+    view.backgroundColor = [UIColor blueColor];
+    [view cy_cornerRound:UIRectCornerTopLeft | UIRectCornerTopRight size:CGSizeMake(50, 50)];
     
     
     NSString *url = @"https://paytest.sooyie.cn/Controller/service/Client2.ashx?action=GetSplashScreen";

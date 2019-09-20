@@ -59,4 +59,14 @@ static NSString * kErrorImage;
     [self.cy_errorImageView removeFromSuperview];
     self.cy_errorImageView = nil;
 }
+
+- (void) cy_cornerRound:(UIRectCorner)corner size:(CGSize)size
+{
+    [self.superview layoutIfNeeded];
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corner cornerRadii:size];
+    CAShapeLayer *shapeLayer = [[CAShapeLayer alloc] init];
+    shapeLayer.frame = self.bounds;
+    shapeLayer.path = path.CGPath;
+    self.layer.mask = shapeLayer;
+}
 @end
