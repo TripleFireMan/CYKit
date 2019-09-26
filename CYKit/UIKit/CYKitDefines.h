@@ -24,6 +24,7 @@
 #define CY_Height_NavBar (CY_IS_PhoneXAll ? 88.0 : 64.0)
 #define CY_Height_TabBar (CY_IS_PhoneXAll ? 83.0 : 49.0)
 #define CY_Height_Bottom_SafeArea (CY_IS_PhoneXAll ? 34.0 : 0)
+#define CY_IPhone6Scale(x) ceilf(x*(x/375.f))
 
 #define CYPingFangSCRegular(x)       [UIFont fontWithName:@"PingFang-SC-Regular" size:x]
 #define CYPingFangSCMedium(x)        [UIFont fontWithName:@"PingFangSC-Medium" size:x]
