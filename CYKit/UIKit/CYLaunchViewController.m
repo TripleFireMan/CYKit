@@ -247,7 +247,7 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
             launchImage = dict[@"UILaunchImageName"];
         }
     }
-    UIImage *img = [UIImage imageNamed:@"WechatIMG98-2"];
+    UIImage *img = [UIImage imageNamed:launchImage];
     return img;
 }
 
