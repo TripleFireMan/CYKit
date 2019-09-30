@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SYHelpUsContentCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="75" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP使用" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubf-Lv-VDV">
+                        <rect key="frame" x="10" y="59" width="55" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YA6-1f-XPn">
+                        <rect key="frame" x="27.5" y="80" width="20" height="2"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.16078431369999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="AV6-BR-hZT"/>
+                            <constraint firstAttribute="width" constant="20" id="PBc-hG-wl4"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7oy-zI-SHh">
+                        <rect key="frame" x="0.0" y="98" width="75" height="2"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="Ybh-Pp-sqh"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sy_help_cate_unseleted" highlightedImage="sy_help_cate_seleted" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="te0-2X-reP">
+                        <rect key="frame" x="22.5" y="20" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="eKc-TP-wCC"/>
+                            <constraint firstAttribute="width" constant="30" id="l8C-4c-Czo"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="YA6-1f-XPn" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="6nR-r6-QSk"/>
+                <constraint firstAttribute="bottom" secondItem="7oy-zI-SHh" secondAttribute="bottom" id="CNC-Rd-5Ik"/>
+                <constraint firstItem="7oy-zI-SHh" firstAttribute="top" secondItem="YA6-1f-XPn" secondAttribute="bottom" constant="16" id="MIW-Ei-1Te"/>
+                <constraint firstItem="7oy-zI-SHh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SiX-mE-KSP"/>
+                <constraint firstItem="te0-2X-reP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Xz6-JU-IYz"/>
+                <constraint firstAttribute="trailing" secondItem="ubf-Lv-VDV" secondAttribute="trailing" constant="10" id="aac-QF-Et7"/>
+                <constraint firstItem="YA6-1f-XPn" firstAttribute="top" secondItem="ubf-Lv-VDV" secondAttribute="bottom" constant="5" id="lid-uQ-oU2"/>
+                <constraint firstItem="te0-2X-reP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="nUU-eg-N8B"/>
+                <constraint firstItem="ubf-Lv-VDV" firstAttribute="top" secondItem="te0-2X-reP" secondAttribute="bottom" constant="9" id="rbu-do-6dL"/>
+                <constraint firstItem="ubf-Lv-VDV" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wWC-uK-tp1"/>
+                <constraint firstItem="ubf-Lv-VDV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="yEz-Hg-9gR"/>
+                <constraint firstAttribute="trailing" secondItem="7oy-zI-SHh" secondAttribute="trailing" id="zB8-on-LJI"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomLine" destination="7oy-zI-SHh" id="P2d-qa-wID"/>
+                <outlet property="imageIcon" destination="te0-2X-reP" id="e2c-sJ-4n8"/>
+                <outlet property="indicator" destination="YA6-1f-XPn" id="IKf-3J-BGO"/>
+                <outlet property="titleLabel" destination="ubf-Lv-VDV" id="gOj-tJ-Ex4"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="99.776785714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sy_help_cate_seleted" width="34" height="34"/>
+        <image name="sy_help_cate_unseleted" width="34" height="34"/>
+    </resources>
+</document>

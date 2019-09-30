@@ -12,6 +12,60 @@
 		4C2CC0161E7F707C002FFB38 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0151E7F707C002FFB38 /* MeViewController.m */; };
 		4C633FCE1F78A3F400D235D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C633FCD1F78A3F400D235D2 /* libz.tbd */; };
 		4C782D882330D06B00F4EEED /* CYSPlashCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C782D872330D06B00F4EEED /* CYSPlashCommand.m */; };
+		4C9A534823419381003FD736 /* SYHelpUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A534323419380003FD736 /* SYHelpUsViewController.xib */; };
+		4C9A534923419381003FD736 /* SYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A534523419380003FD736 /* SYBaseViewController.m */; };
+		4C9A534A23419381003FD736 /* SYHelpUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A534723419380003FD736 /* SYHelpUsViewController.m */; };
+		4C9A5356234193CA003FD736 /* SYHelpUsContentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A534B234193C9003FD736 /* SYHelpUsContentCollectionViewCell.m */; };
+		4C9A5357234193CA003FD736 /* SYHelpUsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A534D234193C9003FD736 /* SYHelpUsHeaderView.m */; };
+		4C9A5358234193CA003FD736 /* SYHelpUsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A534E234193C9003FD736 /* SYHelpUsHeaderView.xib */; };
+		4C9A5359234193CA003FD736 /* SYHelpUsContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A534F234193CA003FD736 /* SYHelpUsContentCollectionViewCell.xib */; };
+		4C9A535A234193CA003FD736 /* SYHelpUsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A5350234193CA003FD736 /* SYHelpUsModel.m */; };
+		4C9A535B234193CA003FD736 /* SYHelpUsRightCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A5352234193CA003FD736 /* SYHelpUsRightCollectionViewCell.m */; };
+		4C9A535C234193CA003FD736 /* SYHelpUsRightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A5353234193CA003FD736 /* SYHelpUsRightCollectionViewCell.xib */; };
+		4C9A535F234194E5003FD736 /* SYCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A535D234194E5003FD736 /* SYCollectionViewFlowLayout.m */; };
+		4C9A5362234195BF003FD736 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A5360234195BE003FD736 /* HttpTool.m */; };
+		4C9A53AE23419829003FD736 /* SYArticleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53AB23419829003FD736 /* SYArticleDetailViewController.m */; };
+		4C9A53AF23419829003FD736 /* SYArticleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53AD23419829003FD736 /* SYArticleDetailViewController.xib */; };
+		4C9A53B223419863003FD736 /* SYArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53B123419863003FD736 /* SYArticleModel.m */; };
+		4C9A53BD23419B40003FD736 /* SYAboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53B323419B3E003FD736 /* SYAboutUsViewController.xib */; };
+		4C9A53BE23419B40003FD736 /* SYAboutUsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53B423419B3E003FD736 /* SYAboutUsTableViewCell.xib */; };
+		4C9A53BF23419B40003FD736 /* SYAboutUsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53B523419B3E003FD736 /* SYAboutUsTableViewCell.m */; };
+		4C9A53C023419B40003FD736 /* SYAboutUsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53BA23419B3F003FD736 /* SYAboutUsHeaderView.m */; };
+		4C9A53C123419B40003FD736 /* SYAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53BB23419B3F003FD736 /* SYAboutUsViewController.m */; };
+		4C9A53C223419B40003FD736 /* SYAboutUsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53BC23419B40003FD736 /* SYAboutUsModel.m */; };
+		4C9A53D123419BAE003FD736 /* SYDebugModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53C323419BAC003FD736 /* SYDebugModel.m */; };
+		4C9A53D223419BAE003FD736 /* SYTitleDebugTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53C423419BAC003FD736 /* SYTitleDebugTableViewCell.xib */; };
+		4C9A53D323419BAE003FD736 /* SYDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53C623419BAC003FD736 /* SYDebugViewController.m */; };
+		4C9A53D423419BAE003FD736 /* SYTitleDebugTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53C723419BAD003FD736 /* SYTitleDebugTableViewCell.m */; };
+		4C9A53D523419BAE003FD736 /* SYInterfaceDebugTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53CA23419BAD003FD736 /* SYInterfaceDebugTableViewCell.m */; };
+		4C9A53D623419BAE003FD736 /* SYSwitchDebugTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53CC23419BAD003FD736 /* SYSwitchDebugTableViewCell.xib */; };
+		4C9A53D723419BAE003FD736 /* SYInterfaceDebugTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53CE23419BAE003FD736 /* SYInterfaceDebugTableViewCell.xib */; };
+		4C9A53D823419BAE003FD736 /* SYSwitchDebugTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53D023419BAE003FD736 /* SYSwitchDebugTableViewCell.m */; };
+		4C9A53DB23419E41003FD736 /* SYCustomScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53D923419E41003FD736 /* SYCustomScanViewController.m */; };
+		4C9A53DE23419E69003FD736 /* StyleDIY.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53DC23419E69003FD736 /* StyleDIY.m */; };
+		4C9A53F72341A40C003FD736 /* SpeechVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A53E02341A40B003FD736 /* SpeechVC.m */; };
+		4C9A53F82341A40C003FD736 /* 8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53E22341A40C003FD736 /* 8.m4a */; };
+		4C9A53F92341A40C003FD736 /* 9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53E32341A40C003FD736 /* 9.m4a */; };
+		4C9A53FA2341A40C003FD736 /* 支付宝到账.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53E42341A40C003FD736 /* 支付宝到账.m4a */; };
+		4C9A53FB2341A40C003FD736 /* 万.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53E52341A40C003FD736 /* 万.m4a */; };
+		4C9A53FC2341A40C003FD736 /* 亿.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53E62341A40C003FD736 /* 亿.m4a */; };
+		4C9A53FD2341A40C003FD736 /* 元.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53E72341A40C003FD736 /* 元.m4a */; };
+		4C9A53FE2341A40C003FD736 /* 支付失败.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53E82341A40C003FD736 /* 支付失败.m4a */; };
+		4C9A53FF2341A40C003FD736 /* 云闪付到账.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53E92341A40C003FD736 /* 云闪付到账.m4a */; };
+		4C9A54002341A40C003FD736 /* 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53EA2341A40C003FD736 /* 1.m4a */; };
+		4C9A54012341A40C003FD736 /* 0.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53EB2341A40C003FD736 /* 0.m4a */; };
+		4C9A54022341A40C003FD736 /* 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53EC2341A40C003FD736 /* 2.m4a */; };
+		4C9A54032341A40C003FD736 /* 点.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53ED2341A40C003FD736 /* 点.m4a */; };
+		4C9A54042341A40C003FD736 /* 3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53EE2341A40C003FD736 /* 3.m4a */; };
+		4C9A54052341A40C003FD736 /* 7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53EF2341A40C003FD736 /* 7.m4a */; };
+		4C9A54062341A40C003FD736 /* 6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53F02341A40C003FD736 /* 6.m4a */; };
+		4C9A54072341A40C003FD736 /* 百.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53F12341A40C003FD736 /* 百.m4a */; };
+		4C9A54082341A40C003FD736 /* 十.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53F22341A40C003FD736 /* 十.m4a */; };
+		4C9A54092341A40C003FD736 /* 千.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53F32341A40C003FD736 /* 千.m4a */; };
+		4C9A540A2341A40C003FD736 /* 微信到账.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53F42341A40C003FD736 /* 微信到账.m4a */; };
+		4C9A540B2341A40C003FD736 /* 4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53F52341A40C003FD736 /* 4.m4a */; };
+		4C9A540C2341A40C003FD736 /* 5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A53F62341A40C003FD736 /* 5.m4a */; };
+		4C9A540F2341A4E8003FD736 /* SpeechD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A540D2341A4E7003FD736 /* SpeechD.m */; };
 		4CBA91651E59BE9600AEBC30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA91641E59BE9600AEBC30 /* main.m */; };
 		4CBA91681E59BE9600AEBC30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA91671E59BE9600AEBC30 /* AppDelegate.m */; };
 		4CBA916B1E59BE9600AEBC30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA916A1E59BE9600AEBC30 /* ViewController.m */; };
@@ -36,6 +90,84 @@
 		4C633FCD1F78A3F400D235D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4C782D862330D06B00F4EEED /* CYSPlashCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYSPlashCommand.h; sourceTree = "<group>"; };
 		4C782D872330D06B00F4EEED /* CYSPlashCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYSPlashCommand.m; sourceTree = "<group>"; };
+		4C9A534323419380003FD736 /* SYHelpUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYHelpUsViewController.xib; sourceTree = "<group>"; };
+		4C9A534423419380003FD736 /* SYHelpUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYHelpUsViewController.h; sourceTree = "<group>"; };
+		4C9A534523419380003FD736 /* SYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYBaseViewController.m; sourceTree = "<group>"; };
+		4C9A534623419380003FD736 /* SYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYBaseViewController.h; sourceTree = "<group>"; };
+		4C9A534723419380003FD736 /* SYHelpUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYHelpUsViewController.m; sourceTree = "<group>"; };
+		4C9A534B234193C9003FD736 /* SYHelpUsContentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYHelpUsContentCollectionViewCell.m; sourceTree = "<group>"; };
+		4C9A534C234193C9003FD736 /* SYHelpUsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYHelpUsHeaderView.h; sourceTree = "<group>"; };
+		4C9A534D234193C9003FD736 /* SYHelpUsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYHelpUsHeaderView.m; sourceTree = "<group>"; };
+		4C9A534E234193C9003FD736 /* SYHelpUsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYHelpUsHeaderView.xib; sourceTree = "<group>"; };
+		4C9A534F234193CA003FD736 /* SYHelpUsContentCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYHelpUsContentCollectionViewCell.xib; sourceTree = "<group>"; };
+		4C9A5350234193CA003FD736 /* SYHelpUsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYHelpUsModel.m; sourceTree = "<group>"; };
+		4C9A5351234193CA003FD736 /* SYHelpUsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYHelpUsModel.h; sourceTree = "<group>"; };
+		4C9A5352234193CA003FD736 /* SYHelpUsRightCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYHelpUsRightCollectionViewCell.m; sourceTree = "<group>"; };
+		4C9A5353234193CA003FD736 /* SYHelpUsRightCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYHelpUsRightCollectionViewCell.xib; sourceTree = "<group>"; };
+		4C9A5354234193CA003FD736 /* SYHelpUsContentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYHelpUsContentCollectionViewCell.h; sourceTree = "<group>"; };
+		4C9A5355234193CA003FD736 /* SYHelpUsRightCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYHelpUsRightCollectionViewCell.h; sourceTree = "<group>"; };
+		4C9A535D234194E5003FD736 /* SYCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		4C9A535E234194E5003FD736 /* SYCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		4C9A5360234195BE003FD736 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		4C9A5361234195BF003FD736 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		4C9A53AB23419829003FD736 /* SYArticleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYArticleDetailViewController.m; sourceTree = "<group>"; };
+		4C9A53AC23419829003FD736 /* SYArticleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYArticleDetailViewController.h; sourceTree = "<group>"; };
+		4C9A53AD23419829003FD736 /* SYArticleDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYArticleDetailViewController.xib; sourceTree = "<group>"; };
+		4C9A53B023419863003FD736 /* SYArticleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYArticleModel.h; sourceTree = "<group>"; };
+		4C9A53B123419863003FD736 /* SYArticleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYArticleModel.m; sourceTree = "<group>"; };
+		4C9A53B323419B3E003FD736 /* SYAboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYAboutUsViewController.xib; sourceTree = "<group>"; };
+		4C9A53B423419B3E003FD736 /* SYAboutUsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYAboutUsTableViewCell.xib; sourceTree = "<group>"; };
+		4C9A53B523419B3E003FD736 /* SYAboutUsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAboutUsTableViewCell.m; sourceTree = "<group>"; };
+		4C9A53B623419B3E003FD736 /* SYAboutUsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAboutUsModel.h; sourceTree = "<group>"; };
+		4C9A53B723419B3E003FD736 /* SYAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAboutUsViewController.h; sourceTree = "<group>"; };
+		4C9A53B823419B3F003FD736 /* SYAboutUsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAboutUsTableViewCell.h; sourceTree = "<group>"; };
+		4C9A53B923419B3F003FD736 /* SYAboutUsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYAboutUsHeaderView.h; sourceTree = "<group>"; };
+		4C9A53BA23419B3F003FD736 /* SYAboutUsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAboutUsHeaderView.m; sourceTree = "<group>"; };
+		4C9A53BB23419B3F003FD736 /* SYAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAboutUsViewController.m; sourceTree = "<group>"; };
+		4C9A53BC23419B40003FD736 /* SYAboutUsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYAboutUsModel.m; sourceTree = "<group>"; };
+		4C9A53C323419BAC003FD736 /* SYDebugModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYDebugModel.m; sourceTree = "<group>"; };
+		4C9A53C423419BAC003FD736 /* SYTitleDebugTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYTitleDebugTableViewCell.xib; sourceTree = "<group>"; };
+		4C9A53C523419BAC003FD736 /* SYTitleDebugTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTitleDebugTableViewCell.h; sourceTree = "<group>"; };
+		4C9A53C623419BAC003FD736 /* SYDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYDebugViewController.m; sourceTree = "<group>"; };
+		4C9A53C723419BAD003FD736 /* SYTitleDebugTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTitleDebugTableViewCell.m; sourceTree = "<group>"; };
+		4C9A53C823419BAD003FD736 /* SYDebugCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDebugCellProtocol.h; sourceTree = "<group>"; };
+		4C9A53C923419BAD003FD736 /* SYDebugModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDebugModel.h; sourceTree = "<group>"; };
+		4C9A53CA23419BAD003FD736 /* SYInterfaceDebugTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYInterfaceDebugTableViewCell.m; sourceTree = "<group>"; };
+		4C9A53CB23419BAD003FD736 /* SYSwitchDebugTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSwitchDebugTableViewCell.h; sourceTree = "<group>"; };
+		4C9A53CC23419BAD003FD736 /* SYSwitchDebugTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYSwitchDebugTableViewCell.xib; sourceTree = "<group>"; };
+		4C9A53CD23419BAE003FD736 /* SYInterfaceDebugTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYInterfaceDebugTableViewCell.h; sourceTree = "<group>"; };
+		4C9A53CE23419BAE003FD736 /* SYInterfaceDebugTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYInterfaceDebugTableViewCell.xib; sourceTree = "<group>"; };
+		4C9A53CF23419BAE003FD736 /* SYDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYDebugViewController.h; sourceTree = "<group>"; };
+		4C9A53D023419BAE003FD736 /* SYSwitchDebugTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSwitchDebugTableViewCell.m; sourceTree = "<group>"; };
+		4C9A53D923419E41003FD736 /* SYCustomScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYCustomScanViewController.m; sourceTree = "<group>"; };
+		4C9A53DA23419E41003FD736 /* SYCustomScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYCustomScanViewController.h; sourceTree = "<group>"; };
+		4C9A53DC23419E69003FD736 /* StyleDIY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleDIY.m; sourceTree = "<group>"; };
+		4C9A53DD23419E69003FD736 /* StyleDIY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleDIY.h; sourceTree = "<group>"; };
+		4C9A53DF2341A40B003FD736 /* SpeechVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechVC.h; sourceTree = "<group>"; };
+		4C9A53E02341A40B003FD736 /* SpeechVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechVC.m; sourceTree = "<group>"; };
+		4C9A53E22341A40C003FD736 /* 8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8.m4a; sourceTree = "<group>"; };
+		4C9A53E32341A40C003FD736 /* 9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 9.m4a; sourceTree = "<group>"; };
+		4C9A53E42341A40C003FD736 /* 支付宝到账.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "支付宝到账.m4a"; sourceTree = "<group>"; };
+		4C9A53E52341A40C003FD736 /* 万.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "万.m4a"; sourceTree = "<group>"; };
+		4C9A53E62341A40C003FD736 /* 亿.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "亿.m4a"; sourceTree = "<group>"; };
+		4C9A53E72341A40C003FD736 /* 元.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "元.m4a"; sourceTree = "<group>"; };
+		4C9A53E82341A40C003FD736 /* 支付失败.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "支付失败.m4a"; sourceTree = "<group>"; };
+		4C9A53E92341A40C003FD736 /* 云闪付到账.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "云闪付到账.m4a"; sourceTree = "<group>"; };
+		4C9A53EA2341A40C003FD736 /* 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.m4a; sourceTree = "<group>"; };
+		4C9A53EB2341A40C003FD736 /* 0.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.m4a; sourceTree = "<group>"; };
+		4C9A53EC2341A40C003FD736 /* 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.m4a; sourceTree = "<group>"; };
+		4C9A53ED2341A40C003FD736 /* 点.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "点.m4a"; sourceTree = "<group>"; };
+		4C9A53EE2341A40C003FD736 /* 3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.m4a; sourceTree = "<group>"; };
+		4C9A53EF2341A40C003FD736 /* 7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.m4a; sourceTree = "<group>"; };
+		4C9A53F02341A40C003FD736 /* 6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.m4a; sourceTree = "<group>"; };
+		4C9A53F12341A40C003FD736 /* 百.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "百.m4a"; sourceTree = "<group>"; };
+		4C9A53F22341A40C003FD736 /* 十.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "十.m4a"; sourceTree = "<group>"; };
+		4C9A53F32341A40C003FD736 /* 千.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "千.m4a"; sourceTree = "<group>"; };
+		4C9A53F42341A40C003FD736 /* 微信到账.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "微信到账.m4a"; sourceTree = "<group>"; };
+		4C9A53F52341A40C003FD736 /* 4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.m4a; sourceTree = "<group>"; };
+		4C9A53F62341A40C003FD736 /* 5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.m4a; sourceTree = "<group>"; };
+		4C9A540D2341A4E7003FD736 /* SpeechD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechD.m; sourceTree = "<group>"; };
+		4C9A540E2341A4E8003FD736 /* SpeechD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechD.h; sourceTree = "<group>"; };
 		4CBA91601E59BE9600AEBC30 /* CYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBA91641E59BE9600AEBC30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CBA91661E59BE9600AEBC30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +201,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C9A53E12341A40C003FD736 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4C9A53E22341A40C003FD736 /* 8.m4a */,
+				4C9A53E32341A40C003FD736 /* 9.m4a */,
+				4C9A53E42341A40C003FD736 /* 支付宝到账.m4a */,
+				4C9A53E52341A40C003FD736 /* 万.m4a */,
+				4C9A53E62341A40C003FD736 /* 亿.m4a */,
+				4C9A53E72341A40C003FD736 /* 元.m4a */,
+				4C9A53E82341A40C003FD736 /* 支付失败.m4a */,
+				4C9A53E92341A40C003FD736 /* 云闪付到账.m4a */,
+				4C9A53EA2341A40C003FD736 /* 1.m4a */,
+				4C9A53EB2341A40C003FD736 /* 0.m4a */,
+				4C9A53EC2341A40C003FD736 /* 2.m4a */,
+				4C9A53ED2341A40C003FD736 /* 点.m4a */,
+				4C9A53EE2341A40C003FD736 /* 3.m4a */,
+				4C9A53EF2341A40C003FD736 /* 7.m4a */,
+				4C9A53F02341A40C003FD736 /* 6.m4a */,
+				4C9A53F12341A40C003FD736 /* 百.m4a */,
+				4C9A53F22341A40C003FD736 /* 十.m4a */,
+				4C9A53F32341A40C003FD736 /* 千.m4a */,
+				4C9A53F42341A40C003FD736 /* 微信到账.m4a */,
+				4C9A53F52341A40C003FD736 /* 4.m4a */,
+				4C9A53F62341A40C003FD736 /* 5.m4a */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		4CBA91571E59BE9600AEBC30 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +262,64 @@
 				4C2CC0121E7F7071002FFB38 /* HomeViewController.m */,
 				4C2CC0141E7F707C002FFB38 /* MeViewController.h */,
 				4C2CC0151E7F707C002FFB38 /* MeViewController.m */,
+				4C9A53DD23419E69003FD736 /* StyleDIY.h */,
+				4C9A53DC23419E69003FD736 /* StyleDIY.m */,
+				4C9A53DA23419E41003FD736 /* SYCustomScanViewController.h */,
+				4C9A53D923419E41003FD736 /* SYCustomScanViewController.m */,
+				4C9A53C823419BAD003FD736 /* SYDebugCellProtocol.h */,
+				4C9A53C923419BAD003FD736 /* SYDebugModel.h */,
+				4C9A53C323419BAC003FD736 /* SYDebugModel.m */,
+				4C9A53CF23419BAE003FD736 /* SYDebugViewController.h */,
+				4C9A53C623419BAC003FD736 /* SYDebugViewController.m */,
+				4C9A53CD23419BAE003FD736 /* SYInterfaceDebugTableViewCell.h */,
+				4C9A53CA23419BAD003FD736 /* SYInterfaceDebugTableViewCell.m */,
+				4C9A53CE23419BAE003FD736 /* SYInterfaceDebugTableViewCell.xib */,
+				4C9A53CB23419BAD003FD736 /* SYSwitchDebugTableViewCell.h */,
+				4C9A53D023419BAE003FD736 /* SYSwitchDebugTableViewCell.m */,
+				4C9A53CC23419BAD003FD736 /* SYSwitchDebugTableViewCell.xib */,
+				4C9A53C523419BAC003FD736 /* SYTitleDebugTableViewCell.h */,
+				4C9A53C723419BAD003FD736 /* SYTitleDebugTableViewCell.m */,
+				4C9A53C423419BAC003FD736 /* SYTitleDebugTableViewCell.xib */,
+				4C9A534623419380003FD736 /* SYBaseViewController.h */,
+				4C9A534523419380003FD736 /* SYBaseViewController.m */,
+				4C9A534423419380003FD736 /* SYHelpUsViewController.h */,
+				4C9A534723419380003FD736 /* SYHelpUsViewController.m */,
+				4C9A534323419380003FD736 /* SYHelpUsViewController.xib */,
+				4C9A5354234193CA003FD736 /* SYHelpUsContentCollectionViewCell.h */,
+				4C9A534B234193C9003FD736 /* SYHelpUsContentCollectionViewCell.m */,
+				4C9A534F234193CA003FD736 /* SYHelpUsContentCollectionViewCell.xib */,
+				4C9A534C234193C9003FD736 /* SYHelpUsHeaderView.h */,
+				4C9A534D234193C9003FD736 /* SYHelpUsHeaderView.m */,
+				4C9A534E234193C9003FD736 /* SYHelpUsHeaderView.xib */,
+				4C9A5351234193CA003FD736 /* SYHelpUsModel.h */,
+				4C9A5350234193CA003FD736 /* SYHelpUsModel.m */,
+				4C9A5361234195BF003FD736 /* HttpTool.h */,
+				4C9A5360234195BE003FD736 /* HttpTool.m */,
+				4C9A53B023419863003FD736 /* SYArticleModel.h */,
+				4C9A53B123419863003FD736 /* SYArticleModel.m */,
+				4C9A53B923419B3F003FD736 /* SYAboutUsHeaderView.h */,
+				4C9A53BA23419B3F003FD736 /* SYAboutUsHeaderView.m */,
+				4C9A53B623419B3E003FD736 /* SYAboutUsModel.h */,
+				4C9A53BC23419B40003FD736 /* SYAboutUsModel.m */,
+				4C9A53B823419B3F003FD736 /* SYAboutUsTableViewCell.h */,
+				4C9A53B523419B3E003FD736 /* SYAboutUsTableViewCell.m */,
+				4C9A53B423419B3E003FD736 /* SYAboutUsTableViewCell.xib */,
+				4C9A53B723419B3E003FD736 /* SYAboutUsViewController.h */,
+				4C9A53BB23419B3F003FD736 /* SYAboutUsViewController.m */,
+				4C9A53B323419B3E003FD736 /* SYAboutUsViewController.xib */,
+				4C9A53AC23419829003FD736 /* SYArticleDetailViewController.h */,
+				4C9A53AB23419829003FD736 /* SYArticleDetailViewController.m */,
+				4C9A53AD23419829003FD736 /* SYArticleDetailViewController.xib */,
+				4C9A535E234194E5003FD736 /* SYCollectionViewFlowLayout.h */,
+				4C9A535D234194E5003FD736 /* SYCollectionViewFlowLayout.m */,
+				4C9A5355234193CA003FD736 /* SYHelpUsRightCollectionViewCell.h */,
+				4C9A5352234193CA003FD736 /* SYHelpUsRightCollectionViewCell.m */,
+				4C9A5353234193CA003FD736 /* SYHelpUsRightCollectionViewCell.xib */,
+				4C9A53E12341A40C003FD736 /* Sources */,
+				4C9A53DF2341A40B003FD736 /* SpeechVC.h */,
+				4C9A53E02341A40B003FD736 /* SpeechVC.m */,
+				4C9A540E2341A4E8003FD736 /* SpeechD.h */,
+				4C9A540D2341A4E7003FD736 /* SpeechD.m */,
 				4CFE2ECA2318AEE1005AD4C4 /* Me */,
 				4CBA916C1E59BE9600AEBC30 /* Main.storyboard */,
 				4CBA916F1E59BE9600AEBC30 /* Assets.xcassets */,
@@ -238,12 +456,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9A540A2341A40C003FD736 /* 微信到账.m4a in Resources */,
+				4C9A54082341A40C003FD736 /* 十.m4a in Resources */,
+				4C9A54052341A40C003FD736 /* 7.m4a in Resources */,
+				4C9A53FD2341A40C003FD736 /* 元.m4a in Resources */,
+				4C9A53F92341A40C003FD736 /* 9.m4a in Resources */,
+				4C9A53FF2341A40C003FD736 /* 云闪付到账.m4a in Resources */,
+				4C9A54022341A40C003FD736 /* 2.m4a in Resources */,
+				4C9A5358234193CA003FD736 /* SYHelpUsHeaderView.xib in Resources */,
+				4C9A534823419381003FD736 /* SYHelpUsViewController.xib in Resources */,
+				4C9A53D223419BAE003FD736 /* SYTitleDebugTableViewCell.xib in Resources */,
+				4C9A53FE2341A40C003FD736 /* 支付失败.m4a in Resources */,
+				4C9A54002341A40C003FD736 /* 1.m4a in Resources */,
+				4C9A53BD23419B40003FD736 /* SYAboutUsViewController.xib in Resources */,
+				4C9A54012341A40C003FD736 /* 0.m4a in Resources */,
 				4CBA91731E59BE9600AEBC30 /* LaunchScreen.storyboard in Resources */,
+				4C9A53FC2341A40C003FD736 /* 亿.m4a in Resources */,
+				4C9A53AF23419829003FD736 /* SYArticleDetailViewController.xib in Resources */,
+				4C9A540C2341A40C003FD736 /* 5.m4a in Resources */,
+				4C9A53F82341A40C003FD736 /* 8.m4a in Resources */,
+				4C9A53FA2341A40C003FD736 /* 支付宝到账.m4a in Resources */,
 				4CE71C362302E6D000D7D00D /* CYKit.podspec in Resources */,
+				4C9A535C234193CA003FD736 /* SYHelpUsRightCollectionViewCell.xib in Resources */,
+				4C9A54072341A40C003FD736 /* 百.m4a in Resources */,
+				4C9A54032341A40C003FD736 /* 点.m4a in Resources */,
+				4C9A53D623419BAE003FD736 /* SYSwitchDebugTableViewCell.xib in Resources */,
+				4C9A54062341A40C003FD736 /* 6.m4a in Resources */,
+				4C9A53FB2341A40C003FD736 /* 万.m4a in Resources */,
 				4CBA91701E59BE9600AEBC30 /* Assets.xcassets in Resources */,
 				4CE71C352302E6D000D7D00D /* README.md in Resources */,
+				4C9A53D723419BAE003FD736 /* SYInterfaceDebugTableViewCell.xib in Resources */,
 				4CE71C342302E6D000D7D00D /* LICENSE in Resources */,
 				4CBA916E1E59BE9600AEBC30 /* Main.storyboard in Resources */,
+				4C9A54092341A40C003FD736 /* 千.m4a in Resources */,
+				4C9A53BE23419B40003FD736 /* SYAboutUsTableViewCell.xib in Resources */,
+				4C9A540B2341A40C003FD736 /* 4.m4a in Resources */,
+				4C9A54042341A40C003FD736 /* 3.m4a in Resources */,
+				4C9A5359234193CA003FD736 /* SYHelpUsContentCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +526,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo-resources.sh",
 				"${PODS_ROOT}/../../CYKit/Resources/back@2x.png",
@@ -300,10 +547,13 @@
 				"${PODS_ROOT}/../../CYKit/Resources/sy_mine_camera@2x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/sy_mine_camera@3x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/CYKit.bundle",
+				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back@3x.png",
@@ -324,6 +574,11 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_mine_camera@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sy_mine_camera@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CYKit.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-back.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-help.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-helpicons.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-samples.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -339,12 +594,35 @@
 			files = (
 				4C2CC0161E7F707C002FFB38 /* MeViewController.m in Sources */,
 				4CBA916B1E59BE9600AEBC30 /* ViewController.m in Sources */,
+				4C9A535A234193CA003FD736 /* SYHelpUsModel.m in Sources */,
+				4C9A5362234195BF003FD736 /* HttpTool.m in Sources */,
+				4C9A53B223419863003FD736 /* SYArticleModel.m in Sources */,
 				4C782D882330D06B00F4EEED /* CYSPlashCommand.m in Sources */,
+				4C9A540F2341A4E8003FD736 /* SpeechD.m in Sources */,
 				4CBA91681E59BE9600AEBC30 /* AppDelegate.m in Sources */,
+				4C9A5357234193CA003FD736 /* SYHelpUsHeaderView.m in Sources */,
+				4C9A53DE23419E69003FD736 /* StyleDIY.m in Sources */,
 				4C2CC0101E7F6F5E002FFB38 /* CustomTabBarController+Initional.m in Sources */,
+				4C9A534923419381003FD736 /* SYBaseViewController.m in Sources */,
+				4C9A53DB23419E41003FD736 /* SYCustomScanViewController.m in Sources */,
 				4CFE2ECF2318AF1C005AD4C4 /* CYMeModel.m in Sources */,
+				4C9A53C023419B40003FD736 /* SYAboutUsHeaderView.m in Sources */,
+				4C9A534A23419381003FD736 /* SYHelpUsViewController.m in Sources */,
+				4C9A53D823419BAE003FD736 /* SYSwitchDebugTableViewCell.m in Sources */,
+				4C9A53C223419B40003FD736 /* SYAboutUsModel.m in Sources */,
 				4C2CC0131E7F7071002FFB38 /* HomeViewController.m in Sources */,
 				4CBA91651E59BE9600AEBC30 /* main.m in Sources */,
+				4C9A53D423419BAE003FD736 /* SYTitleDebugTableViewCell.m in Sources */,
+				4C9A535B234193CA003FD736 /* SYHelpUsRightCollectionViewCell.m in Sources */,
+				4C9A535F234194E5003FD736 /* SYCollectionViewFlowLayout.m in Sources */,
+				4C9A53D123419BAE003FD736 /* SYDebugModel.m in Sources */,
+				4C9A53BF23419B40003FD736 /* SYAboutUsTableViewCell.m in Sources */,
+				4C9A53D323419BAE003FD736 /* SYDebugViewController.m in Sources */,
+				4C9A53C123419B40003FD736 /* SYAboutUsViewController.m in Sources */,
+				4C9A53AE23419829003FD736 /* SYArticleDetailViewController.m in Sources */,
+				4C9A5356234193CA003FD736 /* SYHelpUsContentCollectionViewCell.m in Sources */,
+				4C9A53F72341A40C003FD736 /* SpeechVC.m in Sources */,
+				4C9A53D523419BAE003FD736 /* SYInterfaceDebugTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

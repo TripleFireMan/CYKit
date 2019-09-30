@@ -10,6 +10,12 @@
 #define CYKitDemo_h
 #import "CocoaLumberjack.h"
 #import <Masonry.h>
+#import "CYKitDefines.h"
+#import "HttpTool.h"
+#import "XHToast.h"
+#import "MBProgressHUD.h"
+#import <BlocksKit+UIKit.h>
+#import <YYKit.h>
 #define LOG_LEVEL_DEF ddLogLevel
 #import <CocoaLumberjack/CocoaLumberjack.h>
 
@@ -18,4 +24,37 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 #else
 static const DDLogLevel ddLogLevel = DDLogLevelWarning;
 #endif
+
+#define LBXScan_Define_Native  //包含native库
+#define LBXScan_Define_ZXing   //包含ZXing库
+#define LBXScan_Define_ZBar   //包含ZBar库
+#define LBXScan_Define_UI     //包含界面库
+
+#define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+//弹框
+#define SHOW_ALERT(msg)  TFQAlertUtil *alert=[[TFQAlertUtil alloc]init];\
+alert.text=msg;\
+[alert showAlert];
+
+
+//二进制颜色设置
+#define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+//字体
+#define SFONT_BOLD(X)    [UIFont fontWithName:@"Helvetica-Bold" size:X]   // 加粗
+#define   BFONT(X)         [UIFont systemFontOfSize:X]
+ #define   BYFONT(X) [UIFont fontWithName:@"Helvetica" size:X];
+
+#define USER_D [NSUserDefaults standardUserDefaults]
+#define MMKV_D [MMKV defaultMMKV]
+//随机色
+#define randomColor random(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+//导航栏高度
+#define NavBarHeight ((Status) + (Nav))
+//然后将高度相加，便可以动态计算顶部高度。
+#define TabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49) //底部tabbar高度
+//状态栏(statusbar)
+#define Status [[UIApplication sharedApplication] statusBarFrame].size.height
+
 #endif /* CYKitDemo_h */

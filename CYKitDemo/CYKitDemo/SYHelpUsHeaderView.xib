@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SYHelpUsHeaderView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SYHelpUsHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="277"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sy_help_us_header" translatesAutoresizingMaskIntoConstraints="NO" id="IDw-xU-hei">
+                    <rect key="frame" x="0.0" y="0.0" width="413" height="277"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UUO-yT-c4T">
+                    <rect key="frame" x="182" y="187" width="25" height="2"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="BaM-Ao-foy"/>
+                        <constraint firstAttribute="height" constant="2" id="icA-kQ-L4U"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="筋斗云APP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQt-wU-uxp">
+                    <rect key="frame" x="114.5" y="133" width="160" height="39"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王者教学 轻松操作" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi4-IP-hEt">
+                    <rect key="frame" x="119" y="211" width="151" height="22"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xi4-IP-hEt" firstAttribute="top" secondItem="UUO-yT-c4T" secondAttribute="bottom" constant="22" id="BUd-xD-VG3"/>
+                <constraint firstItem="UUO-yT-c4T" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ETR-gf-eUD"/>
+                <constraint firstAttribute="bottom" secondItem="IDw-xU-hei" secondAttribute="bottom" id="PhQ-pu-epW"/>
+                <constraint firstItem="xi4-IP-hEt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UkG-sr-kBw"/>
+                <constraint firstItem="IDw-xU-hei" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VHJ-aU-8Vb"/>
+                <constraint firstItem="OQt-wU-uxp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="W6x-S3-W6z"/>
+                <constraint firstItem="IDw-xU-hei" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="apP-9S-K6b"/>
+                <constraint firstAttribute="bottom" secondItem="xi4-IP-hEt" secondAttribute="bottom" constant="44" id="fna-Lq-jvJ"/>
+                <constraint firstItem="UUO-yT-c4T" firstAttribute="top" secondItem="OQt-wU-uxp" secondAttribute="bottom" constant="15" id="hjx-Il-Quk"/>
+                <constraint firstAttribute="trailing" secondItem="IDw-xU-hei" secondAttribute="trailing" constant="-24" id="lgu-PG-SgD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgView" destination="IDw-xU-hei" id="6rc-oo-oyl"/>
+                <outlet property="lineView" destination="UUO-yT-c4T" id="EB7-lE-xLe"/>
+                <outlet property="subTitleLabel" destination="xi4-IP-hEt" id="4PD-Ua-Eqq"/>
+                <outlet property="titleLabel" destination="OQt-wU-uxp" id="oNf-GT-STI"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="sy_help_us_header" width="375" height="228"/>
+    </resources>
+</document>

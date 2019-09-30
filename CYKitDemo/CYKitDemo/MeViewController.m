@@ -13,8 +13,14 @@
 #import "CYWeixinLoginViewController.h"
 #import "CYForgotPasswordViewController.h"
 #import "CYChangePasswordViewController.h"
+#import "CYLaunchViewController.h"
+#import "SYHelpUsViewController.h"
+#import "SYAboutUsViewController.h"
+#import "SYCustomScanViewController.h"
+#import "StyleDIY.h"
+#import "SpeechVC.h"
 
-@interface MeViewController () <UITableViewDelegate,UITableViewDataSource>
+@interface MeViewController () <UITableViewDelegate,UITableViewDataSource,LBXScanViewControllerDelegate,UINavigationControllerDelegate>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @end
@@ -50,7 +56,7 @@
 - (void)loadData
 {
     
-    NSArray *titles = @[@"H5容器",@"用户反馈",@"登录"];
+    NSArray *titles = @[@"H5容器",@"用户反馈",@"登录",@"启动页",@"帮助页",@"清除缓存",@"关于我们",@"扫码",@"语音播报"];
     
     for (int i = 0; i < titles.count; i++) {
         CYMeModel *model = [CYMeModel new];
@@ -115,6 +121,78 @@
             }
         };
         [self.navigationController pushViewController:login animated:YES];
+    }
+    else if ([model.title isEqualToString:@"启动页"]){
+        CYLaunchViewController *launchVC = [CYLaunchViewController new];
+        [self.navigationController pushViewController:launchVC animated:YES];
+    }
+    else if ([model.title isEqualToString:@"帮助页"]){
+        SYHelpUsViewController *helpUs = [SYHelpUsViewController new];
+        [self.navigationController pushViewController:helpUs animated:YES];
+    }
+    else if ([model.title isEqualToString:@"清除缓存"]){
+        [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:[UIApplication sharedApplication].keyWindow animated:YES];
+            [XHToast showBottomWithText:@"缓存清除成功"];
+        });
+    }
+    else if ([model.title isEqualToString:@"关于我们"]){
+        SYAboutUsViewController *aboutus = [[SYAboutUsViewController alloc]init];
+        [self.navigationController pushViewController:aboutus animated:YES];
+    }
+    else if ([model.title isEqualToString:@"扫码"]){
+        self.navigationController.navigationBar.hidden = YES;
+        SYCustomScanViewController *scanVC = [SYCustomScanViewController new];
+//        scanVC.navigationController.navigationBar.hidden = YES;
+        scanVC.scanType = SYCustomScanType_ChangeCard;
+        scanVC.style = [StyleDIY weixinStyle];
+        scanVC.delegate = self;
+        scanVC.isOpenInterestRect = YES;
+        [self.navigationController pushViewController:scanVC animated:YES];
+    }
+    else if ([[model title] isEqualToString:@"语音播报"]){
+        SpeechVC *speechVC = [SpeechVC new];
+        [self.navigationController pushViewController:speechVC animated:YES];
+    }
+}
+
+- (void) scanResultWithArray:(NSArray<LBXScanResult *> *)array
+{
+    LBXScanResult *obj = [array firstObject];
+    if (obj) {
+        
+        NSString *string = obj.strScanned;
+        [XHToast showBottomWithText:string];
+        [self.navigationController popViewControllerAnimated:YES];
+//        NSString *lastContent = [string lastPathComponent];
+//
+//        NSData *data = [[NSData alloc]initWithBase64EncodedString:lastContent options:NSDataBase64DecodingIgnoreUnknownCharacters];
+//
+//        NSString *decodeBase64String = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+//
+//        NSString *newMchID = decodeBase64String;
+//
+//        NSMutableDictionary *params = [NSMutableDictionary dictionary];
+//        [params setObject:newMchID forKey:@"newMerchantID"];
+//        [params setObject:[SYUser currentUser].ID?:@"" forKey:@"oldMerchantID"];
+//        NSLog(@"params : %@",params);
+//        [HttpTool GETWithAction:ACTION_CHANGE_CARD content:params HUD:YES successWithStatus:^(id data, NSInteger statusCode, NSString *msg) {
+//            if (statusCode == k_SuoYiInterfaceSuccessCode) {
+//                [XHToast showBottomWithText:@"换码成功"];
+//                //将所有信息都更新一遍
+//                [[SYUser currentUser] loginWithJsonObject:data];
+//                [self.navigationController popViewControllerAnimated:YES];
+//            }
+//            else{
+//                if ([msg isKindOfClass:[NSString class]] && msg.length!=0) {
+//                    [XHToast showBottomWithText:msg];
+//                }
+//                [self.navigationController popViewControllerAnimated:YES];
+//            }
+//        } failure:^(NSError *error) {
+//            [self.navigationController popViewControllerAnimated:YES];
+//        }];
     }
 }
 

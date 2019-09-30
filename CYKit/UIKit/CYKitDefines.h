@@ -25,7 +25,7 @@
 #define CY_Height_TabBar (CY_IS_PhoneXAll ? 83.0 : 49.0)
 #define CY_Height_Bottom_SafeArea (CY_IS_PhoneXAll ? 34.0 : 0)
 #define CY_Above_IPhone6 ([UIScreen mainScreen].bounds.size.width >= 375)
-#define CY_IPhone6Scale(x) CY_Above_IPhone6?(x):ceilf(x*(x/375.f))
+#define CY_IPhone6Scale(x) (CY_Above_IPhone6?(x):ceilf((UIScreen mainScreen].bounds.size.width)*(x/375.f)))
 
 #define CYPingFangSCRegular(x)       [UIFont fontWithName:@"PingFang-SC-Regular" size:x]
 #define CYPingFangSCMedium(x)        [UIFont fontWithName:@"PingFangSC-Medium" size:x]

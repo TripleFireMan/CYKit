@@ -18,5 +18,8 @@ pod 'YYKit'
 pod 'CYKit',:path => '../'
 pod 'XHToast'
 pod 'CocoaLumberjack'
+pod 'FDFullscreenPopGesture', '1.1'
+pod 'MBProgressHUD'
+pod 'LBXScan', '~> 2.3'
 end
 
