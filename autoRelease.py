@@ -9,8 +9,8 @@ print ("文件名为: ", f.name)
 shouldModifire = '' 
 content = ''
 for line in f.readlines():                          #依次读取每行  
-    line = line.strip()                             #去掉每行头尾空白  
     content = content + line
+    line = line.strip()                             #去掉每行头尾空白  
     if 's.version = "0' in line:
     	shouldModifire = line
     
