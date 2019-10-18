@@ -38,11 +38,11 @@ replaceed = content.replace(shouldModifire,shouldReplaceItem)
 print('修改版本号:' + shouldModifire + '=>' +  shouldReplaceItem)
 
 
-# fo.seek(0)
-# fo.truncate()	
-# fo.write(replaceed)
-# fo.flush()
-# fo.close()
+fo.seek(0)
+fo.truncate()	
+fo.write(replaceed)
+fo.flush()
+fo.close()
 
 #代码提交
 os.system('git add .')
