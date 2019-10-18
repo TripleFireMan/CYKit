@@ -7,14 +7,14 @@ f = open("CYKit.podspec", "r+")
 print ("文件名为: ", f.name)
  
 shouldModifire = '' 
+content = ''
 for line in f.readlines():                          #依次读取每行  
     line = line.strip()                             #去掉每行头尾空白  
+    content = content + line
     if 's.version = "0' in line:
     	shouldModifire = line
-    	break
-    print ("读取的数据为: %s" % (line))
-#关闭文件
-f.close()
+    
+
 
 #查找到需要修改的行
 print('shouldModifire%s'%shouldModifire)
@@ -28,21 +28,16 @@ newVersion = str(versions[0])+'.'+ str(versions[1]) + '.' + str(versions_last_in
 shouldReplaceItem = items[0] + '=' + newVersion
 
 #替换相应的版本号，并写入文件
-fo = open("CYKit.podspec", "r+")
-content = ''
-for line  in fo.readlines():
-	print('line = %s'%(line))
-	content = content + line
-print(content)
 replaceed = content.replace(shouldModifire,shouldReplaceItem)
 print('修改版本号:' + shouldModifire + '=>' +  shouldReplaceItem)
 
-
-fo.seek(0)
-fo.truncate()	
-fo.write(replaceed)
-fo.flush()
-fo.close()
+#写入文件
+f.seek(0)
+f.truncate()	
+f.write(replaceed)
+f.flush()
+#关闭文件
+f.close()
 
 #代码提交
 os.system('git add .')
@@ -53,11 +48,6 @@ os.system('git push --tags')
 #提交到cocoapods
 os.system('pod trunk push --allow-warnings')
 
-
-# print('----------')
-# print(newVersion)
-# print(items)
-# modifire(shouldModifire)
 
 
 
