@@ -48,7 +48,7 @@ fo.close()
 os.system('git add .')
 os.system('git commit -a -m "【脚本】修改相应版本号"')
 os.system('git push origin master')
-os.system('git tag -a ' + shouldReplaceItem)
+os.system('git tag -a 0.7.7')
 os.system('git push --tags')
 
 
