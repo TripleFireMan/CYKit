@@ -50,6 +50,8 @@ os.system('git commit -a -m "【脚本】修改相应版本号"')
 os.system('git push origin master')
 os.system('git tag -a ' + newVersion + ' -m ' + 'tag版本号')
 os.system('git push --tags')
+#提交到cocoapods
+os.system('pod trunk push --allow-warnings')
 
 
 # print('----------')
