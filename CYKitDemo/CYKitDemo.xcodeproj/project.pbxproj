@@ -75,6 +75,7 @@
 		4CE71C342302E6D000D7D00D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4CE71C312302E6CF00D7D00D /* LICENSE */; };
 		4CE71C352302E6D000D7D00D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4CE71C322302E6CF00D7D00D /* README.md */; };
 		4CE71C362302E6D000D7D00D /* CYKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4CE71C332302E6D000D7D00D /* CYKit.podspec */; };
+		4CF9EF392355997B005E71A3 /* CYDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EF372355997B005E71A3 /* CYDownloadViewController.m */; };
 		4CFE2ECF2318AF1C005AD4C4 /* CYMeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE2ECE2318AF1C005AD4C4 /* CYMeModel.m */; };
 		7DF3FE013BAD84D52FCBC28F /* libPods-CYKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1AD689932BA930006EBA9B /* libPods-CYKitDemo.a */; };
 /* End PBXBuildFile section */
@@ -181,6 +182,8 @@
 		4CE71C312302E6CF00D7D00D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		4CE71C322302E6CF00D7D00D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		4CE71C332302E6D000D7D00D /* CYKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CYKit.podspec; path = ../../CYKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4CF9EF362355997B005E71A3 /* CYDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYDownloadViewController.h; sourceTree = "<group>"; };
+		4CF9EF372355997B005E71A3 /* CYDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYDownloadViewController.m; sourceTree = "<group>"; };
 		4CFE2ECD2318AF1C005AD4C4 /* CYMeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYMeModel.h; sourceTree = "<group>"; };
 		4CFE2ECE2318AF1C005AD4C4 /* CYMeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYMeModel.m; sourceTree = "<group>"; };
 		680ECBDAFB5A5653E1A02C28 /* Pods-CYKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYKitDemo.release.xcconfig"; path = "Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -315,6 +318,8 @@
 				4C9A5355234193CA003FD736 /* SYHelpUsRightCollectionViewCell.h */,
 				4C9A5352234193CA003FD736 /* SYHelpUsRightCollectionViewCell.m */,
 				4C9A5353234193CA003FD736 /* SYHelpUsRightCollectionViewCell.xib */,
+				4CF9EF362355997B005E71A3 /* CYDownloadViewController.h */,
+				4CF9EF372355997B005E71A3 /* CYDownloadViewController.m */,
 				4C9A53E12341A40C003FD736 /* Sources */,
 				4C9A53DF2341A40B003FD736 /* SpeechVC.h */,
 				4C9A53E02341A40B003FD736 /* SpeechVC.m */,
@@ -600,6 +605,7 @@
 				4C782D882330D06B00F4EEED /* CYSPlashCommand.m in Sources */,
 				4C9A540F2341A4E8003FD736 /* SpeechD.m in Sources */,
 				4CBA91681E59BE9600AEBC30 /* AppDelegate.m in Sources */,
+				4CF9EF392355997B005E71A3 /* CYDownloadViewController.m in Sources */,
 				4C9A5357234193CA003FD736 /* SYHelpUsHeaderView.m in Sources */,
 				4C9A53DE23419E69003FD736 /* StyleDIY.m in Sources */,
 				4C2CC0101E7F6F5E002FFB38 /* CustomTabBarController+Initional.m in Sources */,

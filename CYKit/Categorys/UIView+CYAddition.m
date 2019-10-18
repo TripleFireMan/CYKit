@@ -69,4 +69,11 @@ static NSString * kErrorImage;
     shapeLayer.path = path.CGPath;
     self.layer.mask = shapeLayer;
 }
+
+- (void) cy_adjustForIOS13
+{
+    if (@available(iOS 13, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
+}
 @end

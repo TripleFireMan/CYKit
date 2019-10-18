@@ -77,7 +77,7 @@
         make.right.offset(-60);
     }];
     [self.titleLabel setContentHuggingPriority:UILayoutPriorityDefaultLow forAxis:UILayoutConstraintAxisHorizontal];
-    
+    [self p_adjustForIOS13];
 }
 
 
@@ -114,6 +114,16 @@
     
     return UIStatusBarStyleLightContent;
     
+}
+
+- (void) p_adjustForIOS13
+{
+    if (@available(iOS 13, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+        self.view.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    } else {
+        
+    }
 }
 
 /*

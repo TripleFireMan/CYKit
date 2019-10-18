@@ -49,5 +49,10 @@
 	<false/>
 	<key>NSCameraUsageDescription</key>
 	<string>筋斗云收银需要使用您的相机，扫描司机码牌才可以进行注册、收银</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

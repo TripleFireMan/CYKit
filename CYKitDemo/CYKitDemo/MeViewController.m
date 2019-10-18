@@ -19,6 +19,8 @@
 #import "SYCustomScanViewController.h"
 #import "StyleDIY.h"
 #import "SpeechVC.h"
+#import "CYDownloadViewController.h"
+#import "UIView+CYAddition.h"
 
 @interface MeViewController () <UITableViewDelegate,UITableViewDataSource,LBXScanViewControllerDelegate,UINavigationControllerDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -45,7 +47,7 @@
     }];
     
     [self loadData];
-
+    [self.tableView cy_adjustForIOS13];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,7 +58,7 @@
 - (void)loadData
 {
     
-    NSArray *titles = @[@"H5容器",@"用户反馈",@"登录",@"启动页",@"帮助页",@"清除缓存",@"关于我们",@"扫码",@"语音播报"];
+    NSArray *titles = @[@"H5容器",@"用户反馈",@"登录",@"启动页",@"帮助页",@"清除缓存",@"关于我们",@"扫码",@"语音播报",@"下载"];
     
     for (int i = 0; i < titles.count; i++) {
         CYMeModel *model = [CYMeModel new];
@@ -154,6 +156,10 @@
     else if ([[model title] isEqualToString:@"语音播报"]){
         SpeechVC *speechVC = [SpeechVC new];
         [self.navigationController pushViewController:speechVC animated:YES];
+    }
+    else if ([model.title isEqualToString:@"下载"]){
+        CYDownloadViewController *downloadVC = [CYDownloadViewController new];
+        [self.navigationController pushViewController:downloadVC animated:YES];
     }
 }
 

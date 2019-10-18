@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) cy_hideImages;
 /// 做圆角
 - (void) cy_cornerRound:(UIRectCorner)corner size:(CGSize)size;
+- (void) cy_adjustForIOS13;
+
 @end
 
 NS_ASSUME_NONNULL_END
