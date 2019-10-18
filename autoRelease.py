@@ -35,8 +35,8 @@ for line  in fo.readlines():
 	content = content + line
 print(content)
 replaceed = content.replace(shouldModifire,shouldReplaceItem)
-print(shouldModifire)
-print(shouldReplaceItem)
+print('修改版本号:' + shouldModifire + '=>' +  shouldReplaceItem)
+
 
 fo.seek(0)
 fo.truncate()	
