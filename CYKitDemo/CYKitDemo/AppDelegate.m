@@ -25,7 +25,7 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     self.window.rootViewController = tabbalCtl;
     [self.window makeKeyAndVisible];
-    
+
     [self addFileLogger];
     
     return YES;
