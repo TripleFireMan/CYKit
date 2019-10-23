@@ -29,6 +29,7 @@
 
 #define CYPingFangSCRegular(x)       [UIFont fontWithName:@"PingFang-SC-Regular" size:x]
 #define CYPingFangSCMedium(x)        [UIFont fontWithName:@"PingFangSC-Medium" size:x]
+#define CYPingFangSCBold(x)        [UIFont fontWithName:@"PingFangSC-Bold" size:x]
 
 #define CY_Sigle_Line_Height             (1/[UIScreen mainScreen].scale)
 #define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
