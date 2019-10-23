@@ -16,7 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) cy_hideImages;
 /// 做圆角
 - (void) cy_cornerRound:(UIRectCorner)corner size:(CGSize)size;
+/// ios13darkmode适配
 - (void) cy_adjustForIOS13;
+/// 渐变
+- (void) cy_gradientLayerWithColor:(UIColor *)fromColor toColor:(UIColor *)toColor Horizontal:(BOOL)isHorizontal;
 
 @end
 
