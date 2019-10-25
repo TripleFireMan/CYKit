@@ -54,4 +54,14 @@ typedef void(^CYStringBlock)(NSString *string);
 typedef void(^CYSuccessBlock)(BOOL success, id obj);
 typedef void(^CYFailureBlock)(NSError *error, id obj);
 typedef void(^CYImageBlock)(UIImage *img);
+
+/// 字符串判断是否为空
+static bool CYStringIsEmpty(NSString *string){
+    if ([string isKindOfClass:[NSString class]] && string.length!=0) {
+        return false;
+    }
+    else{
+        return true;
+    }
+}
 #endif /* CYKitDefines_h */
