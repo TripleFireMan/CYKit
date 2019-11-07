@@ -6,11 +6,11 @@
 //  Copyright © 2019 sy. All rights reserved.
 //
 
-#import "MJRefreshBackNormalFooter.h"
+#import <MJRefresh/MJRefreshBackNormalFooter.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CYRefreshFooter :MJRefreshBackNormalFooter
+@interface CYRefreshFooter   :MJRefreshBackNormalFooter
 
 @end
 

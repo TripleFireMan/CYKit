@@ -6,8 +6,7 @@
 //  Copyright © 2019 sy. All rights reserved.
 //
 
-#import "MJRefreshNormalHeader.h"
-
+#import <MJRefresh/MJRefreshNormalHeader.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CYRefreshHeader : MJRefreshNormalHeader
