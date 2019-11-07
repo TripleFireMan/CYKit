@@ -32,6 +32,13 @@
 #import <CYKit/NSObject+CYAddition.h>
 #import <CYKit/CYCustomTabBarController.h>
 #import <CYKit/CYNetworkCommand.h>
+#import <CYKit/CYRefreshHeader.h>
+#import <CYKit/CYRefreshFooter.h>
+#import <CYKit/CYPageManager.h>
+#import <CYKit/CYPageMenu.h>
+#import <CYKit/CYPageMenuItem.h>
+#import <CYKit/CYPageMenuButton.h>
+#import <CYKit/CYPageScrollView.h>
 #else
 
 #import "CYModel.h"
@@ -55,4 +62,13 @@
 #import "NSObject+CYAddition.h"
 #import "CYCustomTabBarController.h"
 #import "CYNetworkCommand.h"
+#import "CYRefreshFooter.h"
+#import "CYRefreshHeader.h"
+
+#import "CYPageManager.h"
+#import "CYPageMenu.h"
+#import "CYPageMenuButton.h"
+#import "CYPageMenuItem.h"
+#import "CYPageScrollView.h"
+
 #endif

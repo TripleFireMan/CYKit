@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYKit"
-  s.version = "0.7.11"
+  s.version = "0.7.12"
   s.summary      = "something useful for daily development"
   s.homepage     = "https://github.com/TripleFireMan"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -40,6 +40,8 @@ Pod::Spec.new do |s|
   s.dependency "ReactiveObjC"
   s.dependency "YYKit"
   s.dependency "XHToast"
+  s.dependency "MJExtension"
+  s.dependency "MJRefresh"
   
   s.subspec 'Categorys' do |ss|
     ss.source_files = "CYKit/Categorys/*.{h,m}","CYKit/UIKit/CYKitDefines.h"
