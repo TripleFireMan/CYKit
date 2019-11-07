@@ -7,7 +7,7 @@
 //
 
 #import "CYRefreshFooter.h"
-
+#import "CYKitDefines.h"
 @implementation CYRefreshFooter
 
 /*

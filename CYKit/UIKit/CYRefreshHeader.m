@@ -7,7 +7,7 @@
 //
 
 #import "CYRefreshHeader.h"
-
+#import "CYKitDefines.h"
 @implementation CYRefreshHeader
 
 /*
