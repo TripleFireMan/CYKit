@@ -20,6 +20,34 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>NSExceptionDomains</key>
+			<dict>
+				<key>https://localhost:8000/</key>
+				<dict>
+					<key>NSExceptionMinimumTLSVersion</key>
+					<string>TLSv1.0</string>
+				</dict>
+				<key>https://pay.sooyie.cn/</key>
+				<dict>
+					<key>NSExceptionMinimumTLSVersion</key>
+					<string>TLSv1.0</string>
+				</dict>
+				<key>https://paytest.sooyie.cn/</key>
+				<dict>
+					<key>NSExceptionMinimumTLSVersion</key>
+					<string>TLSv1.0</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>筋斗云收银需要使用您的相机，扫描司机码牌才可以进行注册、收银</string>
 	<key>UILaunchStoryboardName</key>
 	<string>Main</string>
 	<key>UIMainStoryboardFile</key>
@@ -47,12 +75,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSCameraUsageDescription</key>
-	<string>筋斗云收银需要使用您的相机，扫描司机码牌才可以进行注册、收银</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 </dict>
 </plist>

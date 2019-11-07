@@ -95,7 +95,7 @@ NSString *k_CY_PARAMS = @"params";
 - (AFHTTPSessionManager *)httpSessionManger
 {
     if (!_httpSessionManger) {
-        AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+        AFSecurityPolicy *securityPolicy = [AFSecurityPolicy defaultPolicy];
         securityPolicy.validatesDomainName = NO;
         securityPolicy.allowInvalidCertificates = YES;
         _httpSessionManger = [[AFHTTPSessionManager alloc] initWithBaseURL:nil sessionConfiguration:nil];
