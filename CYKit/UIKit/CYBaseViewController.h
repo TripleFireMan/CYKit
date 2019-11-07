@@ -22,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIButton *backBtn;
 @property (nonatomic, strong) UILabel *titleLabel;
 
+- (void) setupSubView;
+- (void) addConstraints;
+
 @end
 
 NS_ASSUME_NONNULL_END

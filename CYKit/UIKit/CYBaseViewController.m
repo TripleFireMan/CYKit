@@ -79,6 +79,20 @@
     }];
     [self.titleLabel setContentHuggingPriority:UILayoutPriorityDefaultLow forAxis:UILayoutConstraintAxisHorizontal];
     [self p_adjustForIOS13];
+    
+    [self setupSubView];
+    
+    [self addConstraints];
+}
+
+- (void) setupSubView
+{
+    
+}
+
+- (void) addConstraints
+{
+    
 }
 
 
