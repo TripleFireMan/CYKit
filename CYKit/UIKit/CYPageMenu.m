@@ -186,7 +186,7 @@ static const CGFloat kGradientImageWidth = 32;
         switch (_themeType) {
             case CYPageMenuThemeTypeDefault: {
                 height = kSelectedViewHeightDefault;
-                colorHexStr = @"3FD7D8";
+                colorHexStr = self.sliderColorHexString?:@"3FD7D8";
             } break;
                 
             case CYPageMenuThemeTypeSec: {

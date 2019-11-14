@@ -47,6 +47,7 @@ typedef NS_ENUM(NSInteger, CYPageMenuLevel) {
 @property (nonatomic, strong, readonly) UIScrollView *scrollView;
 // 主题样式
 @property (nonatomic, assign) CYPageMenuThemeType themeType;
+@property (nonatomic, copy  ) NSString *sliderColorHexString;
 @property (nonatomic, assign) CYPageMenuLevel levelType;
 @property (nonatomic, assign) BOOL showSelectedView;
 @property (nonatomic, weak) id<CYPageMenuDelegate>delegate;
