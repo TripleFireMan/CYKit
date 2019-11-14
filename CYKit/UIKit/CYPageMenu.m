@@ -186,7 +186,7 @@ static const CGFloat kGradientImageWidth = 32;
         switch (_themeType) {
             case CYPageMenuThemeTypeDefault: {
                 height = kSelectedViewHeightDefault;
-                colorHexStr = @"#FF0000";
+                colorHexStr = @"3FD7D8";
             } break;
                 
             case CYPageMenuThemeTypeSec: {
