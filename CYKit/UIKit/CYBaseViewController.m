@@ -55,9 +55,11 @@
     
     
     self.backBtn = [[UIButton alloc]initWithFrame:CGRectZero];
-    [self.backBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+    UIImage *bgImage = [[UIImage imageNamed:@"back"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    [self.backBtn setImage:bgImage forState:UIControlStateNormal];
     [self.backBtn addTarget:self action:@selector(backbtn) forControlEvents:UIControlEventTouchUpInside];
     [self.backBtn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 20)];
+    self.backBtn.tintColor = [UIColor whiteColor];
     
     [self.headerView addSubview:self.backBtn];
     [self.backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -78,6 +80,17 @@
         make.right.offset(-60);
     }];
     [self.titleLabel setContentHuggingPriority:UILayoutPriorityDefaultLow forAxis:UILayoutConstraintAxisHorizontal];
+    
+    self.bottomLine = [UIView new];
+    self.bottomLine.backgroundColor = RGBColor(200, 200, 200);
+    [self.headerView addSubview:self.bottomLine];
+    [self.bottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.offset(0);
+        make.height.offset(CY_Sigle_Line_Height);
+    }];
+    
+    self.bottomLine.hidden = YES;
+    
     [self p_adjustForIOS13];
     
     [self setupSubView];

@@ -17,10 +17,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL shouldShowHeader;
 /// 是否展示顶部头图
 @property (nonatomic, assign) BOOL shouldShowHeaderImage;
+/// 是否展示分割线
+@property (nonatomic, assign) BOOL shouldShowBottomLine;
 /// 头部视图
 @property (nonatomic, strong) UIView *headerView;
 @property (nonatomic, strong) UIButton *backBtn;
 @property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UIView *bottomLine;
 
 - (void) setupSubView;
 - (void) addConstraints;
