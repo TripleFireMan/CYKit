@@ -125,6 +125,11 @@
     self.headerView.hidden = !_shouldShowHeader;
 }
 
+- (void) setShouldShowBottomLine:(BOOL)shouldShowBottomLine{
+    _shouldShowBottomLine = shouldShowBottomLine;
+    self.bottomLine.hidden = !_shouldShowBottomLine;
+}
+
 - (void) setTitle:(NSString *)title
 {
     [super setTitle:title];
