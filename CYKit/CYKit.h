@@ -17,6 +17,7 @@
 #import <CYKit/UIDevice+CYAddition.h>
 #import <CYKit/NSString+CYAddition.h>
 #import <CYKit/NSData+CYAddition.h>
+#import <CYKit/NSURL+CYAddition.h>
 #import <CYKit/CYKitDefines.h>
 #import <CYKit/CYBaseViewController.h>
 #import <CYKit/CYH5ViewController.h>
@@ -48,6 +49,7 @@
 #import "UIColor+CYAddition.h"
 #import "NSString+CYAddition.h"
 #import "NSData+CYAddition.h"
+#import "NSURL+CYAddition.h"
 #import "CYKitDefines.h"
 #import "CYBaseViewController.h"
 #import "CYH5ViewController.h"
