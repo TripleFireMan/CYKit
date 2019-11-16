@@ -99,6 +99,12 @@ static NSString * kErrorMsg;
 {
     [self.cy_errorImageView removeFromSuperview];
     self.cy_errorImageView = nil;
+}
+
+- (void) cy_hideAll
+{
+    [self.cy_errorImageView removeFromSuperview];
+    self.cy_errorImageView = nil;
     [self.cy_errorMsgLabel removeFromSuperview];
     self.cy_errorMsgLabel = nil;
 }
