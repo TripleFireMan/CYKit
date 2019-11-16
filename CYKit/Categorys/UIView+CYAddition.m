@@ -9,9 +9,10 @@
 #import <objc/runtime.h>
 #import "Masonry.h"
 #import "BlocksKit+UIKit.h"
+#import "CYKitDefines.h"
 
 static NSString * kErrorImage;
-
+static NSString * kErrorMsg;
 
 @implementation UIView (CYAddition)
 
@@ -35,6 +36,17 @@ static NSString * kErrorImage;
     return objc_getAssociatedObject(self, &kErrorImage);
 }
 
+- (void) setCy_errorMsgLabel:(UILabel *)cy_errorMsgLabel
+{
+    objc_setAssociatedObject(self, &kErrorMsg, cy_errorMsgLabel, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (UILabel *) cy_errorMsgLabel
+{
+    return objc_getAssociatedObject(self, &kErrorMsg);
+}
+
+
 - (void) cy_showEmptyImage:(NSString *)name clickRefresh:(void (^)(void))complete
 {
     if (name) {
@@ -54,10 +66,41 @@ static NSString * kErrorImage;
     
 }
 
+- (void) cy_showEmptyImage:(NSString *)name text:(NSString *)text clickRefresh:(void (^)(void))complete
+{
+    if (name && text) {
+        [self cy_hideAll];
+        self.cy_errorImageView = [UIImageView new];
+        self.cy_errorImageView.image = [UIImage imageNamed:name];
+        self.cy_errorImageView.userInteractionEnabled = YES;
+        [self addSubview:self.cy_errorImageView];
+        [self.cy_errorImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.offset(0);
+        }];
+        
+        self.cy_errorMsgLabel = [UILabel new];
+        self.cy_errorMsgLabel.text = text;
+        self.cy_errorMsgLabel.textColor = [UIColor colorWithRed:200/255.f green:200/255.f blue:200/255.f alpha:1];
+        self.cy_errorMsgLabel.font = CYPingFangSCRegular(13.f);
+        self.cy_errorMsgLabel.textAlignment = NSTextAlignmentCenter;
+        [self addSubview:self.cy_errorMsgLabel];
+        [self.cy_errorMsgLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.cy_errorImageView.mas_bottom).offset(8);
+            make.centerX.offset(0);
+        }];
+        
+        [self.cy_errorImageView bk_whenTapped:^{
+            complete?complete():nil;
+        }];
+    }
+}
+
 - (void) cy_hideImages
 {
     [self.cy_errorImageView removeFromSuperview];
     self.cy_errorImageView = nil;
+    [self.cy_errorMsgLabel removeFromSuperview];
+    self.cy_errorMsgLabel = nil;
 }
 
 - (void) cy_cornerRound:(UIRectCorner)corner size:(CGSize)size
