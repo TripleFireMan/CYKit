@@ -26,7 +26,6 @@
     CGFloat y = self.mj_h / 2.f;
     p = CGPointMake(p.x, y);
     self.stateLabel.center = p;
-    self.stateLabel.textColor = RGBColor(160, 160, 160);
     self.arrowView.tintColor = self.stateLabel.textColor;
     self.arrowView.mj_size = CGSizeMake(self.arrowView.image.size.width * 0.8, self.arrowView.image.size.height * 0.8) ;
     self.stateLabel.font = [UIFont systemFontOfSize:13.f];
