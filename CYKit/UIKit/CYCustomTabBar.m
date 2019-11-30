@@ -110,14 +110,47 @@ const  int centerTag = 100;
 {
     _centerView = centerView;
     
-    UIView *view = [self viewWithTag:centerTag];
+//    NSInteger centertag = 0;
+    __block NSInteger count = 0;
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj isKindOfClass:[CYCustomBarButton class]]) {
+            count++;
+        }
+    }];
+    
+    count = count / 2;
+    
+    
+    
+    UIView *view = [self viewWithTag:customTabBarTagOffset + count];
     if (view) {
         [view removeFromSuperview];
     }
-    _centerView.tag = centerTag;
+    
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (obj.tag >= customTabBarTagOffset + count) {
+            obj.tag = customTabBarTagOffset + count + 1;
+        }
+    }];
+    
+    
+    _centerView.tag = customTabBarTagOffset + count;
+
+    
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changeIndex:)];
+    tap.numberOfTouchesRequired = 1;
+    _centerView.userInteractionEnabled = YES;
+    [_centerView addGestureRecognizer:tap];
     
     
     [self addSubview:_centerView];
+}
+
+- (void)changeIndex:(UITapGestureRecognizer *)ges
+{
+    NSInteger tag = ges.view.tag;
+    self.selectedIndex = tag - customTabBarTagOffset;
 }
 
 - (void)setSelectedIndex:(NSInteger)selectedIndex
