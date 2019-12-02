@@ -75,6 +75,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self.tabBar bringSubviewToFront:self.customTabBar];
 }
 
 - (CYCustomTabBar *)customTabBar
