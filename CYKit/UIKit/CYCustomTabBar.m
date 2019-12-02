@@ -86,21 +86,23 @@ const  int centerTag = 100;
     int i = 0;
     
     for (UIView *cosView  in self.subviews) {
-        if (cosView.tag >= customTabBarTagOffset && cosView.tag < centerTag) {
-            CYCustomBarButton *button = (CYCustomBarButton *)cosView;
-            if (i < buttonCount / 2) {
-                buttonX = i * buttonWidth;
-            }else{
-                buttonX = i * buttonWidth + centerWidth;
+        if ([cosView isKindOfClass:[CYCustomBarButton class]]) {
+            if (cosView.tag >= customTabBarTagOffset) {
+                CYCustomBarButton *button = (CYCustomBarButton *)cosView;
+                if (i < buttonCount / 2) {
+                    buttonX = i * buttonWidth;
+                }else{
+                    buttonX = i * buttonWidth + centerWidth;
+                }
+                
+                button.frame = CGRectMake(buttonX, buttonY, buttonWidth, buttonHeight);
+                
+                if (button.tag - customTabBarTagOffset == self.selectedIndex) {
+                    button.isSelected = YES;
+                }
+                
+                i ++;
             }
-            
-            button.frame = CGRectMake(buttonX, buttonY, buttonWidth, buttonHeight);
-            
-            if (button.tag - customTabBarTagOffset == self.selectedIndex) {
-                button.isSelected = YES;
-            }
-            
-            i ++;
         }
     }
     
