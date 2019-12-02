@@ -63,8 +63,13 @@ const  int centerTag = 100;
     
     CGFloat tabBarWidth = self.frame.size.width;
     CGFloat tabBarHeight = self.frame.size.height;
-    NSInteger buttonCount = Tag - customTabBarTagOffset;
     
+    __block NSInteger buttonCount = 0;
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj isKindOfClass:[CYCustomBarButton class]]) {
+            buttonCount ++;
+        }
+    }];
     
     CGFloat centerWidth = self.centerView.frame.size.width;
     CGFloat centerHeight = self.centerView.frame.size.height - toplineHeight;
