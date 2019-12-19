@@ -1,16 +1,14 @@
 //
-//  UITableView+CYAddition.h
+//  UICollectionView+CYAddition.h
 //  CYKit
 //
-//  Created by 成焱 on 2019/10/23.
+//  Created by 成焱 on 2019/12/19.
 //
-
-
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UITableView (CYAddition)
+@interface UICollectionView (CYAddition)
 - (void) cy_adjustForIOS11;
 - (void) cy_adjustForIOS13;
 @end

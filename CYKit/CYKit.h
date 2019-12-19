@@ -40,6 +40,7 @@
 #import <CYKit/CYPageMenuItem.h>
 #import <CYKit/CYPageMenuButton.h>
 #import <CYKit/CYPageScrollView.h>
+#import <CYKit/UICollectionView+CYAddition.h>
 #else
 
 #import "CYModel.h"
@@ -50,6 +51,7 @@
 #import "NSString+CYAddition.h"
 #import "NSData+CYAddition.h"
 #import "NSURL+CYAddition.h"
+#import "UICollectionView+CYAddition.h"
 #import "CYKitDefines.h"
 #import "CYBaseViewController.h"
 #import "CYH5ViewController.h"

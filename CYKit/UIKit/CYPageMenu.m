@@ -19,7 +19,7 @@
 #define ButtonLabelX(btn) (round([btn convertPoint:btn.titleLabel.frame.origin toView:self.scrollView].x))
 #define ButtonLabelY(btn) (round([btn convertPoint:btn.titleLabel.frame.origin toView:self.scrollView].y))
 
-#define SelectedViewWidthForBtn(btn) (ButtonLabelWidth(btn)*0.8)
+#define SelectedViewWidthForBtn(btn) (ButtonLabelWidth(btn)*1)
 #define SelectedViewXForBtn(btn) ButtonLabelX(btn)
 
 
@@ -199,7 +199,7 @@ static const CGFloat kGradientImageWidth = 32;
         if (height > 0 && colorHexStr) {
             _selectedView.frame = CGRectMake(0.0, 0.0, 0, height);
             if (!self.showSelectedView) {
-                _selectedView.backgroundColor = [[UIColor cy_colorWithHexRGBString:colorHexStr] colorWithAlphaComponent:0];
+                _selectedView.backgroundColor = [[UIColor cy_colorWithHexRGBString:colorHexStr] colorWithAlphaComponent:1];
             }
             else{
                 _selectedView.backgroundColor = [UIColor cy_colorWithHexRGBString:colorHexStr];
@@ -295,7 +295,7 @@ static const CGFloat kGradientImageWidth = 32;
         
         
         [UIView animateWithDuration:0.2 animations:^{
-            _selectedView.frame = frame;
+            self.selectedView.frame = frame;
             [self scrollToSelectedIndex]; //滚动并显示滑块视图
             [self p_updateRedDotOnButton:toItemButton];//消除频道右上角小红点 lijian 2017-08-31
         }];
@@ -376,7 +376,7 @@ static const CGFloat kGradientImageWidth = 32;
 
         if (progress >= 0.999) { //完成切换
             [UIView animateWithDuration:0.2 animations:^{
-                _selectedView.frame = frame;
+                self.selectedView.frame = frame;
                 fromItemButton.titleLabel.font = [self p_normalFont];
                 toItemButton.titleLabel.font = [self p_selectedFont];
 
@@ -535,9 +535,9 @@ static const CGFloat kGradientImageWidth = 32;
         [firstButton setNeedsLayout];
         [firstButton layoutIfNeeded];
         
-        frame.origin.y = CGRectGetHeight(self.scrollView.frame) - CGRectGetHeight(frame) - 12.5;
+        frame.origin.y = CGRectGetHeight(self.scrollView.frame) - 2.5;
         if (self.themeType == CYPageMenuThemeTypeSec) {
-            frame.origin.y = ButtonLabelY(firstButton)-2.5;
+            frame.origin.y =  ButtonLabelY(firstButton)-2.5;
         }
         
         frame.size.width = SelectedViewWidthForBtn(firstButton);
@@ -590,6 +590,12 @@ static const CGFloat kGradientImageWidth = 32;
     [super layoutSubviews];
     self.leftGradientImageView.frame = CGRectMake(-12, 0, kGradientImageWidth, CGRectGetHeight(self.bounds));
     self.rightGradientImageView.frame = CGRectMake(CGRectGetWidth(self.bounds)-kGradientImageWidth+12, 0, kGradientImageWidth, CGRectGetHeight(self.bounds));
+}
+
+- (void) setSliderColorHexString:(NSString *)sliderColorHexString
+{
+    _sliderColorHexString = sliderColorHexString;
+    self.selectedView.backgroundColor = [UIColor cy_colorWithHexRGBString:_sliderColorHexString];
 }
 
 @end
