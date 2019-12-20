@@ -11,6 +11,22 @@
 
 
 @implementation UITableView (CYAddition)
+
++ (UITableView *) cy_tableViewWithDelegate:(id)delegate
+{
+    UITableView *table = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    table.delegate = delegate;
+    table.dataSource = delegate;
+    table.separatorStyle = UITableViewCellSeparatorStyleNone;
+    table.backgroundColor = [UIColor whiteColor];
+    [table cy_adjustForIOS13];
+    return table;
+}
+
+- (void) cy_registeCellClass:(NSString *)classString
+{
+    [self registerClass:NSClassFromString(classString) forCellReuseIdentifier:classString];
+}
 - (void) cy_adjustForIOS11
 {
     if (@available(iOS 11, *)) {

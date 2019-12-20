@@ -11,6 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UITableView (CYAddition)
+
++ (UITableView *) cy_tableViewWithDelegate:(id)delegate;
+
+- (void) cy_registeCellClass:(NSString *)classString;
+
 - (void) cy_adjustForIOS11;
 - (void) cy_adjustForIOS13;
 @end

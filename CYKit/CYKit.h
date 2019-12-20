@@ -41,6 +41,7 @@
 #import <CYKit/CYPageMenuButton.h>
 #import <CYKit/CYPageScrollView.h>
 #import <CYKit/UICollectionView+CYAddition.h>
+#import <CYKit/UILabel+CYAddition.h>
 #else
 
 #import "CYModel.h"
@@ -74,5 +75,6 @@
 #import "CYPageMenuButton.h"
 #import "CYPageMenuItem.h"
 #import "CYPageScrollView.h"
+#import "UILabel+CYAddition.h"
 
 #endif
