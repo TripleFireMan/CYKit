@@ -69,13 +69,21 @@ static NSString * kErrorMsg;
 - (void) cy_showEmptyImage:(NSString *)name text:(NSString *)text clickRefresh:(void (^)(void))complete
 {
     if (name && text) {
+        [self cy_showEmptyImage:name text:text topMargin:0 clickRefresh:complete];
+    }
+}
+
+- (void) cy_showEmptyImage:(NSString *)name text:(NSString *)text topMargin:(CGFloat)margin clickRefresh:(void (^)(void))complete
+{
+    if (name && text) {
         [self cy_hideAll];
         self.cy_errorImageView = [UIImageView new];
         self.cy_errorImageView.image = [UIImage imageNamed:name];
         self.cy_errorImageView.userInteractionEnabled = YES;
         [self addSubview:self.cy_errorImageView];
         [self.cy_errorImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.center.offset(0);
+            make.centerX.offset(0);
+            make.centerY.offset(-margin/2.f);
         }];
         
         self.cy_errorMsgLabel = [UILabel new];

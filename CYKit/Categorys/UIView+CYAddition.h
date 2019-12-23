@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) cy_showEmptyImage:(NSString *)name clickRefresh:(void(^)(void))complete;
 - (void) cy_hideImages;
 - (void) cy_showEmptyImage:(NSString *)name text:(NSString *)text clickRefresh:(void (^)(void))complete;
+- (void) cy_showEmptyImage:(NSString *)name text:(NSString *)text topMargin:(CGFloat)margin clickRefresh:(void (^)(void))complete;
 - (void) cy_hideAll;
 /// 做圆角
 - (void) cy_cornerRound:(UIRectCorner)corner size:(CGSize)size;
