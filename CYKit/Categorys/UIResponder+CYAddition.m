@@ -17,7 +17,7 @@ NSString *CYRouteEventMakePhoneCallPhoneNumberKey = @"CYRouteEventMakePhoneCallP
 
 @implementation UIResponder (CYAddition)
 
-- (void) routeWithEventName:(NSString *)eventName userInfo:(NSDictionary *)userInfo
+- (void) routeWithEventName:(NSString *)eventName userInfo:(nullable NSDictionary *)userInfo
 {
     [[self nextResponder] routeWithEventName:eventName userInfo:userInfo];
 }
