@@ -39,12 +39,18 @@
         objc_property_t property = properties[i];
         // 得到当前属性的名字（字符串形式）
         NSString *propertyName = [NSString stringWithFormat:@"%s", property_getName(property)];
+        NSLog(@"propertyName:%@",propertyName);
         // 使用KVC方式得到该属性的值
         id propertyValue = [self valueForKey:(NSString *)propertyName];
         
         // null的就不用管了
         if (!propertyValue ||
             [propertyValue isKindOfClass:[NSNull class]]) {
+            continue;
+        }
+        if ([propertyName isEqualToString:@"hash"] ||
+            [propertyName isEqualToString:@"description"]||
+            [propertyName isEqualToString:@"debugDescription"]) {
             continue;
         }
         
