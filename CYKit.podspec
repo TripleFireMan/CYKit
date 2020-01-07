@@ -49,7 +49,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Class' do |ss|
-    ss.source_files = "CYKit/Class/*.{h,m}","CYKit/UIKit/CYKitDefines.h","CYKit/Categorys/NSString+CYAddition.h"
+    ss.source_files = "CYKit/Class/*.{h,m}","CYKit/UIKit/CYKitDefines.h","CYKit/Categorys/NSString+CYAddition.h","CYKit/Categorys/NSObject+CYAddition.h"
   end
   
   s.subspec 'UIKit' do |ss|

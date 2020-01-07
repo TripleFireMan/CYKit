@@ -7,7 +7,7 @@
 //
 
 #import "NSObject+CYAddition.h"
-
+#import <objc/runtime.h>
 @implementation NSObject (CYAddition)
 
 + (void) cy_SwizzleClass:(Class)theClass
@@ -31,5 +31,16 @@
     } else {
         method_exchangeImplementations(originalMethod, swizzledMethod);
     }
+}
+
++ (instancetype) cy_shareInstance
+{
+    Class clazz = [self class];
+    id instance = objc_getAssociatedObject(clazz, @"cy_shareInstanceOBJ");
+    if (!instance) {
+        instance = [[clazz alloc] init];
+        objc_setAssociatedObject(self, @"cy_shareInstanceOBJ", instance, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    return instance;
 }
 @end

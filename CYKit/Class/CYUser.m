@@ -12,7 +12,6 @@
 @implementation CYUser
 + (instancetype) shareInstance
 {
-    Class clazz = [self class];
     static id user = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -50,7 +49,8 @@
         }
         if ([propertyName isEqualToString:@"hash"] ||
             [propertyName isEqualToString:@"description"]||
-            [propertyName isEqualToString:@"debugDescription"]) {
+            [propertyName isEqualToString:@"debugDescription"]
+            [propertyName isEqualToString:@"superclass"]) {
             continue;
         }
         
