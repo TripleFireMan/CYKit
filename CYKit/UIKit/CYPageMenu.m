@@ -199,7 +199,7 @@ static const CGFloat kGradientImageWidth = 32;
         if (height > 0 && colorHexStr) {
             _selectedView.frame = CGRectMake(0.0, 0.0, 0, height);
             if (!self.showSelectedView) {
-                _selectedView.backgroundColor = [[UIColor cy_colorWithHexRGBString:colorHexStr] colorWithAlphaComponent:1];
+                _selectedView.backgroundColor = [[UIColor cy_colorWithHexRGBString:colorHexStr] colorWithAlphaComponent:0];
             }
             else{
                 _selectedView.backgroundColor = [UIColor cy_colorWithHexRGBString:colorHexStr];
