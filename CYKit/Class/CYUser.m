@@ -49,7 +49,7 @@
         }
         if ([propertyName isEqualToString:@"hash"] ||
             [propertyName isEqualToString:@"description"]||
-            [propertyName isEqualToString:@"debugDescription"]
+            [propertyName isEqualToString:@"debugDescription"]||
             [propertyName isEqualToString:@"superclass"]) {
             continue;
         }
