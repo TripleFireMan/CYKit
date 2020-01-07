@@ -21,5 +21,6 @@ pod 'CocoaLumberjack'
 pod 'FDFullscreenPopGesture', '1.1'
 pod 'MBProgressHUD'
 pod 'LBXScan', '~> 2.3'
+pod 'FastCoding'
 end
 

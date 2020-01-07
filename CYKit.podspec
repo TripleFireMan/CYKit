@@ -42,6 +42,7 @@ Pod::Spec.new do |s|
   s.dependency "XHToast"
   s.dependency "MJExtension"
   s.dependency "MJRefresh"
+  s.dependency "FastCoding"
   
   s.subspec 'Categorys' do |ss|
     ss.source_files = "CYKit/Categorys/*.{h,m}","CYKit/UIKit/CYKitDefines.h"
