@@ -126,6 +126,14 @@
     NSLog(@"artileName:%@",article.Author);
     [article cy_clean];
 //    [article cy_save];
+    [self becomeFirstResponder];
+    NSLog(@"if %d",[self isFirstResponder]);
+    UIWindow * keyWindow = [[UIApplication sharedApplication] keyWindow];
+
+    UIView * firstResponder = [keyWindow performSelector:@selector(firstResponder)];
+    NSLog(@"----%@",firstResponder);
+
+
 }
 
 

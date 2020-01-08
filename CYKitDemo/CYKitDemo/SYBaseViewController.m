@@ -35,12 +35,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    if (__builtin_available(iOS 13, *)) {
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_13_0
+    if (@available(iOS 13, *)) {
         self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
     } else {
         
     }
+#endif
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.headerView = [UIView new];

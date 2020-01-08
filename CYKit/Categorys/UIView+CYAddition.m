@@ -129,9 +129,13 @@ static NSString * kErrorMsg;
 
 - (void) cy_adjustForIOS13
 {
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_13_0
     if (@available(iOS 13, *)) {
         self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    } else {
+        
     }
+#endif
 }
 
 - (void) cy_gradientLayerWithColor:(UIColor *)fromColor toColor:(UIColor *)toColor Horizontal:(BOOL)isHorizontal
