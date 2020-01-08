@@ -148,14 +148,11 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
     NSURLRequest *request = [NSURLRequest requestWithURL:imageUrl];
     NSString *imgUrMd5String = @"kUserLaucnImage";
     @weakify(self);
-    [[self.sessionManager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
-        
-    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+    [[self.sessionManager downloadTaskWithRequest:request progress:nil destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
         NSString *cacheFilePath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
         NSString *destionNation = [cacheFilePath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",imgUrMd5String]];
         return [NSURL fileURLWithPath:destionNation];
-        
-    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nonnull filePath, NSError * _Nonnull error) {
         @strongify(self);
         NSLog(@"filepath:%@",filePath);
         if (!error && filePath) {
@@ -190,8 +187,7 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
         else{
             [self jumpToHomePage];
         }
-
-    }]resume];
+    } ] resume];
 }
 
 

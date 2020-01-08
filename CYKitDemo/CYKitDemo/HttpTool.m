@@ -73,15 +73,14 @@ static HttpTool * httpTool = nil;
     //2、发送请求
     [mgr POST:URLString parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
     
-    } progress:^(NSProgress * _Nonnull uploadProgress) {
-        NSLog(@"progress:%@",uploadProgress);
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    }  success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"responseObject:%@",responseObject);
         success?success(responseObject):nil;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"error:%@",error);
         failure?failure(error):nil;
     }];
+    
 }
 
 + (void)UPLOAD:(NSString *)URLString parameters:(id)parameters HUD:(BOOL)hud success:(void (^)(id))success failure:(void (^)(NSError *))failure
@@ -115,9 +114,7 @@ static HttpTool * httpTool = nil;
         NSString *str = [formatter stringFromDate:[NSDate date]];
         NSString *fileName = [NSString stringWithFormat:@"%@.png", str];
         [formData appendPartWithFileData:IMG name:@"classIcon" fileName:fileName mimeType:@"image/png"];
-    } progress:^(NSProgress * _Nonnull uploadProgress) {
-        NSLog(@"progress:%@",uploadProgress);
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    }  success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"responseObject:%@",responseObject);
         [HttpTool HiddenHUD];
         success?success(responseObject):nil;
@@ -145,9 +142,7 @@ static HttpTool * httpTool = nil;
     [mgr setSecurityPolicy:securityPolicy];
     //2、发送请求
     NSLog(@"url == %@, params = %@",URLString,parameters);
-    [mgr GET:[URLString copy] parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject)
+    [mgr GET:[URLString copy] parameters:parameters  success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject)
      {
          [HttpTool HiddenHUD];
 //#ifdef DEBUG

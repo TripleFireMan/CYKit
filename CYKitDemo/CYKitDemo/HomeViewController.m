@@ -18,6 +18,9 @@
 #import "CYSPlashCommand.h"
 #import "UIView+CYAddition.h"
 
+#import "NSObject+CYAddition.h"
+#import "SYArticleModel.h"
+
 @interface HomeViewController ()
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) CYSPlashCommand *command;
@@ -116,6 +119,13 @@
 //    NSLog(@"%s 消耗时间为 %.2f 毫秒",__func__,time);
     
 //    [YCDBVideo dropTable];
+    
+    SYArticleModel *article = [SYArticleModel cy_shareInstance];
+//    article.Author = @"成焱";
+//    [article cy_save];
+    NSLog(@"artileName:%@",article.Author);
+//    [article cy_clean];
+//    [article cy_save];
 }
 
 

@@ -111,16 +111,16 @@ NSString *k_CY_PARAMS = @"params";
 
 - (void) getUrl:(NSString *)url params:(NSDictionary *)params successBlock:(CYSuccessBlock)success failure:(CYFailureBlock)failure
 {
-    [self.httpSessionManger GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.httpSessionManger GET:url parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         success?success(YES,responseObject):nil;
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
         failure?failure(error,nil):nil;
     }];
 }
 
 - (void) postUrl:(NSString *)url params:(NSDictionary *)params successBlock:(CYSuccessBlock)success failure:(CYFailureBlock)failure
 {
-    [self.httpSessionManger POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.httpSessionManger POST:url parameters:params  success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         success?success(YES,responseObject):nil;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure?failure(error,nil):nil;
