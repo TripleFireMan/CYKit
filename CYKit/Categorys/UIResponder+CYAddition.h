@@ -27,6 +27,7 @@ UIKIT_EXTERN NSString *CYRouteEventMakePhoneCallPhoneNumberKey;
 
 
 @interface UIResponder (CYAddition)
++(id)currentFirstResponder;
 - (void) routeWithEventName:(NSString *)eventName userInfo:(nullable NSDictionary *)userInfo;
 @end
 

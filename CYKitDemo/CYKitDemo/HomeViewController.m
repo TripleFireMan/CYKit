@@ -124,7 +124,7 @@
 //    article.Author = @"成焱";
 //    [article cy_save];
     NSLog(@"artileName:%@",article.Author);
-//    [article cy_clean];
+    [article cy_clean];
 //    [article cy_save];
 }
 

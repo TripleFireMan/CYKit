@@ -15,7 +15,21 @@ NSString *CYRouteEventMakePhoneCall = @"CYRouteEventMakePhoneCall";
 /// 电话号码
 NSString *CYRouteEventMakePhoneCallPhoneNumberKey = @"CYRouteEventMakePhoneCallPhoneNumberKey";
 
+static UIResponder * currentFirstResponder = nil;
 @implementation UIResponder (CYAddition)
+
++(id)currentFirstResponder {
+    currentFirstResponder = nil;
+    [[UIApplication sharedApplication] sendAction:@selector(findFirstResponder:)
+                                               to:nil
+                                             from:nil
+                                         forEvent:nil];
+    return currentFirstResponder;
+}
+
+-(void)findFirstResponder:(id)sender {
+    currentFirstResponder = self;
+}
 
 - (void) routeWithEventName:(NSString *)eventName userInfo:(nullable NSDictionary *)userInfo
 {
