@@ -44,6 +44,7 @@
 #import <CYKit/UILabel+CYAddition.h>
 #import <CYKit/UIResponder+CYAddition.h>
 #import <CYKit/CYUser.h>
+#import <CYKit/NSDateFormatter+CYAddition.h>
 #else
 
 #import "CYModel.h"
@@ -80,5 +81,6 @@
 #import "UILabel+CYAddition.h"
 #import "UIResponder+CYAddition.h"
 #import "CYUser.h"
+#import "NSDateFormatter+CYAddition.h"
 
 #endif
