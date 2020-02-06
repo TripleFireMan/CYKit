@@ -90,6 +90,16 @@ API_AVAILABLE(ios(8.0))
     [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.insets(UIEdgeInsetsMake(CY_Height_NavBar, 0, 0, 0));
     }];
+    
+    [RACObserve(self.webView, canGoBack) subscribeNext:^(id  _Nullable x) {
+        @strongify(self);
+        if([x boolValue]){
+            self.closeBtn.hidden = NO;
+        }
+        else{
+            self.closeBtn.hidden = YES;
+        }
+    }];
 }
 - (void) viewDidAppear:(BOOL)animated
 {
@@ -164,7 +174,9 @@ API_AVAILABLE(ios(8.0))
         }
     } else if ([object isEqual:self.webView] && [keyPath isEqualToString:@"title"]) { // 标题
         if (![self.webView.title isEqualToString:@"123"]) {
-            self .title = self.webView.title;
+            if (self.navigationController.viewControllers.count!=1) {
+                self .title = self.webView.title;
+            }
         }
     } else { // 其他
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
