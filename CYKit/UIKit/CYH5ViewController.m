@@ -138,6 +138,14 @@ API_AVAILABLE(ios(8.0))
     [super viewWillDisappear:animated];
     //    self.tabBarController.tabBar.hidden = NO;
 }
+
+- (void) setUrlString:(NSString *)urlString
+{
+    _urlString = urlString;
+    if (_urlString) {
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_urlString]]];
+    }
+}
 /*
  #pragma mark - Navigation
  
