@@ -11,7 +11,6 @@
 		4C2CC0131E7F7071002FFB38 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0121E7F7071002FFB38 /* HomeViewController.m */; };
 		4C2CC0161E7F707C002FFB38 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0151E7F707C002FFB38 /* MeViewController.m */; };
 		4C633FCE1F78A3F400D235D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C633FCD1F78A3F400D235D2 /* libz.tbd */; };
-		4C782D882330D06B00F4EEED /* CYSPlashCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C782D872330D06B00F4EEED /* CYSPlashCommand.m */; };
 		4C9A534823419381003FD736 /* SYHelpUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A534323419380003FD736 /* SYHelpUsViewController.xib */; };
 		4C9A534923419381003FD736 /* SYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A534523419380003FD736 /* SYBaseViewController.m */; };
 		4C9A534A23419381003FD736 /* SYHelpUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A534723419380003FD736 /* SYHelpUsViewController.m */; };
@@ -89,8 +88,6 @@
 		4C2CC0141E7F707C002FFB38 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		4C2CC0151E7F707C002FFB38 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		4C633FCD1F78A3F400D235D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		4C782D862330D06B00F4EEED /* CYSPlashCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYSPlashCommand.h; sourceTree = "<group>"; };
-		4C782D872330D06B00F4EEED /* CYSPlashCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYSPlashCommand.m; sourceTree = "<group>"; };
 		4C9A534323419380003FD736 /* SYHelpUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYHelpUsViewController.xib; sourceTree = "<group>"; };
 		4C9A534423419380003FD736 /* SYHelpUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYHelpUsViewController.h; sourceTree = "<group>"; };
 		4C9A534523419380003FD736 /* SYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYBaseViewController.m; sourceTree = "<group>"; };
@@ -374,8 +371,6 @@
 			children = (
 				4CFE2ECD2318AF1C005AD4C4 /* CYMeModel.h */,
 				4CFE2ECE2318AF1C005AD4C4 /* CYMeModel.m */,
-				4C782D862330D06B00F4EEED /* CYSPlashCommand.h */,
-				4C782D872330D06B00F4EEED /* CYSPlashCommand.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -604,7 +599,6 @@
 				4C9A535A234193CA003FD736 /* SYHelpUsModel.m in Sources */,
 				4C9A5362234195BF003FD736 /* HttpTool.m in Sources */,
 				4C9A53B223419863003FD736 /* SYArticleModel.m in Sources */,
-				4C782D882330D06B00F4EEED /* CYSPlashCommand.m in Sources */,
 				4C9A540F2341A4E8003FD736 /* SpeechD.m in Sources */,
 				4CBA91681E59BE9600AEBC30 /* AppDelegate.m in Sources */,
 				4CF9EF392355997B005E71A3 /* CYDownloadViewController.m in Sources */,

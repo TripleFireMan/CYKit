@@ -12,10 +12,7 @@
 #import <CYKit/UIColor+CYAddition.h>
 #import <CYKit/NSString+CYAddition.h>
 #import <CYKit/NSData+CYAddition.h>
-
-#import "CYNetworkCommand.h"
 #import "ReactiveObjC.h"
-#import "CYSPlashCommand.h"
 #import "UIView+CYAddition.h"
 
 #import "NSObject+CYAddition.h"
@@ -23,7 +20,6 @@
 
 @interface HomeViewController ()
 @property (nonatomic, strong) UIImageView *imageView;
-@property (nonatomic, strong) CYSPlashCommand *command;
 @end
 
 @implementation HomeViewController
@@ -75,26 +71,11 @@
     
     DDLogInfo(@"objs = %@",[param objectForKey:@"12"]);
     
-    [[RACObserve(self.command, data) skip:1] subscribeNext:^(id  _Nullable x) {
-        DDLogInfo(@"x = %@",x);
-    }];
-    
-//    [[RACObserve(self.command, error) skip:1] subscribeNext:^(id  _Nullable x) {
-//        DDLogInfo(@"errpr = %@",x);
-//    }];
-    
-    [[RACObserve(self.command, status) skip:1]subscribeNext:^(id  _Nullable x) {
-        DDLogInfo(@"x ==== %@",x);
-    }];
     
     
 //    [self.command.getCommand execute:@{k_CY_URL:url,k_CY_PARAMS:param}];
 //    [self.command.postCommand execute:@{k_CY_URL:url,k_CY_PARAMS:param}];
-    [self.command.postCommand execute:nil];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.command.postCommand execute:@{k_CY_URL:url,k_CY_PARAMS:param}];
-    });
+
     
 
 //    NSDate *date1 = [NSDate date];
@@ -152,13 +133,6 @@
 }
 */
 
-- (CYSPlashCommand *)command
-{
-    if (!_command) {
-        _command = [CYSPlashCommand new];
-    }
-    return _command;
-}
 
 
 @end

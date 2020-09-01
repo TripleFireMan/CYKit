@@ -8,12 +8,10 @@
 
 #import "ViewController.h"
 #import "CYKit.h"
-#import "CYNetworkCommand.h"
 #import "ReactiveObjC.h"
 #import "NSObject+CYAddition.h"
 #import "SYArticleModel.h"
 @interface ViewController ()
-@property (nonatomic, strong) CYNetworkCommand *command;
 @end
 
 @implementation ViewController
@@ -28,12 +26,6 @@
     
     
     
-    [RACObserve(self.command, data) subscribeNext:^(id  _Nullable x) {
-        DDLogInfo(@"x = %@",x);
-    }];
-    
-    [self.command.getCommand execute:@{k_CY_URL:url,k_CY_PARAMS:param}];
-    
     SYArticleModel *article = [SYArticleModel cy_shareInstance];
     article.Author = @"成焱";
     [article cy_save];
@@ -42,13 +34,6 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (CYNetworkCommand *)command
-{
-    if (!_command) {
-        _command = [CYNetworkCommand new];
-    }
-    return _command;
-}
 
 
 - (void)didReceiveMemoryWarning {

@@ -39,8 +39,8 @@ Pod::Spec.new do |s|
   s.dependency "ReactiveObjC"
   s.dependency "YYKit"
   s.dependency "XHToast"
-  s.dependency "MJExtension"
-  s.dependency "MJRefresh"
+  s.dependency "MJExtension",'3.2.2'
+  s.dependency "MJRefresh",'3.2.2'
   s.dependency "FastCoding"
   
   s.subspec 'Categorys' do |ss|

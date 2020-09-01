@@ -32,7 +32,6 @@
 #import <CYKit/CYChangePasswordViewController.h>
 #import <CYKit/NSObject+CYAddition.h>
 #import <CYKit/CYCustomTabBarController.h>
-#import <CYKit/CYNetworkCommand.h>
 #import <CYKit/CYRefreshHeader.h>
 #import <CYKit/CYRefreshFooter.h>
 #import <CYKit/CYPageManager.h>
