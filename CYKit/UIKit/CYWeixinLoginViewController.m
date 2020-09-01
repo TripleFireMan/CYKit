@@ -13,8 +13,8 @@
 #import "Masonry.h"
 #import "CYKitDefines.h"
 #import "ReactiveObjC.h"
-#import "BlocksKit+UIKit.h"
 #import "XHToast.h"
+#import "UIGestureRecognizer+YYAdd.h"
 
 //#import "WXApi.h"
 @interface CYWeixinLoginViewController ()
@@ -258,7 +258,8 @@
 - (void) bindData
 {
     @weakify(self);
-    [self.eyeIcon bk_whenTapped:^{
+    
+    UITapGestureRecognizer *tap0 = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
         @strongify(self);
         if ([self.securityInput boolValue] == YES) {
             self.securityInput = @(NO);
@@ -267,6 +268,9 @@
             self.securityInput = @(YES);
         }
     }];
+    tap0.numberOfTapsRequired = 1;
+    self.eyeIcon.userInteractionEnabled = YES;
+    [self.eyeIcon addGestureRecognizer:tap0];
     
     [RACObserve(self, securityInput) subscribeNext:^(id  _Nullable x) {
         @strongify(self);
@@ -274,10 +278,14 @@
         self.eyeIcon.highlighted = [x boolValue];
     }];
     
-    [self.logoImageView bk_whenTapped:^{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
         @strongify(self);
         self.loginBlock?self.loginBlock(CYWexinLoginType_LogoImage):nil;
     }];
+    tap.numberOfTapsRequired = 1;
+    
+    self.logoImageView.userInteractionEnabled=  YES;
+    [self.logoImageView addGestureRecognizer:tap];
     
     
     [[[self.phoneTextField rac_textSignal] combineLatestWith:[self.passwordTextField rac_textSignal]] subscribeNext:^(id  _Nullable x) {
@@ -289,31 +297,25 @@
         }
     }];
     
-    [self.loginBtn bk_addEventHandler:^(id sender) {
+    [[self.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         @strongify(self);
         // 登录
         
         self.loginBlock?self.loginBlock(CYWexinLoginType_Login):nil;
-        
-    } forControlEvents:UIControlEventTouchUpInside];
+    }];
     
-    [self.scanRegBtn bk_addEventHandler:^(id sender) {
+    [[self.scanRegBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         @strongify(self);
         
         self.loginBlock?self.loginBlock(CYWexinLoginType_Scan):nil;
-        
-    } forControlEvents:UIControlEventTouchUpInside];
+    }];
     
-    [self.userRegBtn bk_addEventHandler:^(id sender) {
+    [[self.userRegBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         @strongify(self);
         self.isScanRegiste = NO;
         self.loginBlock?self.loginBlock(CYWexinLoginType_NewUser):nil;
-    } forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.fogotPasswordLbl bk_whenTapped:^{
-        @strongify(self);
-        self.loginBlock?self.loginBlock(CYWexinLoginType_FogetPassword):nil;
     }];
+
 }
 
 

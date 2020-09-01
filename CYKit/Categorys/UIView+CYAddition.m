@@ -8,7 +8,7 @@
 #import "UIView+CYAddition.h"
 #import <objc/runtime.h>
 #import "Masonry.h"
-#import "BlocksKit+UIKit.h"
+#import "UIGestureRecognizer+YYAdd.h"
 #import "CYKitDefines.h"
 
 static NSString * kErrorImage;
@@ -59,9 +59,12 @@ static NSString * kErrorMsg;
             make.center.offset(0);
         }];
         
-        [self.cy_errorImageView bk_whenTapped:^{
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
             complete?complete():nil;
         }];
+        tap.numberOfTapsRequired = 1;
+        self.cy_errorImageView.userInteractionEnabled = YES;
+        [self.cy_errorImageView addGestureRecognizer:tap];
     }
     
 }
@@ -97,9 +100,12 @@ static NSString * kErrorMsg;
             make.centerX.offset(0);
         }];
         
-        [self.cy_errorImageView bk_whenTapped:^{
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
             complete?complete():nil;
         }];
+        tap.numberOfTapsRequired = 1;
+        self.cy_errorImageView.userInteractionEnabled = YES;
+        [self.cy_errorImageView addGestureRecognizer:tap];
     }
 }
 

@@ -58,40 +58,40 @@ UITableViewDataSource>
         make.height.offset(245);
     }];
     
-    [headerView bk_whenTapped:^{
-        @strongify(self);
-        self.clickCount ++;
-        if (self.clickCount >= MAX_COUNT) {
-            self.clickCount = 0;
-            
-            SYDebugViewController *debugVc = [SYDebugViewController new];
-            @weakify(debugVc);
-            debugVc.callBack = ^(SYDebugModel * _Nonnull model) {
-                if (model.SYDebugType == SYDebugCell_ClearUserInfoAndLogout) {
-                    @strongify(debugVc);
-                    [debugVc dismissViewControllerAnimated:YES completion:^{
-                        UINavigationController *nav = self.navigationController;
-                        [self.navigationController popToRootViewControllerAnimated:YES];
-                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.15 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//                            [[SYUser currentUser] logout];
-                            CYWeixinLoginViewController* vc = [[CYWeixinLoginViewController alloc]init];
-                            vc.mytag = @"1";
-                            vc.hidesBottomBarWhenPushed = YES;
-                            [nav pushViewController:vc animated:YES];
-                            //发送退出登录的通知
-//                            [[NSNotificationCenter defaultCenter] postNotificationName:k_DidLoginOrLogoutNotification object:nil userInfo:@{k_DidLoginOrLogoutKey:@(NO)}];
-                        });
-                    }];
-                    
-                }
-            };
-            UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:debugVc];
-            navi.modalPresentationStyle = UIModalPresentationFullScreen;
-            [self presentViewController:navi animated:YES completion:nil];
-            
-            [XHToast showBottomWithText:[NSString stringWithFormat:@"环境切换成功,当前环境:%@",(SYDebugMacro() == YES ?@"测试":@"正式")]];
-        }
-    }];
+//    [headerView bk_whenTapped:^{
+//        @strongify(self);
+//        self.clickCount ++;
+//        if (self.clickCount >= MAX_COUNT) {
+//            self.clickCount = 0;
+//
+//            SYDebugViewController *debugVc = [SYDebugViewController new];
+//            @weakify(debugVc);
+//            debugVc.callBack = ^(SYDebugModel * _Nonnull model) {
+//                if (model.SYDebugType == SYDebugCell_ClearUserInfoAndLogout) {
+//                    @strongify(debugVc);
+//                    [debugVc dismissViewControllerAnimated:YES completion:^{
+//                        UINavigationController *nav = self.navigationController;
+//                        [self.navigationController popToRootViewControllerAnimated:YES];
+//                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.15 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+////                            [[SYUser currentUser] logout];
+//                            CYWeixinLoginViewController* vc = [[CYWeixinLoginViewController alloc]init];
+//                            vc.mytag = @"1";
+//                            vc.hidesBottomBarWhenPushed = YES;
+//                            [nav pushViewController:vc animated:YES];
+//                            //发送退出登录的通知
+////                            [[NSNotificationCenter defaultCenter] postNotificationName:k_DidLoginOrLogoutNotification object:nil userInfo:@{k_DidLoginOrLogoutKey:@(NO)}];
+//                        });
+//                    }];
+//
+//                }
+//            };
+//            UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:debugVc];
+//            navi.modalPresentationStyle = UIModalPresentationFullScreen;
+//            [self presentViewController:navi animated:YES completion:nil];
+//
+//            [XHToast showBottomWithText:[NSString stringWithFormat:@"环境切换成功,当前环境:%@",(SYDebugMacro() == YES ?@"测试":@"正式")]];
+//        }
+//    }];
     [self.tableView reloadData];
 }
 

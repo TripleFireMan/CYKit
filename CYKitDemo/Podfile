@@ -1,4 +1,4 @@
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
 target 'CYKitDemo' do
     
@@ -8,7 +8,7 @@ pod 'AFNetworking','2.6.0'
 #pod 'CYKit',:'path => /..'
 
 pod 'Masonry',             '~> 1.0.2'
-pod 'BlocksKit',           '~> 2.2.5'
+#pod 'BlocksKit',           '~> 2.2.5'
 #pod 'CocoaLumberjack',     '~> 3.0.0'
 #pod 'FMDB','~> 2.7'
 
@@ -22,5 +22,6 @@ pod 'FDFullscreenPopGesture', '1.1'
 pod 'MBProgressHUD'
 pod 'LBXScan', '~> 2.3'
 pod 'FastCoding'
+pod 'ZBarSDK'
 end
 

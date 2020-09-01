@@ -14,7 +14,6 @@
 #import "HttpTool.h"
 #import "XHToast.h"
 #import "MBProgressHUD.h"
-#import <BlocksKit+UIKit.h>
 #import <YYKit.h>
 #define LOG_LEVEL_DEF ddLogLevel
 #import <CocoaLumberjack/CocoaLumberjack.h>
@@ -27,7 +26,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelWarning;
 
 #define LBXScan_Define_Native  //包含native库
 #define LBXScan_Define_ZXing   //包含ZXing库
-#define LBXScan_Define_ZBar   //包含ZBar库
+//#define LBXScan_Define_ZBar   //包含ZBar库
 #define LBXScan_Define_UI     //包含界面库
 
 #define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]

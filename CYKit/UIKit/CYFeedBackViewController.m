@@ -11,8 +11,8 @@
 #import "Masonry.h"
 #import "CYKitDefines.h"
 #import "ReactiveObjC.h"
-#import "BlocksKit+UIKit.h"
 #import "XHToast.h"
+#import "UIGestureRecognizer+YYAdd.h"
 
 #define RGBColor(r,g,b)     [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define BG_GRAY_COLOR       RGBColor(249, 249, 249)
@@ -278,10 +278,16 @@
         }
     }];
     
-    [self.imageView bk_whenTapped:^{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
         @strongify(self);
         [self uploadImage];
     }];
+    tap.numberOfTapsRequired = 1;
+    
+    self.imageView.userInteractionEnabled=  YES;
+    [self.imageView addGestureRecognizer:tap];
+    
+    
     
     [[self.phoneTF rac_textSignal] subscribeNext:^(NSString * _Nullable x) {
         @strongify(self);
@@ -290,7 +296,7 @@
         }
     }];
     
-    [self.confirmBtn bk_addEventHandler:^(id sender) {
+    [[self.confirmBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         @strongify(self);
         NSString *content = [self.feedBackTextView text];
         NSString *phoneNum = [self.phoneTF text];
@@ -313,7 +319,7 @@
             [dic setObject:picUrl?:@"" forKey:k_CYPicUrlFeedBackKey];
             self.confirmBlock(dic);
         }
-    } forControlEvents:UIControlEventTouchUpInside];
+    }];
 }
 
 

@@ -21,15 +21,15 @@
     [super awakeFromNib];
     // Initialization code
     @weakify(self);
-    [self.segment bk_addEventHandler:^(id sender) {
-        @strongify(self);
-        if (self.segment.selectedSegmentIndex == 0) {
-            self.model.isDebug = YES;
-        }
-        else{
-            self.model.isDebug = NO;
-        }
-    } forControlEvents:UIControlEventValueChanged];
+//    [self.segment bk_addEventHandler:^(id sender) {
+//        @strongify(self);
+//        if (self.segment.selectedSegmentIndex == 0) {
+//            self.model.isDebug = YES;
+//        }
+//        else{
+//            self.model.isDebug = NO;
+//        }
+//    } forControlEvents:UIControlEventValueChanged];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -38,29 +38,29 @@
     [self setTitle:@"测试界面"];
     [self loadModel];
     @weakify(self);
-    UIButton *lf = [UIButton buttonWithType:UIButtonTypeCustom];
-    lf.frame = CGRectMake(0, 0, 40, 40);
-    [lf setTitle:@"返回" forState:UIControlStateNormal];
-    [lf setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [lf bk_addEventHandler:^(id sender) {
-        @strongify(self);
-        [self dismissViewControllerAnimated:YES completion:nil];
-    } forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithCustomView:lf];
-    self.navigationItem.leftBarButtonItem = left;
+//    UIButton *lf = [UIButton buttonWithType:UIButtonTypeCustom];
+//    lf.frame = CGRectMake(0, 0, 40, 40);
+//    [lf setTitle:@"返回" forState:UIControlStateNormal];
+//    [lf setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    [lf bk_addEventHandler:^(id sender) {
+//        @strongify(self);
+//        [self dismissViewControllerAnimated:YES completion:nil];
+//    } forControlEvents:UIControlEventTouchUpInside];
+//    UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithCustomView:lf];
+//    self.navigationItem.leftBarButtonItem = left;
+//
+//    UIButton *rt = [UIButton buttonWithType:UIButtonTypeCustom];
+//    rt.frame = CGRectMake(0, 0, 40, 40);
+//    [rt setTitle:@"保存" forState:UIControlStateNormal];
+//    [rt setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    [rt bk_addEventHandler:^(id sender) {
+//        @strongify(self);
+//        [self save];
+//        [self dismissViewControllerAnimated:YES completion:nil];
+//    } forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *rt = [UIButton buttonWithType:UIButtonTypeCustom];
-    rt.frame = CGRectMake(0, 0, 40, 40);
-    [rt setTitle:@"保存" forState:UIControlStateNormal];
-    [rt setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [rt bk_addEventHandler:^(id sender) {
-        @strongify(self);
-        [self save];
-        [self dismissViewControllerAnimated:YES completion:nil];
-    } forControlEvents:UIControlEventTouchUpInside];
-    
-    UIBarButtonItem *rtBarItem = [[UIBarButtonItem alloc] initWithCustomView:rt];
-    self.navigationItem.rightBarButtonItem = rtBarItem;
+//    UIBarButtonItem *rtBarItem = [[UIBarButtonItem alloc] initWithCustomView:rt];
+//    self.navigationItem.rightBarButtonItem = rtBarItem;
     
     [self setupSubviews];
     

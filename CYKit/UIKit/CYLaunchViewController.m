@@ -9,9 +9,10 @@
 #import "CYLaunchViewController.h"
 #import "AFNetworking.h"
 #import "Masonry.h"
-#import "BlocksKit+UIKit.h"
 #import "CYKitDefines.h"
 #import "ReactiveObjC.h"
+#import "NSTimer+YYAdd.h"
+
 #define k_UserDefault_LaunchImageKey    @"k_UserDefault_LaunchImageKey"
 #define k_UserDefault_LaunchImageInvalidTimeKey @"k_UserDefault_LaunchImageInvalidTimeKey"
 
@@ -70,10 +71,10 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
     @weakify(self);
     self.closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.closeBtn setTitleColor:self.countDownTextColor forState:UIControlStateNormal];
-    [self.closeBtn bk_addEventHandler:^(id sender) {
+    [[self.closeBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         @strongify(self);
         [self jumpToHomePage];
-    } forControlEvents:UIControlEventTouchUpInside];
+    }];
     
     [self.closeBtn setTitle:[NSString stringWithFormat:@"%@s",@(self.countDown)] forState:UIControlStateNormal];
     self.closeBtn.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
@@ -111,7 +112,7 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
     [self.timer invalidate];
     self.timer = nil;
     @weakify(self);
-    self.timer = [NSTimer bk_timerWithTimeInterval:1 block:^(NSTimer *timer) {
+    self.timer = [NSTimer timerWithTimeInterval:1 block:^(NSTimer * _Nonnull timer) {
         @strongify(self);
         self.countDown --;
         self.closeBtn.hidden = NO;
@@ -120,7 +121,6 @@ static NSTimeInterval CY_PICTURE_INVALIED_TIME = 3 * 24 * 60 * 60;
         if (self.countDown <= 0) {
             [self jumpToHomePage];
         }
-        
     } repeats:YES];
     
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];

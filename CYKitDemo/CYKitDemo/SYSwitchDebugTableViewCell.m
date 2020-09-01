@@ -20,10 +20,10 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     @weakify(self);
-    [self.switchItem bk_addEventHandler:^(id sender) {
-        @strongify(self);
-        self.model.isOpen = [NSNumber numberWithBool:self.switchItem.isOn];
-    } forControlEvents:UIControlEventValueChanged];
+//    [self.switchItem bk_addEventHandler:^(id sender) {
+//        @strongify(self);
+//        self.model.isOpen = [NSNumber numberWithBool:self.switchItem.isOn];
+//    } forControlEvents:UIControlEventValueChanged];
     // Initialization code
 }
 

@@ -9,8 +9,6 @@
 #import <WebKit/WebKit.h>
 #import "Masonry.h"
 #import "CYKitDefines.h"
-#import "BlocksKit.h"
-#import "BlocksKit+UIKit.h"
 #import "ReactiveObjC.h"
 
 
@@ -36,10 +34,11 @@ API_AVAILABLE(ios(8.0))
     UIButton *close = [UIButton buttonWithType:UIButtonTypeCustom];
     [close setImage:[[UIImage imageNamed:@"image_navigation_close"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
     close.tintColor = [UIColor whiteColor];
-    [close bk_addEventHandler:^(id sender) {
+    
+    [[close rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         @strongify(self);
         [self.navigationController popViewControllerAnimated:YES];
-    } forControlEvents:UIControlEventTouchUpInside];
+    }];
     self.closeBtn = close;
     [self.headerView addSubview:close];
     [close mas_makeConstraints:^(MASConstraintMaker *make) {

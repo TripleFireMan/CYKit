@@ -48,39 +48,39 @@ static NSString * const downloadUrl2 = @"http://v3-default.ixigua.com/d28d263b73
     [self.btn1 setTitle:@"开始下载" forState:UIControlStateNormal];
     [self.btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     self.downloadmodel = [[CYDownloadModel alloc] initWithURL:downloadUrl];
-    [self.btn1 bk_addEventHandler:^(id sender) {
-        @strongify(self);
-        //查询当前是否有相应的url对应的任务在下载
-        
-        //1. 创建下载模型
-        if (self.downloadmodel.state == CYDownload_Wait ||
-            self.downloadmodel.state == CYDownload_Init) {
-            [[CYDownloadSessionManager shareInstance] startDownload:self.downloadmodel progress:^(CYDownloadProgress * _Nonnull progress) {
-                self.progress1.progress = progress.progress;
-            } state:^(CYDownloadStatus status, NSString * _Nonnull filePath, NSError * _Nonnull error) {
-                if (error) {
-                    [XHToast showBottomWithText:@"下载失败"];
-                }
-                else{
-                    if (status == CYDownload_Downloaded) {
-                        [XHToast showBottomWithText:@"下载完成"];
-                        self.moviePlayerViewController = [[AVPlayerViewController alloc] init];
-                        self.moviePlayerViewController.player = [AVPlayer playerWithURL:[NSURL fileURLWithPath:self.downloadmodel.destinationFilePath]];
-                        [self presentViewController:self.moviePlayerViewController animated:YES completion:nil];
-                    }
-                }
-            }];
-        }
-        
-        
-        else if (self.downloadmodel.state == CYDownload_Downloading){
-            [[CYDownloadSessionManager shareInstance] pause:self.downloadmodel];
-        }
-        else if (self.downloadmodel.state == CYDownload_Pause){
-            [[CYDownloadSessionManager shareInstance] resume:self.downloadmodel];
-        }
-        
-    } forControlEvents:UIControlEventTouchUpInside];
+//    [self.btn1 bk_addEventHandler:^(id sender) {
+//        @strongify(self);
+//        //查询当前是否有相应的url对应的任务在下载
+//
+//        //1. 创建下载模型
+//        if (self.downloadmodel.state == CYDownload_Wait ||
+//            self.downloadmodel.state == CYDownload_Init) {
+//            [[CYDownloadSessionManager shareInstance] startDownload:self.downloadmodel progress:^(CYDownloadProgress * _Nonnull progress) {
+//                self.progress1.progress = progress.progress;
+//            } state:^(CYDownloadStatus status, NSString * _Nonnull filePath, NSError * _Nonnull error) {
+//                if (error) {
+//                    [XHToast showBottomWithText:@"下载失败"];
+//                }
+//                else{
+//                    if (status == CYDownload_Downloaded) {
+//                        [XHToast showBottomWithText:@"下载完成"];
+//                        self.moviePlayerViewController = [[AVPlayerViewController alloc] init];
+//                        self.moviePlayerViewController.player = [AVPlayer playerWithURL:[NSURL fileURLWithPath:self.downloadmodel.destinationFilePath]];
+//                        [self presentViewController:self.moviePlayerViewController animated:YES completion:nil];
+//                    }
+//                }
+//            }];
+//        }
+//
+//
+//        else if (self.downloadmodel.state == CYDownload_Downloading){
+//            [[CYDownloadSessionManager shareInstance] pause:self.downloadmodel];
+//        }
+//        else if (self.downloadmodel.state == CYDownload_Pause){
+//            [[CYDownloadSessionManager shareInstance] resume:self.downloadmodel];
+//        }
+//
+//    } forControlEvents:UIControlEventTouchUpInside];
     
     [RACObserve(self.downloadmodel, state) subscribeNext:^(id  _Nullable x) {
         @strongify(self);
@@ -100,9 +100,9 @@ static NSString * const downloadUrl2 = @"http://v3-default.ixigua.com/d28d263b73
     self.btn2 = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.btn2 setTitle:@"开始下载" forState:UIControlStateNormal];
     [self.btn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.btn2 bk_addEventHandler:^(id sender) {
-        
-    } forControlEvents:UIControlEventTouchUpInside];
+//    [self.btn2 bk_addEventHandler:^(id sender) {
+//        
+//    } forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.btn2];
 
     [self.lbl1 mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -115,16 +115,16 @@
         make.height.offset(50);
     }];
     @weakify(self);
-    [self.flusBtn bk_addEventHandler:^(id sender) {
-        @strongify(self);
-        if ([self isOpenFlash]) {
-            self.flusBtn.selected = NO;
-        }
-        else{
-            self.flusBtn.selected = YES;
-        }
-        [self openOrCloseFlash];
-    } forControlEvents:UIControlEventTouchUpInside];
+//    [self.flusBtn bk_addEventHandler:^(id sender) {
+//        @strongify(self);
+//        if ([self isOpenFlash]) {
+//            self.flusBtn.selected = NO;
+//        }
+//        else{
+//            self.flusBtn.selected = YES;
+//        }
+//        [self openOrCloseFlash];
+//    } forControlEvents:UIControlEventTouchUpInside];
     
 }
 

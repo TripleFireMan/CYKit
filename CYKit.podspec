@@ -35,7 +35,6 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 #  s.dependency 'FMDB', '~> 2.7'
   s.dependency "Masonry"
-  s.dependency "BlocksKit"
   s.dependency "AFNetworking"
   s.dependency "ReactiveObjC"
   s.dependency "YYKit"
