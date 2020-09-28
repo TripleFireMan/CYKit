@@ -24,10 +24,8 @@
 #import <CYKit/UIButton+CYAddition.h>
 #import <CYKit/UIView+CYAddition.h>
 #import <CYKit/UIView+CYAddition.h>
-#import <CYKit/CYFeedBackViewController.h>
 #import <CYKit/CYFingerPrintLock.h>
 #import <CYKit/CYEvaluate.h>
-#import <CYKit/CYWeixinLoginViewController.h>
 #import <CYKit/CYForgotPasswordViewController.h>
 #import <CYKit/CYChangePasswordViewController.h>
 #import <CYKit/NSObject+CYAddition.h>
@@ -44,11 +42,13 @@
 #import <CYKit/UIResponder+CYAddition.h>
 #import <CYKit/CYUser.h>
 #import <CYKit/NSDateFormatter+CYAddition.h>
+#import <CYKit/UITapGestureRecognizer+CYAddition.h>
 #else
 
 #import "CYModel.h"
 #import "NSDate+CYExtend.h"
 #import "UIImage+CYAddtion.h"
+#import "UITapGestureRecognizer+CYAddition.h"
 #import "UIDevice+CYAddition.h"
 #import "UIColor+CYAddition.h"
 #import "NSString+CYAddition.h"
@@ -60,10 +60,8 @@
 #import "CYH5ViewController.h"
 #import "UIButton+CYAddition.h"
 #import "UIView+CYAddition.h"
-#import "CYFeedBackViewController.h"
 #import "CYFingerPrintLock.h"
 #import "CYEvaluate.h"
-#import "CYWeixinLoginViewController.h"
 #import "CYForgotPasswordViewController.h"
 #import "CYChangePasswordViewController.h"
 #import "NSObject+CYAddition.h"

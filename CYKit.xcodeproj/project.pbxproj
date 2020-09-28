@@ -82,6 +82,8 @@
 		4C3AE2242521E0E0004545D4 /* CYDownloadModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE2182521E0E0004545D4 /* CYDownloadModel.h */; };
 		4C3AE2252521E0E0004545D4 /* CYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE2192521E0E0004545D4 /* CYUser.m */; };
 		4C3AE2262521E0E0004545D4 /* CYDownloadSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE21A2521E0E0004545D4 /* CYDownloadSessionManager.h */; };
+		4C3AE2312521E47A004545D4 /* UITapGestureRecognizer+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE22F2521E47A004545D4 /* UITapGestureRecognizer+CYAddition.h */; };
+		4C3AE2322521E47A004545D4 /* UITapGestureRecognizer+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE2302521E47A004545D4 /* UITapGestureRecognizer+CYAddition.m */; };
 		4C633FCC1F78A38A00D235D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C633FCB1F78A38A00D235D2 /* libz.tbd */; };
 		4C8AC4351DB0F14100BE5647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8AC4341DB0F14100BE5647 /* Foundation.framework */; };
 		4C8AC4371DB0F14C00BE5647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8AC4361DB0F14C00BE5647 /* UIKit.framework */; };
@@ -189,6 +191,8 @@
 		4C3AE2182521E0E0004545D4 /* CYDownloadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYDownloadModel.h; sourceTree = "<group>"; };
 		4C3AE2192521E0E0004545D4 /* CYUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYUser.m; sourceTree = "<group>"; };
 		4C3AE21A2521E0E0004545D4 /* CYDownloadSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYDownloadSessionManager.h; sourceTree = "<group>"; };
+		4C3AE22F2521E47A004545D4 /* UITapGestureRecognizer+CYAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+CYAddition.h"; sourceTree = "<group>"; };
+		4C3AE2302521E47A004545D4 /* UITapGestureRecognizer+CYAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+CYAddition.m"; sourceTree = "<group>"; };
 		4C633FCB1F78A38A00D235D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4C8AC4271DB0F0D300BE5647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C8AC4341DB0F14100BE5647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -401,6 +405,8 @@
 				4C3AE1D72521E0CD004545D4 /* UITableView+CYAddition.m */,
 				4C3AE1DC2521E0CE004545D4 /* UIView+CYAddition.h */,
 				4C3AE1DF2521E0CE004545D4 /* UIView+CYAddition.m */,
+				4C3AE22F2521E47A004545D4 /* UITapGestureRecognizer+CYAddition.h */,
+				4C3AE2302521E47A004545D4 /* UITapGestureRecognizer+CYAddition.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -418,6 +424,7 @@
 				4C3AE2222521E0E0004545D4 /* CYUser.h in Headers */,
 				4C3AE20C2521E0CF004545D4 /* UILabel+CYAddition.h in Headers */,
 				4C3AE1692521D685004545D4 /* CYBaseViewController.h in Headers */,
+				4C3AE2312521E47A004545D4 /* UITapGestureRecognizer+CYAddition.h in Headers */,
 				4C3AE1FD2521E0CE004545D4 /* NSObject+CYAddition.h in Headers */,
 				4CFE2F1D2318B6B4005AD4C4 /* NSDate+CYExtend.h in Headers */,
 				4C3AE2072521E0CF004545D4 /* UITableView+CYAddition.h in Headers */,
@@ -587,6 +594,7 @@
 				4C3AE20B2521E0CF004545D4 /* NSObject+CYAddition.m in Sources */,
 				4C3AE21B2521E0E0004545D4 /* CYDownloadSessionManager.m in Sources */,
 				4C3AE1672521D685004545D4 /* CYForgotPasswordViewController.m in Sources */,
+				4C3AE2322521E47A004545D4 /* UITapGestureRecognizer+CYAddition.m in Sources */,
 				4C3AE2002521E0CF004545D4 /* NSString+CYLog.m in Sources */,
 				4C3AE1F72521E0CE004545D4 /* NSURL+CYAddition.m in Sources */,
 				4CFE2F132318B6B4005AD4C4 /* NSString+CYAddition.m in Sources */,
