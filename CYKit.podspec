@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYKit"
-  s.version = "0.7.30"
+  s.version = "0.7.31"
   s.summary      = "something useful for daily development"
   s.homepage     = "https://github.com/TripleFireMan"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.license      = "MIT"
   s.author       = { "成焱" => "ab364743113@126.com" }
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/TripleFireMan/CYKit.git", :tag => s.version.to_s }
   
   s.source_files  = "CYKit", "CYKit/*.{h,m}"
