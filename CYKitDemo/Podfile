@@ -2,7 +2,7 @@ source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
 target 'CYKitDemo' do
     
-    platform:ios,'8.0'
+    platform:ios,'10.0'
 #pod 'SDWebImage','3.7.0'
 pod 'AFNetworking','2.6.0'
 #pod 'CYKit',:'path => /..'
