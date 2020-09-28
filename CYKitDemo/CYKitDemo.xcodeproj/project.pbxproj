@@ -73,7 +73,6 @@
 		4CBA91731E59BE9600AEBC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA91711E59BE9600AEBC30 /* LaunchScreen.storyboard */; };
 		4CE71C342302E6D000D7D00D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4CE71C312302E6CF00D7D00D /* LICENSE */; };
 		4CE71C352302E6D000D7D00D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4CE71C322302E6CF00D7D00D /* README.md */; };
-		4CE71C362302E6D000D7D00D /* CYKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4CE71C332302E6D000D7D00D /* CYKit.podspec */; };
 		4CF9EF392355997B005E71A3 /* CYDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EF372355997B005E71A3 /* CYDownloadViewController.m */; };
 		4CFE2ECF2318AF1C005AD4C4 /* CYMeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE2ECE2318AF1C005AD4C4 /* CYMeModel.m */; };
 		7DF3FE013BAD84D52FCBC28F /* libPods-CYKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1AD689932BA930006EBA9B /* libPods-CYKitDemo.a */; };
@@ -178,7 +177,6 @@
 		4CBA91741E59BE9600AEBC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CE71C312302E6CF00D7D00D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		4CE71C322302E6CF00D7D00D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
-		4CE71C332302E6D000D7D00D /* CYKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CYKit.podspec; path = ../../CYKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4CF9EF362355997B005E71A3 /* CYDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYDownloadViewController.h; sourceTree = "<group>"; };
 		4CF9EF372355997B005E71A3 /* CYDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYDownloadViewController.m; sourceTree = "<group>"; };
 		4CFE2ECD2318AF1C005AD4C4 /* CYMeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYMeModel.h; sourceTree = "<group>"; };
@@ -343,7 +341,6 @@
 		4CE71C302302E6B600D7D00D /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				4CE71C332302E6D000D7D00D /* CYKit.podspec */,
 				4CE71C312302E6CF00D7D00D /* LICENSE */,
 				4CE71C322302E6CF00D7D00D /* README.md */,
 			);
@@ -476,7 +473,6 @@
 				4C9A540C2341A40C003FD736 /* 5.m4a in Resources */,
 				4C9A53F82341A40C003FD736 /* 8.m4a in Resources */,
 				4C9A53FA2341A40C003FD736 /* 支付宝到账.m4a in Resources */,
-				4CE71C362302E6D000D7D00D /* CYKit.podspec in Resources */,
 				4C9A535C234193CA003FD736 /* SYHelpUsRightCollectionViewCell.xib in Resources */,
 				4C9A54072341A40C003FD736 /* 百.m4a in Resources */,
 				4C9A54032341A40C003FD736 /* 点.m4a in Resources */,

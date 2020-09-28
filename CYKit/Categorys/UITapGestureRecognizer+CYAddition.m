@@ -11,7 +11,7 @@
 
 static const int block_key;
 
-@interface _YYUIGestureRecognizerBlockTarget : NSObject
+@interface _CYUIGestureRecognizerBlockTarget : NSObject
 
 @property (nonatomic, copy) void (^block)(id sender);
 
@@ -20,7 +20,7 @@ static const int block_key;
 
 @end
 
-@implementation _YYUIGestureRecognizerBlockTarget
+@implementation _CYUIGestureRecognizerBlockTarget
 
 - (id)initWithBlock:(void (^)(id sender))block{
     self = [super init];
@@ -44,7 +44,7 @@ static const int block_key;
 }
 
 - (void)addActionBlock:(void (^)(id sender))block {
-    _YYUIGestureRecognizerBlockTarget *target = [[_YYUIGestureRecognizerBlockTarget alloc] initWithBlock:block];
+    _CYUIGestureRecognizerBlockTarget *target = [[_CYUIGestureRecognizerBlockTarget alloc] initWithBlock:block];
     [self addTarget:target action:@selector(invoke:)];
     NSMutableArray *targets = [self _yy_allUIGestureRecognizerBlockTargets];
     [targets addObject:target];
