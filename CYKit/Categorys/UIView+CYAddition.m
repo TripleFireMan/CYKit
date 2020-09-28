@@ -58,12 +58,12 @@ static NSString * kErrorMsg;
             make.center.offset(0);
         }];
         
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
-            complete?complete():nil;
-        }];
-        tap.numberOfTapsRequired = 1;
-        self.cy_errorImageView.userInteractionEnabled = YES;
-        [self.cy_errorImageView addGestureRecognizer:tap];
+//        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
+//            complete?complete():nil;
+//        }];
+//        tap.numberOfTapsRequired = 1;
+//        self.cy_errorImageView.userInteractionEnabled = YES;
+//        [self.cy_errorImageView addGestureRecognizer:tap];
     }
     
 }
@@ -99,12 +99,13 @@ static NSString * kErrorMsg;
             make.centerX.offset(0);
         }];
         
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
-            complete?complete():nil;
-        }];
-        tap.numberOfTapsRequired = 1;
-        self.cy_errorImageView.userInteractionEnabled = YES;
-        [self.cy_errorImageView addGestureRecognizer:tap];
+//        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
+//
+//        }];
+//        tap.numberOfTapsRequired = 1;
+//        tap.numberOfTapsRequired = 1;
+//        self.cy_errorImageView.userInteractionEnabled = YES;
+//        [self.cy_errorImageView addGestureRecognizer:tap];
     }
 }
 

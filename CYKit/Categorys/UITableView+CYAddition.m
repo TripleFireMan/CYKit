@@ -31,9 +31,6 @@
 {
     if (@available(iOS 11, *)) {
         self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-        self.estimatedRowHeight = 0;
-        self.estimatedSectionFooterHeight = 0;
-        self.estimatedSectionHeaderHeight = 0;
     } else {
     
     }
