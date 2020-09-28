@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYKit"
-  s.version = "0.7.29"
+  s.version = "0.7.30"
   s.summary      = "something useful for daily development"
   s.homepage     = "https://github.com/TripleFireMan"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
