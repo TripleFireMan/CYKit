@@ -7,13 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3AE1622521D685004545D4 /* CYPageMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1462521D684004545D4 /* CYPageMenu.m */; };
+		4C3AE1632521D685004545D4 /* CYWeixinLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1472521D684004545D4 /* CYWeixinLoginViewController.m */; };
+		4C3AE1642521D685004545D4 /* CYH5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1482521D684004545D4 /* CYH5ViewController.m */; };
+		4C3AE1652521D685004545D4 /* CYPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1492521D684004545D4 /* CYPageManager.m */; };
+		4C3AE1662521D685004545D4 /* CYWeixinLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE14A2521D684004545D4 /* CYWeixinLoginViewController.h */; };
+		4C3AE1672521D685004545D4 /* CYForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE14B2521D684004545D4 /* CYForgotPasswordViewController.m */; };
+		4C3AE1682521D685004545D4 /* CYPageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE14C2521D684004545D4 /* CYPageScrollView.h */; };
+		4C3AE1692521D685004545D4 /* CYBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE14D2521D684004545D4 /* CYBaseViewController.h */; };
+		4C3AE16A2521D685004545D4 /* CYPageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE14E2521D685004545D4 /* CYPageManager.h */; };
+		4C3AE16B2521D685004545D4 /* CYFeedBackViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE14F2521D685004545D4 /* CYFeedBackViewController.h */; };
+		4C3AE16C2521D685004545D4 /* CYChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1502521D685004545D4 /* CYChangePasswordViewController.m */; };
+		4C3AE16D2521D685004545D4 /* CYRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1512521D685004545D4 /* CYRefreshHeader.h */; };
+		4C3AE16E2521D685004545D4 /* CYRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1522521D685004545D4 /* CYRefreshFooter.m */; };
+		4C3AE16F2521D685004545D4 /* CYChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE1532521D685004545D4 /* CYChangePasswordViewController.xib */; };
+		4C3AE1702521D685004545D4 /* CYFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1542521D685004545D4 /* CYFeedBackViewController.m */; };
+		4C3AE1712521D685004545D4 /* CYPageMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1552521D685004545D4 /* CYPageMenuButton.m */; };
+		4C3AE1722521D685004545D4 /* CYPageMenuButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1562521D685004545D4 /* CYPageMenuButton.h */; };
+		4C3AE1732521D685004545D4 /* CYRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1572521D685004545D4 /* CYRefreshFooter.h */; };
+		4C3AE1742521D685004545D4 /* CYPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1582521D685004545D4 /* CYPageScrollView.m */; };
+		4C3AE1752521D685004545D4 /* CYPageMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1592521D685004545D4 /* CYPageMenu.h */; };
+		4C3AE1762521D685004545D4 /* CYH5ViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE15A2521D685004545D4 /* CYH5ViewController.h */; };
+		4C3AE1772521D685004545D4 /* CYChangePasswordViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE15B2521D685004545D4 /* CYChangePasswordViewController.h */; };
+		4C3AE1782521D685004545D4 /* CYRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE15C2521D685004545D4 /* CYRefreshHeader.m */; };
+		4C3AE1792521D685004545D4 /* CYPageMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE15D2521D685004545D4 /* CYPageMenuItem.m */; };
+		4C3AE17A2521D685004545D4 /* CYForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE15E2521D685004545D4 /* CYForgotPasswordViewController.xib */; };
+		4C3AE17B2521D685004545D4 /* CYPageMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE15F2521D685004545D4 /* CYPageMenuItem.h */; };
+		4C3AE17C2521D685004545D4 /* CYForgotPasswordViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1602521D685004545D4 /* CYForgotPasswordViewController.h */; };
+		4C3AE17D2521D685004545D4 /* CYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1612521D685004545D4 /* CYBaseViewController.m */; };
+		4C3AE18F2521D6D2004545D4 /* sy_login_phone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE1802521D6D1004545D4 /* sy_login_phone@3x.png */; };
+		4C3AE1902521D6D2004545D4 /* sy_login_scan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE1812521D6D1004545D4 /* sy_login_scan@3x.png */; };
+		4C3AE1912521D6D2004545D4 /* sy_login_avator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE1822521D6D1004545D4 /* sy_login_avator@3x.png */; };
+		4C3AE1922521D6D2004545D4 /* sy_login_header@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE1832521D6D2004545D4 /* sy_login_header@3x.png */; };
+		4C3AE1932521D6D2004545D4 /* sy_login_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE1842521D6D2004545D4 /* sy_login_logo@3x.png */; };
+		4C3AE1942521D6D2004545D4 /* sy_login_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE1852521D6D2004545D4 /* sy_login_logo@2x.png */; };
+		4C3AE1952521D6D2004545D4 /* sy_login_header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE1862521D6D2004545D4 /* sy_login_header@2x.png */; };
+		4C3AE1962521D6D2004545D4 /* sy_login_avator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE1872521D6D2004545D4 /* sy_login_avator@2x.png */; };
+		4C3AE1972521D6D2004545D4 /* sy_login_password@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE1882521D6D2004545D4 /* sy_login_password@3x.png */; };
+		4C3AE1982521D6D2004545D4 /* sy_login_password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE1892521D6D2004545D4 /* sy_login_password@2x.png */; };
+		4C3AE1992521D6D2004545D4 /* CYKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE18A2521D6D2004545D4 /* CYKit.bundle */; };
+		4C3AE19A2521D6D2004545D4 /* sy_mine_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE18B2521D6D2004545D4 /* sy_mine_camera@2x.png */; };
+		4C3AE19B2521D6D2004545D4 /* sy_mine_camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE18C2521D6D2004545D4 /* sy_mine_camera@3x.png */; };
+		4C3AE19C2521D6D2004545D4 /* sy_login_scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE18D2521D6D2004545D4 /* sy_login_scan@2x.png */; };
+		4C3AE19D2521D6D2004545D4 /* sy_login_phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE18E2521D6D2004545D4 /* sy_login_phone@2x.png */; };
 		4C633FCC1F78A38A00D235D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C633FCB1F78A38A00D235D2 /* libz.tbd */; };
 		4C8AC4351DB0F14100BE5647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8AC4341DB0F14100BE5647 /* Foundation.framework */; };
 		4C8AC4371DB0F14C00BE5647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8AC4361DB0F14C00BE5647 /* UIKit.framework */; };
 		4CFE2F022318B6B4005AD4C4 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE2EE22318B6B3005AD4C4 /* back@2x.png */; };
 		4CFE2F032318B6B4005AD4C4 /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE2EE32318B6B3005AD4C4 /* back@3x.png */; };
 		4CFE2F042318B6B4005AD4C4 /* image_navigation_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE2EE42318B6B3005AD4C4 /* image_navigation_close@2x.png */; };
-		4CFE2F052318B6B4005AD4C4 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE2EE52318B6B3005AD4C4 /* 1.png */; };
 		4CFE2F062318B6B4005AD4C4 /* image_navigation_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE2EE62318B6B3005AD4C4 /* image_navigation_close@3x.png */; };
 		4CFE2F072318B6B4005AD4C4 /* CYCustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE2EE82318B6B4005AD4C4 /* CYCustomTabBarController.m */; };
 		4CFE2F082318B6B4005AD4C4 /* CYLaunchViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFE2EE92318B6B4005AD4C4 /* CYLaunchViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +84,49 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C3AE1462521D684004545D4 /* CYPageMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPageMenu.m; sourceTree = "<group>"; };
+		4C3AE1472521D684004545D4 /* CYWeixinLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYWeixinLoginViewController.m; sourceTree = "<group>"; };
+		4C3AE1482521D684004545D4 /* CYH5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYH5ViewController.m; sourceTree = "<group>"; };
+		4C3AE1492521D684004545D4 /* CYPageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPageManager.m; sourceTree = "<group>"; };
+		4C3AE14A2521D684004545D4 /* CYWeixinLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYWeixinLoginViewController.h; sourceTree = "<group>"; };
+		4C3AE14B2521D684004545D4 /* CYForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYForgotPasswordViewController.m; sourceTree = "<group>"; };
+		4C3AE14C2521D684004545D4 /* CYPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPageScrollView.h; sourceTree = "<group>"; };
+		4C3AE14D2521D684004545D4 /* CYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseViewController.h; sourceTree = "<group>"; };
+		4C3AE14E2521D685004545D4 /* CYPageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPageManager.h; sourceTree = "<group>"; };
+		4C3AE14F2521D685004545D4 /* CYFeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYFeedBackViewController.h; sourceTree = "<group>"; };
+		4C3AE1502521D685004545D4 /* CYChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYChangePasswordViewController.m; sourceTree = "<group>"; };
+		4C3AE1512521D685004545D4 /* CYRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRefreshHeader.h; sourceTree = "<group>"; };
+		4C3AE1522521D685004545D4 /* CYRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRefreshFooter.m; sourceTree = "<group>"; };
+		4C3AE1532521D685004545D4 /* CYChangePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYChangePasswordViewController.xib; sourceTree = "<group>"; };
+		4C3AE1542521D685004545D4 /* CYFeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYFeedBackViewController.m; sourceTree = "<group>"; };
+		4C3AE1552521D685004545D4 /* CYPageMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPageMenuButton.m; sourceTree = "<group>"; };
+		4C3AE1562521D685004545D4 /* CYPageMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPageMenuButton.h; sourceTree = "<group>"; };
+		4C3AE1572521D685004545D4 /* CYRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRefreshFooter.h; sourceTree = "<group>"; };
+		4C3AE1582521D685004545D4 /* CYPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPageScrollView.m; sourceTree = "<group>"; };
+		4C3AE1592521D685004545D4 /* CYPageMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPageMenu.h; sourceTree = "<group>"; };
+		4C3AE15A2521D685004545D4 /* CYH5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYH5ViewController.h; sourceTree = "<group>"; };
+		4C3AE15B2521D685004545D4 /* CYChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYChangePasswordViewController.h; sourceTree = "<group>"; };
+		4C3AE15C2521D685004545D4 /* CYRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRefreshHeader.m; sourceTree = "<group>"; };
+		4C3AE15D2521D685004545D4 /* CYPageMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPageMenuItem.m; sourceTree = "<group>"; };
+		4C3AE15E2521D685004545D4 /* CYForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		4C3AE15F2521D685004545D4 /* CYPageMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPageMenuItem.h; sourceTree = "<group>"; };
+		4C3AE1602521D685004545D4 /* CYForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYForgotPasswordViewController.h; sourceTree = "<group>"; };
+		4C3AE1612521D685004545D4 /* CYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBaseViewController.m; sourceTree = "<group>"; };
+		4C3AE1802521D6D1004545D4 /* sy_login_phone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_phone@3x.png"; sourceTree = "<group>"; };
+		4C3AE1812521D6D1004545D4 /* sy_login_scan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_scan@3x.png"; sourceTree = "<group>"; };
+		4C3AE1822521D6D1004545D4 /* sy_login_avator@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_avator@3x.png"; sourceTree = "<group>"; };
+		4C3AE1832521D6D2004545D4 /* sy_login_header@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_header@3x.png"; sourceTree = "<group>"; };
+		4C3AE1842521D6D2004545D4 /* sy_login_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_logo@3x.png"; sourceTree = "<group>"; };
+		4C3AE1852521D6D2004545D4 /* sy_login_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_logo@2x.png"; sourceTree = "<group>"; };
+		4C3AE1862521D6D2004545D4 /* sy_login_header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_header@2x.png"; sourceTree = "<group>"; };
+		4C3AE1872521D6D2004545D4 /* sy_login_avator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_avator@2x.png"; sourceTree = "<group>"; };
+		4C3AE1882521D6D2004545D4 /* sy_login_password@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_password@3x.png"; sourceTree = "<group>"; };
+		4C3AE1892521D6D2004545D4 /* sy_login_password@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_password@2x.png"; sourceTree = "<group>"; };
+		4C3AE18A2521D6D2004545D4 /* CYKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CYKit.bundle; sourceTree = "<group>"; };
+		4C3AE18B2521D6D2004545D4 /* sy_mine_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_mine_camera@2x.png"; sourceTree = "<group>"; };
+		4C3AE18C2521D6D2004545D4 /* sy_mine_camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_mine_camera@3x.png"; sourceTree = "<group>"; };
+		4C3AE18D2521D6D2004545D4 /* sy_login_scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_scan@2x.png"; sourceTree = "<group>"; };
+		4C3AE18E2521D6D2004545D4 /* sy_login_phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_phone@2x.png"; sourceTree = "<group>"; };
 		4C633FCB1F78A38A00D235D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4C8AC4271DB0F0D300BE5647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C8AC4341DB0F14100BE5647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,7 +136,6 @@
 		4CFE2EE22318B6B3005AD4C4 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		4CFE2EE32318B6B3005AD4C4 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
 		4CFE2EE42318B6B3005AD4C4 /* image_navigation_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_navigation_close@2x.png"; sourceTree = "<group>"; };
-		4CFE2EE52318B6B3005AD4C4 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		4CFE2EE62318B6B3005AD4C4 /* image_navigation_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_navigation_close@3x.png"; sourceTree = "<group>"; };
 		4CFE2EE82318B6B4005AD4C4 /* CYCustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYCustomTabBarController.m; sourceTree = "<group>"; };
 		4CFE2EE92318B6B4005AD4C4 /* CYLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLaunchViewController.h; sourceTree = "<group>"; };
@@ -139,8 +223,22 @@
 				4CFE2EE22318B6B3005AD4C4 /* back@2x.png */,
 				4CFE2EE32318B6B3005AD4C4 /* back@3x.png */,
 				4CFE2EE42318B6B3005AD4C4 /* image_navigation_close@2x.png */,
-				4CFE2EE52318B6B3005AD4C4 /* 1.png */,
 				4CFE2EE62318B6B3005AD4C4 /* image_navigation_close@3x.png */,
+				4C3AE18A2521D6D2004545D4 /* CYKit.bundle */,
+				4C3AE1872521D6D2004545D4 /* sy_login_avator@2x.png */,
+				4C3AE1822521D6D1004545D4 /* sy_login_avator@3x.png */,
+				4C3AE1862521D6D2004545D4 /* sy_login_header@2x.png */,
+				4C3AE1832521D6D2004545D4 /* sy_login_header@3x.png */,
+				4C3AE1852521D6D2004545D4 /* sy_login_logo@2x.png */,
+				4C3AE1842521D6D2004545D4 /* sy_login_logo@3x.png */,
+				4C3AE1892521D6D2004545D4 /* sy_login_password@2x.png */,
+				4C3AE1882521D6D2004545D4 /* sy_login_password@3x.png */,
+				4C3AE18E2521D6D2004545D4 /* sy_login_phone@2x.png */,
+				4C3AE1802521D6D1004545D4 /* sy_login_phone@3x.png */,
+				4C3AE18D2521D6D2004545D4 /* sy_login_scan@2x.png */,
+				4C3AE1812521D6D1004545D4 /* sy_login_scan@3x.png */,
+				4C3AE18B2521D6D2004545D4 /* sy_mine_camera@2x.png */,
+				4C3AE18C2521D6D2004545D4 /* sy_mine_camera@3x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -157,6 +255,34 @@
 				4CFE2EEE2318B6B4005AD4C4 /* CYLaunchViewController.m */,
 				4CFE2EEF2318B6B4005AD4C4 /* CYCustomBarButton.m */,
 				4CFE2EF02318B6B4005AD4C4 /* CYCustomTabBar.m */,
+				4C3AE14D2521D684004545D4 /* CYBaseViewController.h */,
+				4C3AE1612521D685004545D4 /* CYBaseViewController.m */,
+				4C3AE15B2521D685004545D4 /* CYChangePasswordViewController.h */,
+				4C3AE1502521D685004545D4 /* CYChangePasswordViewController.m */,
+				4C3AE1532521D685004545D4 /* CYChangePasswordViewController.xib */,
+				4C3AE14F2521D685004545D4 /* CYFeedBackViewController.h */,
+				4C3AE1542521D685004545D4 /* CYFeedBackViewController.m */,
+				4C3AE1602521D685004545D4 /* CYForgotPasswordViewController.h */,
+				4C3AE14B2521D684004545D4 /* CYForgotPasswordViewController.m */,
+				4C3AE15E2521D685004545D4 /* CYForgotPasswordViewController.xib */,
+				4C3AE15A2521D685004545D4 /* CYH5ViewController.h */,
+				4C3AE1482521D684004545D4 /* CYH5ViewController.m */,
+				4C3AE14E2521D685004545D4 /* CYPageManager.h */,
+				4C3AE1492521D684004545D4 /* CYPageManager.m */,
+				4C3AE1592521D685004545D4 /* CYPageMenu.h */,
+				4C3AE1462521D684004545D4 /* CYPageMenu.m */,
+				4C3AE1562521D685004545D4 /* CYPageMenuButton.h */,
+				4C3AE1552521D685004545D4 /* CYPageMenuButton.m */,
+				4C3AE15F2521D685004545D4 /* CYPageMenuItem.h */,
+				4C3AE15D2521D685004545D4 /* CYPageMenuItem.m */,
+				4C3AE14C2521D684004545D4 /* CYPageScrollView.h */,
+				4C3AE1582521D685004545D4 /* CYPageScrollView.m */,
+				4C3AE1572521D685004545D4 /* CYRefreshFooter.h */,
+				4C3AE1522521D685004545D4 /* CYRefreshFooter.m */,
+				4C3AE1512521D685004545D4 /* CYRefreshHeader.h */,
+				4C3AE15C2521D685004545D4 /* CYRefreshHeader.m */,
+				4C3AE14A2521D684004545D4 /* CYWeixinLoginViewController.h */,
+				4C3AE1472521D684004545D4 /* CYWeixinLoginViewController.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -198,16 +324,29 @@
 			files = (
 				4CFE2F1B2318B6B4005AD4C4 /* UIImage+CYAddtion.h in Headers */,
 				4CFE2F1A2318B6B4005AD4C4 /* NSData+CYAddition.h in Headers */,
+				4C3AE1692521D685004545D4 /* CYBaseViewController.h in Headers */,
 				4CFE2F1D2318B6B4005AD4C4 /* NSDate+CYExtend.h in Headers */,
 				4CFE2F192318B6B4005AD4C4 /* NSString+CYAddition.h in Headers */,
 				4CFE2F082318B6B4005AD4C4 /* CYLaunchViewController.h in Headers */,
+				4C3AE1662521D685004545D4 /* CYWeixinLoginViewController.h in Headers */,
 				4CFE2F0B2318B6B4005AD4C4 /* CYCustomTabBar.h in Headers */,
+				4C3AE16B2521D685004545D4 /* CYFeedBackViewController.h in Headers */,
 				4CFE2F152318B6B4005AD4C4 /* UIColor+CYAddition.h in Headers */,
+				4C3AE1752521D685004545D4 /* CYPageMenu.h in Headers */,
 				4CFE2F0C2318B6B4005AD4C4 /* CYCustomTabBarController.h in Headers */,
+				4C3AE1772521D685004545D4 /* CYChangePasswordViewController.h in Headers */,
 				4CFE2F102318B6B4005AD4C4 /* CYKit.h in Headers */,
+				4C3AE17C2521D685004545D4 /* CYForgotPasswordViewController.h in Headers */,
 				4CFE2F122318B6B4005AD4C4 /* CYModel.h in Headers */,
+				4C3AE1682521D685004545D4 /* CYPageScrollView.h in Headers */,
 				4CFE2F0A2318B6B4005AD4C4 /* CYKitDefines.h in Headers */,
+				4C3AE17B2521D685004545D4 /* CYPageMenuItem.h in Headers */,
+				4C3AE1732521D685004545D4 /* CYRefreshFooter.h in Headers */,
 				4CFE2F172318B6B4005AD4C4 /* UIDevice+CYAddition.h in Headers */,
+				4C3AE16A2521D685004545D4 /* CYPageManager.h in Headers */,
+				4C3AE1762521D685004545D4 /* CYH5ViewController.h in Headers */,
+				4C3AE16D2521D685004545D4 /* CYRefreshHeader.h in Headers */,
+				4C3AE1722521D685004545D4 /* CYPageMenuButton.h in Headers */,
 				4CFE2F092318B6B4005AD4C4 /* CYCustomBarButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,11 +433,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3AE1922521D6D2004545D4 /* sy_login_header@3x.png in Resources */,
 				4CFE2F042318B6B4005AD4C4 /* image_navigation_close@2x.png in Resources */,
-				4CFE2F052318B6B4005AD4C4 /* 1.png in Resources */,
+				4C3AE16F2521D685004545D4 /* CYChangePasswordViewController.xib in Resources */,
+				4C3AE1902521D6D2004545D4 /* sy_login_scan@3x.png in Resources */,
+				4C3AE17A2521D685004545D4 /* CYForgotPasswordViewController.xib in Resources */,
+				4C3AE1962521D6D2004545D4 /* sy_login_avator@2x.png in Resources */,
+				4C3AE1942521D6D2004545D4 /* sy_login_logo@2x.png in Resources */,
+				4C3AE1972521D6D2004545D4 /* sy_login_password@3x.png in Resources */,
+				4C3AE1932521D6D2004545D4 /* sy_login_logo@3x.png in Resources */,
 				4CFE2F032318B6B4005AD4C4 /* back@3x.png in Resources */,
 				4CFE2F022318B6B4005AD4C4 /* back@2x.png in Resources */,
+				4C3AE1982521D6D2004545D4 /* sy_login_password@2x.png in Resources */,
+				4C3AE1912521D6D2004545D4 /* sy_login_avator@3x.png in Resources */,
+				4C3AE19B2521D6D2004545D4 /* sy_mine_camera@3x.png in Resources */,
+				4C3AE18F2521D6D2004545D4 /* sy_login_phone@3x.png in Resources */,
 				4CFE2F062318B6B4005AD4C4 /* image_navigation_close@3x.png in Resources */,
+				4C3AE1992521D6D2004545D4 /* CYKit.bundle in Resources */,
+				4C3AE19C2521D6D2004545D4 /* sy_login_scan@2x.png in Resources */,
+				4C3AE19D2521D6D2004545D4 /* sy_login_phone@2x.png in Resources */,
+				4C3AE19A2521D6D2004545D4 /* sy_mine_camera@2x.png in Resources */,
+				4C3AE1952521D6D2004545D4 /* sy_login_header@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,12 +474,25 @@
 				4CFE2F0E2318B6B4005AD4C4 /* CYCustomBarButton.m in Sources */,
 				4CFE2F162318B6B4005AD4C4 /* UIImage+CYAddtion.m in Sources */,
 				4CFE2F182318B6B4005AD4C4 /* NSDate+CYExtend.m in Sources */,
+				4C3AE1712521D685004545D4 /* CYPageMenuButton.m in Sources */,
 				4CFE2F142318B6B4005AD4C4 /* NSData+CYAddition.m in Sources */,
+				4C3AE1672521D685004545D4 /* CYForgotPasswordViewController.m in Sources */,
 				4CFE2F132318B6B4005AD4C4 /* NSString+CYAddition.m in Sources */,
+				4C3AE17D2521D685004545D4 /* CYBaseViewController.m in Sources */,
+				4C3AE1642521D685004545D4 /* CYH5ViewController.m in Sources */,
+				4C3AE1632521D685004545D4 /* CYWeixinLoginViewController.m in Sources */,
+				4C3AE1792521D685004545D4 /* CYPageMenuItem.m in Sources */,
+				4C3AE1742521D685004545D4 /* CYPageScrollView.m in Sources */,
+				4C3AE1622521D685004545D4 /* CYPageMenu.m in Sources */,
+				4C3AE1702521D685004545D4 /* CYFeedBackViewController.m in Sources */,
 				4CFE2F072318B6B4005AD4C4 /* CYCustomTabBarController.m in Sources */,
 				4CFE2F1E2318B6B4005AD4C4 /* UIDevice+CYAddition.m in Sources */,
+				4C3AE1652521D685004545D4 /* CYPageManager.m in Sources */,
+				4C3AE16E2521D685004545D4 /* CYRefreshFooter.m in Sources */,
 				4CFE2F0F2318B6B4005AD4C4 /* CYCustomTabBar.m in Sources */,
 				4CFE2F1C2318B6B4005AD4C4 /* UIColor+CYAddition.m in Sources */,
+				4C3AE1782521D685004545D4 /* CYRefreshHeader.m in Sources */,
+				4C3AE16C2521D685004545D4 /* CYChangePasswordViewController.m in Sources */,
 				4CFE2F0D2318B6B4005AD4C4 /* CYLaunchViewController.m in Sources */,
 				4CFE2F112318B6B4005AD4C4 /* CYModel.m in Sources */,
 			);
