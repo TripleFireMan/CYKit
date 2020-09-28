@@ -8,7 +8,6 @@
 #import "UIView+CYAddition.h"
 #import <objc/runtime.h>
 #import "Masonry.h"
-#import "UIGestureRecognizer+YYAdd.h"
 #import "CYKitDefines.h"
 
 static NSString * kErrorImage;

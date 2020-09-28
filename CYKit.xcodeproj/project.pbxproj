@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4C3AE1622521D685004545D4 /* CYPageMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1462521D684004545D4 /* CYPageMenu.m */; };
-		4C3AE1632521D685004545D4 /* CYWeixinLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1472521D684004545D4 /* CYWeixinLoginViewController.m */; };
 		4C3AE1642521D685004545D4 /* CYH5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1482521D684004545D4 /* CYH5ViewController.m */; };
 		4C3AE1652521D685004545D4 /* CYPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1492521D684004545D4 /* CYPageManager.m */; };
-		4C3AE1662521D685004545D4 /* CYWeixinLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE14A2521D684004545D4 /* CYWeixinLoginViewController.h */; };
 		4C3AE1672521D685004545D4 /* CYForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE14B2521D684004545D4 /* CYForgotPasswordViewController.m */; };
 		4C3AE1682521D685004545D4 /* CYPageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE14C2521D684004545D4 /* CYPageScrollView.h */; };
 		4C3AE1692521D685004545D4 /* CYBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE14D2521D684004545D4 /* CYBaseViewController.h */; };
@@ -48,6 +46,42 @@
 		4C3AE19B2521D6D2004545D4 /* sy_mine_camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE18C2521D6D2004545D4 /* sy_mine_camera@3x.png */; };
 		4C3AE19C2521D6D2004545D4 /* sy_login_scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE18D2521D6D2004545D4 /* sy_login_scan@2x.png */; };
 		4C3AE19D2521D6D2004545D4 /* sy_login_phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE18E2521D6D2004545D4 /* sy_login_phone@2x.png */; };
+		4C3AE1F12521E0CE004545D4 /* UIScrollView+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1D52521E0CD004545D4 /* UIScrollView+CYAddition.m */; };
+		4C3AE1F22521E0CE004545D4 /* UICollectionView+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1D62521E0CD004545D4 /* UICollectionView+CYAddition.h */; };
+		4C3AE1F32521E0CE004545D4 /* UITableView+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1D72521E0CD004545D4 /* UITableView+CYAddition.m */; };
+		4C3AE1F42521E0CE004545D4 /* UIResponder+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1D82521E0CD004545D4 /* UIResponder+CYAddition.h */; };
+		4C3AE1F52521E0CE004545D4 /* UICollectionView+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1D92521E0CD004545D4 /* UICollectionView+CYAddition.m */; };
+		4C3AE1F62521E0CE004545D4 /* NSDictionary+CYLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1DA2521E0CE004545D4 /* NSDictionary+CYLog.h */; };
+		4C3AE1F72521E0CE004545D4 /* NSURL+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1DB2521E0CE004545D4 /* NSURL+CYAddition.m */; };
+		4C3AE1F82521E0CE004545D4 /* UIView+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1DC2521E0CE004545D4 /* UIView+CYAddition.h */; };
+		4C3AE1F92521E0CE004545D4 /* UIResponder+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1DD2521E0CE004545D4 /* UIResponder+CYAddition.m */; };
+		4C3AE1FA2521E0CE004545D4 /* NSDictionary+CYLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1DE2521E0CE004545D4 /* NSDictionary+CYLog.m */; };
+		4C3AE1FB2521E0CE004545D4 /* UIView+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1DF2521E0CE004545D4 /* UIView+CYAddition.m */; };
+		4C3AE1FD2521E0CE004545D4 /* NSObject+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1E12521E0CE004545D4 /* NSObject+CYAddition.h */; };
+		4C3AE1FE2521E0CF004545D4 /* UIScrollView+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1E22521E0CE004545D4 /* UIScrollView+CYAddition.h */; };
+		4C3AE1FF2521E0CF004545D4 /* UIButton+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1E32521E0CE004545D4 /* UIButton+CYAddition.m */; };
+		4C3AE2002521E0CF004545D4 /* NSString+CYLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1E42521E0CE004545D4 /* NSString+CYLog.m */; };
+		4C3AE2012521E0CF004545D4 /* UILabel+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1E52521E0CE004545D4 /* UILabel+CYAddition.m */; };
+		4C3AE2022521E0CF004545D4 /* NSDateFormatter+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1E62521E0CE004545D4 /* NSDateFormatter+CYAddition.m */; };
+		4C3AE2032521E0CF004545D4 /* NSArray+CYLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1E72521E0CE004545D4 /* NSArray+CYLog.m */; };
+		4C3AE2042521E0CF004545D4 /* NSDateFormatter+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1E82521E0CE004545D4 /* NSDateFormatter+CYAddition.h */; };
+		4C3AE2062521E0CF004545D4 /* UIButton+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1EA2521E0CE004545D4 /* UIButton+CYAddition.h */; };
+		4C3AE2072521E0CF004545D4 /* UITableView+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1EB2521E0CE004545D4 /* UITableView+CYAddition.h */; };
+		4C3AE2082521E0CF004545D4 /* NSURL+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1EC2521E0CE004545D4 /* NSURL+CYAddition.h */; };
+		4C3AE2092521E0CF004545D4 /* NSString+CYLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1ED2521E0CE004545D4 /* NSString+CYLog.h */; };
+		4C3AE20A2521E0CF004545D4 /* NSArray+CYLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1EE2521E0CE004545D4 /* NSArray+CYLog.h */; };
+		4C3AE20B2521E0CF004545D4 /* NSObject+CYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1EF2521E0CE004545D4 /* NSObject+CYAddition.m */; };
+		4C3AE20C2521E0CF004545D4 /* UILabel+CYAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1F02521E0CE004545D4 /* UILabel+CYAddition.h */; };
+		4C3AE21B2521E0E0004545D4 /* CYDownloadSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE20F2521E0E0004545D4 /* CYDownloadSessionManager.m */; };
+		4C3AE21C2521E0E0004545D4 /* CYDownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE2102521E0E0004545D4 /* CYDownloadModel.m */; };
+		4C3AE21D2521E0E0004545D4 /* CYFingerPrintLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE2112521E0E0004545D4 /* CYFingerPrintLock.m */; };
+		4C3AE21E2521E0E0004545D4 /* CYEvaluate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE2122521E0E0004545D4 /* CYEvaluate.m */; };
+		4C3AE2202521E0E0004545D4 /* CYEvaluate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE2142521E0E0004545D4 /* CYEvaluate.h */; };
+		4C3AE2212521E0E0004545D4 /* CYFingerPrintLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE2152521E0E0004545D4 /* CYFingerPrintLock.h */; };
+		4C3AE2222521E0E0004545D4 /* CYUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE2162521E0E0004545D4 /* CYUser.h */; };
+		4C3AE2242521E0E0004545D4 /* CYDownloadModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE2182521E0E0004545D4 /* CYDownloadModel.h */; };
+		4C3AE2252521E0E0004545D4 /* CYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE2192521E0E0004545D4 /* CYUser.m */; };
+		4C3AE2262521E0E0004545D4 /* CYDownloadSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE21A2521E0E0004545D4 /* CYDownloadSessionManager.h */; };
 		4C633FCC1F78A38A00D235D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C633FCB1F78A38A00D235D2 /* libz.tbd */; };
 		4C8AC4351DB0F14100BE5647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8AC4341DB0F14100BE5647 /* Foundation.framework */; };
 		4C8AC4371DB0F14C00BE5647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8AC4361DB0F14C00BE5647 /* UIKit.framework */; };
@@ -81,10 +115,8 @@
 
 /* Begin PBXFileReference section */
 		4C3AE1462521D684004545D4 /* CYPageMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPageMenu.m; sourceTree = "<group>"; };
-		4C3AE1472521D684004545D4 /* CYWeixinLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYWeixinLoginViewController.m; sourceTree = "<group>"; };
 		4C3AE1482521D684004545D4 /* CYH5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYH5ViewController.m; sourceTree = "<group>"; };
 		4C3AE1492521D684004545D4 /* CYPageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPageManager.m; sourceTree = "<group>"; };
-		4C3AE14A2521D684004545D4 /* CYWeixinLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYWeixinLoginViewController.h; sourceTree = "<group>"; };
 		4C3AE14B2521D684004545D4 /* CYForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYForgotPasswordViewController.m; sourceTree = "<group>"; };
 		4C3AE14C2521D684004545D4 /* CYPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPageScrollView.h; sourceTree = "<group>"; };
 		4C3AE14D2521D684004545D4 /* CYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseViewController.h; sourceTree = "<group>"; };
@@ -121,6 +153,42 @@
 		4C3AE18C2521D6D2004545D4 /* sy_mine_camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_mine_camera@3x.png"; sourceTree = "<group>"; };
 		4C3AE18D2521D6D2004545D4 /* sy_login_scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_scan@2x.png"; sourceTree = "<group>"; };
 		4C3AE18E2521D6D2004545D4 /* sy_login_phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sy_login_phone@2x.png"; sourceTree = "<group>"; };
+		4C3AE1D52521E0CD004545D4 /* UIScrollView+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CYAddition.m"; sourceTree = "<group>"; };
+		4C3AE1D62521E0CD004545D4 /* UICollectionView+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+CYAddition.h"; sourceTree = "<group>"; };
+		4C3AE1D72521E0CD004545D4 /* UITableView+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CYAddition.m"; sourceTree = "<group>"; };
+		4C3AE1D82521E0CD004545D4 /* UIResponder+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+CYAddition.h"; sourceTree = "<group>"; };
+		4C3AE1D92521E0CD004545D4 /* UICollectionView+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+CYAddition.m"; sourceTree = "<group>"; };
+		4C3AE1DA2521E0CE004545D4 /* NSDictionary+CYLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CYLog.h"; sourceTree = "<group>"; };
+		4C3AE1DB2521E0CE004545D4 /* NSURL+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+CYAddition.m"; sourceTree = "<group>"; };
+		4C3AE1DC2521E0CE004545D4 /* UIView+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CYAddition.h"; sourceTree = "<group>"; };
+		4C3AE1DD2521E0CE004545D4 /* UIResponder+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+CYAddition.m"; sourceTree = "<group>"; };
+		4C3AE1DE2521E0CE004545D4 /* NSDictionary+CYLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CYLog.m"; sourceTree = "<group>"; };
+		4C3AE1DF2521E0CE004545D4 /* UIView+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CYAddition.m"; sourceTree = "<group>"; };
+		4C3AE1E12521E0CE004545D4 /* NSObject+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CYAddition.h"; sourceTree = "<group>"; };
+		4C3AE1E22521E0CE004545D4 /* UIScrollView+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CYAddition.h"; sourceTree = "<group>"; };
+		4C3AE1E32521E0CE004545D4 /* UIButton+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CYAddition.m"; sourceTree = "<group>"; };
+		4C3AE1E42521E0CE004545D4 /* NSString+CYLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CYLog.m"; sourceTree = "<group>"; };
+		4C3AE1E52521E0CE004545D4 /* UILabel+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CYAddition.m"; sourceTree = "<group>"; };
+		4C3AE1E62521E0CE004545D4 /* NSDateFormatter+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+CYAddition.m"; sourceTree = "<group>"; };
+		4C3AE1E72521E0CE004545D4 /* NSArray+CYLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CYLog.m"; sourceTree = "<group>"; };
+		4C3AE1E82521E0CE004545D4 /* NSDateFormatter+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+CYAddition.h"; sourceTree = "<group>"; };
+		4C3AE1EA2521E0CE004545D4 /* UIButton+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CYAddition.h"; sourceTree = "<group>"; };
+		4C3AE1EB2521E0CE004545D4 /* UITableView+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CYAddition.h"; sourceTree = "<group>"; };
+		4C3AE1EC2521E0CE004545D4 /* NSURL+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+CYAddition.h"; sourceTree = "<group>"; };
+		4C3AE1ED2521E0CE004545D4 /* NSString+CYLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CYLog.h"; sourceTree = "<group>"; };
+		4C3AE1EE2521E0CE004545D4 /* NSArray+CYLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CYLog.h"; sourceTree = "<group>"; };
+		4C3AE1EF2521E0CE004545D4 /* NSObject+CYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CYAddition.m"; sourceTree = "<group>"; };
+		4C3AE1F02521E0CE004545D4 /* UILabel+CYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CYAddition.h"; sourceTree = "<group>"; };
+		4C3AE20F2521E0E0004545D4 /* CYDownloadSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYDownloadSessionManager.m; sourceTree = "<group>"; };
+		4C3AE2102521E0E0004545D4 /* CYDownloadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYDownloadModel.m; sourceTree = "<group>"; };
+		4C3AE2112521E0E0004545D4 /* CYFingerPrintLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYFingerPrintLock.m; sourceTree = "<group>"; };
+		4C3AE2122521E0E0004545D4 /* CYEvaluate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYEvaluate.m; sourceTree = "<group>"; };
+		4C3AE2142521E0E0004545D4 /* CYEvaluate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYEvaluate.h; sourceTree = "<group>"; };
+		4C3AE2152521E0E0004545D4 /* CYFingerPrintLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYFingerPrintLock.h; sourceTree = "<group>"; };
+		4C3AE2162521E0E0004545D4 /* CYUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYUser.h; sourceTree = "<group>"; };
+		4C3AE2182521E0E0004545D4 /* CYDownloadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYDownloadModel.h; sourceTree = "<group>"; };
+		4C3AE2192521E0E0004545D4 /* CYUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYUser.m; sourceTree = "<group>"; };
+		4C3AE21A2521E0E0004545D4 /* CYDownloadSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYDownloadSessionManager.h; sourceTree = "<group>"; };
 		4C633FCB1F78A38A00D235D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4C8AC4271DB0F0D300BE5647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C8AC4341DB0F14100BE5647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -269,8 +337,6 @@
 				4C3AE1522521D685004545D4 /* CYRefreshFooter.m */,
 				4C3AE1512521D685004545D4 /* CYRefreshHeader.h */,
 				4C3AE15C2521D685004545D4 /* CYRefreshHeader.m */,
-				4C3AE14A2521D684004545D4 /* CYWeixinLoginViewController.h */,
-				4C3AE1472521D684004545D4 /* CYWeixinLoginViewController.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -280,6 +346,16 @@
 			children = (
 				4CFE2EF32318B6B4005AD4C4 /* CYModel.m */,
 				4CFE2EF42318B6B4005AD4C4 /* CYModel.h */,
+				4C3AE2182521E0E0004545D4 /* CYDownloadModel.h */,
+				4C3AE2102521E0E0004545D4 /* CYDownloadModel.m */,
+				4C3AE21A2521E0E0004545D4 /* CYDownloadSessionManager.h */,
+				4C3AE20F2521E0E0004545D4 /* CYDownloadSessionManager.m */,
+				4C3AE2142521E0E0004545D4 /* CYEvaluate.h */,
+				4C3AE2122521E0E0004545D4 /* CYEvaluate.m */,
+				4C3AE2152521E0E0004545D4 /* CYFingerPrintLock.h */,
+				4C3AE2112521E0E0004545D4 /* CYFingerPrintLock.m */,
+				4C3AE2162521E0E0004545D4 /* CYUser.h */,
+				4C3AE2192521E0E0004545D4 /* CYUser.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -299,6 +375,32 @@
 				4CFE2F012318B6B4005AD4C4 /* UIDevice+CYAddition.m */,
 				4CFE2EFE2318B6B4005AD4C4 /* UIImage+CYAddtion.h */,
 				4CFE2EF92318B6B4005AD4C4 /* UIImage+CYAddtion.m */,
+				4C3AE1EE2521E0CE004545D4 /* NSArray+CYLog.h */,
+				4C3AE1E72521E0CE004545D4 /* NSArray+CYLog.m */,
+				4C3AE1E82521E0CE004545D4 /* NSDateFormatter+CYAddition.h */,
+				4C3AE1E62521E0CE004545D4 /* NSDateFormatter+CYAddition.m */,
+				4C3AE1DA2521E0CE004545D4 /* NSDictionary+CYLog.h */,
+				4C3AE1DE2521E0CE004545D4 /* NSDictionary+CYLog.m */,
+				4C3AE1E12521E0CE004545D4 /* NSObject+CYAddition.h */,
+				4C3AE1EF2521E0CE004545D4 /* NSObject+CYAddition.m */,
+				4C3AE1ED2521E0CE004545D4 /* NSString+CYLog.h */,
+				4C3AE1E42521E0CE004545D4 /* NSString+CYLog.m */,
+				4C3AE1EC2521E0CE004545D4 /* NSURL+CYAddition.h */,
+				4C3AE1DB2521E0CE004545D4 /* NSURL+CYAddition.m */,
+				4C3AE1EA2521E0CE004545D4 /* UIButton+CYAddition.h */,
+				4C3AE1E32521E0CE004545D4 /* UIButton+CYAddition.m */,
+				4C3AE1D62521E0CD004545D4 /* UICollectionView+CYAddition.h */,
+				4C3AE1D92521E0CD004545D4 /* UICollectionView+CYAddition.m */,
+				4C3AE1F02521E0CE004545D4 /* UILabel+CYAddition.h */,
+				4C3AE1E52521E0CE004545D4 /* UILabel+CYAddition.m */,
+				4C3AE1D82521E0CD004545D4 /* UIResponder+CYAddition.h */,
+				4C3AE1DD2521E0CE004545D4 /* UIResponder+CYAddition.m */,
+				4C3AE1E22521E0CE004545D4 /* UIScrollView+CYAddition.h */,
+				4C3AE1D52521E0CD004545D4 /* UIScrollView+CYAddition.m */,
+				4C3AE1EB2521E0CE004545D4 /* UITableView+CYAddition.h */,
+				4C3AE1D72521E0CD004545D4 /* UITableView+CYAddition.m */,
+				4C3AE1DC2521E0CE004545D4 /* UIView+CYAddition.h */,
+				4C3AE1DF2521E0CE004545D4 /* UIView+CYAddition.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -311,28 +413,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CFE2F1B2318B6B4005AD4C4 /* UIImage+CYAddtion.h in Headers */,
+				4C3AE1F22521E0CE004545D4 /* UICollectionView+CYAddition.h in Headers */,
 				4CFE2F1A2318B6B4005AD4C4 /* NSData+CYAddition.h in Headers */,
+				4C3AE2222521E0E0004545D4 /* CYUser.h in Headers */,
+				4C3AE20C2521E0CF004545D4 /* UILabel+CYAddition.h in Headers */,
 				4C3AE1692521D685004545D4 /* CYBaseViewController.h in Headers */,
+				4C3AE1FD2521E0CE004545D4 /* NSObject+CYAddition.h in Headers */,
 				4CFE2F1D2318B6B4005AD4C4 /* NSDate+CYExtend.h in Headers */,
+				4C3AE2072521E0CF004545D4 /* UITableView+CYAddition.h in Headers */,
 				4CFE2F192318B6B4005AD4C4 /* NSString+CYAddition.h in Headers */,
-				4C3AE1662521D685004545D4 /* CYWeixinLoginViewController.h in Headers */,
 				4CFE2F0B2318B6B4005AD4C4 /* CYCustomTabBar.h in Headers */,
 				4CFE2F152318B6B4005AD4C4 /* UIColor+CYAddition.h in Headers */,
+				4C3AE1F82521E0CE004545D4 /* UIView+CYAddition.h in Headers */,
+				4C3AE2202521E0E0004545D4 /* CYEvaluate.h in Headers */,
 				4C3AE1752521D685004545D4 /* CYPageMenu.h in Headers */,
 				4CFE2F0C2318B6B4005AD4C4 /* CYCustomTabBarController.h in Headers */,
+				4C3AE1F42521E0CE004545D4 /* UIResponder+CYAddition.h in Headers */,
+				4C3AE2092521E0CF004545D4 /* NSString+CYLog.h in Headers */,
 				4C3AE1772521D685004545D4 /* CYChangePasswordViewController.h in Headers */,
 				4CFE2F102318B6B4005AD4C4 /* CYKit.h in Headers */,
+				4C3AE1F62521E0CE004545D4 /* NSDictionary+CYLog.h in Headers */,
 				4C3AE17C2521D685004545D4 /* CYForgotPasswordViewController.h in Headers */,
+				4C3AE2262521E0E0004545D4 /* CYDownloadSessionManager.h in Headers */,
+				4C3AE2062521E0CF004545D4 /* UIButton+CYAddition.h in Headers */,
+				4C3AE20A2521E0CF004545D4 /* NSArray+CYLog.h in Headers */,
 				4CFE2F122318B6B4005AD4C4 /* CYModel.h in Headers */,
 				4C3AE1682521D685004545D4 /* CYPageScrollView.h in Headers */,
 				4CFE2F0A2318B6B4005AD4C4 /* CYKitDefines.h in Headers */,
+				4C3AE2242521E0E0004545D4 /* CYDownloadModel.h in Headers */,
 				4C3AE17B2521D685004545D4 /* CYPageMenuItem.h in Headers */,
 				4C3AE1732521D685004545D4 /* CYRefreshFooter.h in Headers */,
+				4C3AE2042521E0CF004545D4 /* NSDateFormatter+CYAddition.h in Headers */,
+				4C3AE2082521E0CF004545D4 /* NSURL+CYAddition.h in Headers */,
+				4C3AE2212521E0E0004545D4 /* CYFingerPrintLock.h in Headers */,
 				4CFE2F172318B6B4005AD4C4 /* UIDevice+CYAddition.h in Headers */,
 				4C3AE16A2521D685004545D4 /* CYPageManager.h in Headers */,
 				4C3AE1762521D685004545D4 /* CYH5ViewController.h in Headers */,
 				4C3AE16D2521D685004545D4 /* CYRefreshHeader.h in Headers */,
 				4C3AE1722521D685004545D4 /* CYPageMenuButton.h in Headers */,
+				4C3AE1FE2521E0CF004545D4 /* UIScrollView+CYAddition.h in Headers */,
 				4CFE2F092318B6B4005AD4C4 /* CYCustomBarButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,26 +576,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3AE2012521E0CF004545D4 /* UILabel+CYAddition.m in Sources */,
 				4CFE2F0E2318B6B4005AD4C4 /* CYCustomBarButton.m in Sources */,
 				4CFE2F162318B6B4005AD4C4 /* UIImage+CYAddtion.m in Sources */,
 				4CFE2F182318B6B4005AD4C4 /* NSDate+CYExtend.m in Sources */,
 				4C3AE1712521D685004545D4 /* CYPageMenuButton.m in Sources */,
 				4CFE2F142318B6B4005AD4C4 /* NSData+CYAddition.m in Sources */,
+				4C3AE21D2521E0E0004545D4 /* CYFingerPrintLock.m in Sources */,
+				4C3AE1FB2521E0CE004545D4 /* UIView+CYAddition.m in Sources */,
+				4C3AE20B2521E0CF004545D4 /* NSObject+CYAddition.m in Sources */,
+				4C3AE21B2521E0E0004545D4 /* CYDownloadSessionManager.m in Sources */,
 				4C3AE1672521D685004545D4 /* CYForgotPasswordViewController.m in Sources */,
+				4C3AE2002521E0CF004545D4 /* NSString+CYLog.m in Sources */,
+				4C3AE1F72521E0CE004545D4 /* NSURL+CYAddition.m in Sources */,
 				4CFE2F132318B6B4005AD4C4 /* NSString+CYAddition.m in Sources */,
+				4C3AE1F32521E0CE004545D4 /* UITableView+CYAddition.m in Sources */,
 				4C3AE17D2521D685004545D4 /* CYBaseViewController.m in Sources */,
+				4C3AE2032521E0CF004545D4 /* NSArray+CYLog.m in Sources */,
+				4C3AE21E2521E0E0004545D4 /* CYEvaluate.m in Sources */,
+				4C3AE2022521E0CF004545D4 /* NSDateFormatter+CYAddition.m in Sources */,
 				4C3AE1642521D685004545D4 /* CYH5ViewController.m in Sources */,
-				4C3AE1632521D685004545D4 /* CYWeixinLoginViewController.m in Sources */,
 				4C3AE1792521D685004545D4 /* CYPageMenuItem.m in Sources */,
 				4C3AE1742521D685004545D4 /* CYPageScrollView.m in Sources */,
 				4C3AE1622521D685004545D4 /* CYPageMenu.m in Sources */,
+				4C3AE1FA2521E0CE004545D4 /* NSDictionary+CYLog.m in Sources */,
 				4CFE2F072318B6B4005AD4C4 /* CYCustomTabBarController.m in Sources */,
+				4C3AE1F92521E0CE004545D4 /* UIResponder+CYAddition.m in Sources */,
+				4C3AE2252521E0E0004545D4 /* CYUser.m in Sources */,
 				4CFE2F1E2318B6B4005AD4C4 /* UIDevice+CYAddition.m in Sources */,
+				4C3AE1F52521E0CE004545D4 /* UICollectionView+CYAddition.m in Sources */,
+				4C3AE1FF2521E0CF004545D4 /* UIButton+CYAddition.m in Sources */,
+				4C3AE21C2521E0E0004545D4 /* CYDownloadModel.m in Sources */,
 				4C3AE1652521D685004545D4 /* CYPageManager.m in Sources */,
 				4C3AE16E2521D685004545D4 /* CYRefreshFooter.m in Sources */,
 				4CFE2F0F2318B6B4005AD4C4 /* CYCustomTabBar.m in Sources */,
 				4CFE2F1C2318B6B4005AD4C4 /* UIColor+CYAddition.m in Sources */,
 				4C3AE1782521D685004545D4 /* CYRefreshHeader.m in Sources */,
+				4C3AE1F12521E0CE004545D4 /* UIScrollView+CYAddition.m in Sources */,
 				4C3AE16C2521D685004545D4 /* CYChangePasswordViewController.m in Sources */,
 				4CFE2F112318B6B4005AD4C4 /* CYModel.m in Sources */,
 			);
