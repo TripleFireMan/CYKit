@@ -46,7 +46,7 @@ os.system('git push origin master')
 os.system('git tag -a ' + newVersion + ' -m ' + 'tag版本号')
 os.system('git push --tags')
 #提交到cocoapods
-os.system('pod trunk push --allow-warnings')
+os.system('pod trunk push --allow-warnings --verbose')
 
 
 
