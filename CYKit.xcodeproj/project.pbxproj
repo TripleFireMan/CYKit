@@ -16,12 +16,10 @@
 		4C3AE1682521D685004545D4 /* CYPageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE14C2521D684004545D4 /* CYPageScrollView.h */; };
 		4C3AE1692521D685004545D4 /* CYBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE14D2521D684004545D4 /* CYBaseViewController.h */; };
 		4C3AE16A2521D685004545D4 /* CYPageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE14E2521D685004545D4 /* CYPageManager.h */; };
-		4C3AE16B2521D685004545D4 /* CYFeedBackViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE14F2521D685004545D4 /* CYFeedBackViewController.h */; };
 		4C3AE16C2521D685004545D4 /* CYChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1502521D685004545D4 /* CYChangePasswordViewController.m */; };
 		4C3AE16D2521D685004545D4 /* CYRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1512521D685004545D4 /* CYRefreshHeader.h */; };
 		4C3AE16E2521D685004545D4 /* CYRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1522521D685004545D4 /* CYRefreshFooter.m */; };
 		4C3AE16F2521D685004545D4 /* CYChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3AE1532521D685004545D4 /* CYChangePasswordViewController.xib */; };
-		4C3AE1702521D685004545D4 /* CYFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1542521D685004545D4 /* CYFeedBackViewController.m */; };
 		4C3AE1712521D685004545D4 /* CYPageMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3AE1552521D685004545D4 /* CYPageMenuButton.m */; };
 		4C3AE1722521D685004545D4 /* CYPageMenuButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1562521D685004545D4 /* CYPageMenuButton.h */; };
 		4C3AE1732521D685004545D4 /* CYRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3AE1572521D685004545D4 /* CYRefreshFooter.h */; };
@@ -58,12 +56,10 @@
 		4CFE2F042318B6B4005AD4C4 /* image_navigation_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE2EE42318B6B3005AD4C4 /* image_navigation_close@2x.png */; };
 		4CFE2F062318B6B4005AD4C4 /* image_navigation_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFE2EE62318B6B3005AD4C4 /* image_navigation_close@3x.png */; };
 		4CFE2F072318B6B4005AD4C4 /* CYCustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE2EE82318B6B4005AD4C4 /* CYCustomTabBarController.m */; };
-		4CFE2F082318B6B4005AD4C4 /* CYLaunchViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFE2EE92318B6B4005AD4C4 /* CYLaunchViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CFE2F092318B6B4005AD4C4 /* CYCustomBarButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFE2EEA2318B6B4005AD4C4 /* CYCustomBarButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CFE2F0A2318B6B4005AD4C4 /* CYKitDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFE2EEB2318B6B4005AD4C4 /* CYKitDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CFE2F0B2318B6B4005AD4C4 /* CYCustomTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFE2EEC2318B6B4005AD4C4 /* CYCustomTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CFE2F0C2318B6B4005AD4C4 /* CYCustomTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFE2EED2318B6B4005AD4C4 /* CYCustomTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CFE2F0D2318B6B4005AD4C4 /* CYLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE2EEE2318B6B4005AD4C4 /* CYLaunchViewController.m */; };
 		4CFE2F0E2318B6B4005AD4C4 /* CYCustomBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE2EEF2318B6B4005AD4C4 /* CYCustomBarButton.m */; };
 		4CFE2F0F2318B6B4005AD4C4 /* CYCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE2EF02318B6B4005AD4C4 /* CYCustomTabBar.m */; };
 		4CFE2F102318B6B4005AD4C4 /* CYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFE2EF12318B6B4005AD4C4 /* CYKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -93,12 +89,10 @@
 		4C3AE14C2521D684004545D4 /* CYPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPageScrollView.h; sourceTree = "<group>"; };
 		4C3AE14D2521D684004545D4 /* CYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBaseViewController.h; sourceTree = "<group>"; };
 		4C3AE14E2521D685004545D4 /* CYPageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPageManager.h; sourceTree = "<group>"; };
-		4C3AE14F2521D685004545D4 /* CYFeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYFeedBackViewController.h; sourceTree = "<group>"; };
 		4C3AE1502521D685004545D4 /* CYChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYChangePasswordViewController.m; sourceTree = "<group>"; };
 		4C3AE1512521D685004545D4 /* CYRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRefreshHeader.h; sourceTree = "<group>"; };
 		4C3AE1522521D685004545D4 /* CYRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRefreshFooter.m; sourceTree = "<group>"; };
 		4C3AE1532521D685004545D4 /* CYChangePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYChangePasswordViewController.xib; sourceTree = "<group>"; };
-		4C3AE1542521D685004545D4 /* CYFeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYFeedBackViewController.m; sourceTree = "<group>"; };
 		4C3AE1552521D685004545D4 /* CYPageMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYPageMenuButton.m; sourceTree = "<group>"; };
 		4C3AE1562521D685004545D4 /* CYPageMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYPageMenuButton.h; sourceTree = "<group>"; };
 		4C3AE1572521D685004545D4 /* CYRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRefreshFooter.h; sourceTree = "<group>"; };
@@ -138,12 +132,10 @@
 		4CFE2EE42318B6B3005AD4C4 /* image_navigation_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_navigation_close@2x.png"; sourceTree = "<group>"; };
 		4CFE2EE62318B6B3005AD4C4 /* image_navigation_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image_navigation_close@3x.png"; sourceTree = "<group>"; };
 		4CFE2EE82318B6B4005AD4C4 /* CYCustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYCustomTabBarController.m; sourceTree = "<group>"; };
-		4CFE2EE92318B6B4005AD4C4 /* CYLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLaunchViewController.h; sourceTree = "<group>"; };
 		4CFE2EEA2318B6B4005AD4C4 /* CYCustomBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYCustomBarButton.h; sourceTree = "<group>"; };
 		4CFE2EEB2318B6B4005AD4C4 /* CYKitDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYKitDefines.h; sourceTree = "<group>"; };
 		4CFE2EEC2318B6B4005AD4C4 /* CYCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYCustomTabBar.h; sourceTree = "<group>"; };
 		4CFE2EED2318B6B4005AD4C4 /* CYCustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYCustomTabBarController.h; sourceTree = "<group>"; };
-		4CFE2EEE2318B6B4005AD4C4 /* CYLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLaunchViewController.m; sourceTree = "<group>"; };
 		4CFE2EEF2318B6B4005AD4C4 /* CYCustomBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYCustomBarButton.m; sourceTree = "<group>"; };
 		4CFE2EF02318B6B4005AD4C4 /* CYCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYCustomTabBar.m; sourceTree = "<group>"; };
 		4CFE2EF12318B6B4005AD4C4 /* CYKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYKit.h; sourceTree = "<group>"; };
@@ -246,27 +238,23 @@
 		4CFE2EE72318B6B4005AD4C4 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				4CFE2EE82318B6B4005AD4C4 /* CYCustomTabBarController.m */,
-				4CFE2EE92318B6B4005AD4C4 /* CYLaunchViewController.h */,
-				4CFE2EEA2318B6B4005AD4C4 /* CYCustomBarButton.h */,
-				4CFE2EEB2318B6B4005AD4C4 /* CYKitDefines.h */,
-				4CFE2EEC2318B6B4005AD4C4 /* CYCustomTabBar.h */,
-				4CFE2EED2318B6B4005AD4C4 /* CYCustomTabBarController.h */,
-				4CFE2EEE2318B6B4005AD4C4 /* CYLaunchViewController.m */,
-				4CFE2EEF2318B6B4005AD4C4 /* CYCustomBarButton.m */,
-				4CFE2EF02318B6B4005AD4C4 /* CYCustomTabBar.m */,
 				4C3AE14D2521D684004545D4 /* CYBaseViewController.h */,
 				4C3AE1612521D685004545D4 /* CYBaseViewController.m */,
 				4C3AE15B2521D685004545D4 /* CYChangePasswordViewController.h */,
 				4C3AE1502521D685004545D4 /* CYChangePasswordViewController.m */,
 				4C3AE1532521D685004545D4 /* CYChangePasswordViewController.xib */,
-				4C3AE14F2521D685004545D4 /* CYFeedBackViewController.h */,
-				4C3AE1542521D685004545D4 /* CYFeedBackViewController.m */,
+				4CFE2EEA2318B6B4005AD4C4 /* CYCustomBarButton.h */,
+				4CFE2EEF2318B6B4005AD4C4 /* CYCustomBarButton.m */,
+				4CFE2EEC2318B6B4005AD4C4 /* CYCustomTabBar.h */,
+				4CFE2EF02318B6B4005AD4C4 /* CYCustomTabBar.m */,
+				4CFE2EED2318B6B4005AD4C4 /* CYCustomTabBarController.h */,
+				4CFE2EE82318B6B4005AD4C4 /* CYCustomTabBarController.m */,
 				4C3AE1602521D685004545D4 /* CYForgotPasswordViewController.h */,
 				4C3AE14B2521D684004545D4 /* CYForgotPasswordViewController.m */,
 				4C3AE15E2521D685004545D4 /* CYForgotPasswordViewController.xib */,
 				4C3AE15A2521D685004545D4 /* CYH5ViewController.h */,
 				4C3AE1482521D684004545D4 /* CYH5ViewController.m */,
+				4CFE2EEB2318B6B4005AD4C4 /* CYKitDefines.h */,
 				4C3AE14E2521D685004545D4 /* CYPageManager.h */,
 				4C3AE1492521D684004545D4 /* CYPageManager.m */,
 				4C3AE1592521D685004545D4 /* CYPageMenu.h */,
@@ -299,18 +287,18 @@
 		4CFE2EF52318B6B4005AD4C4 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
-				4CFE2EF62318B6B4005AD4C4 /* NSString+CYAddition.m */,
+				4CFE2EFD2318B6B4005AD4C4 /* NSData+CYAddition.h */,
 				4CFE2EF72318B6B4005AD4C4 /* NSData+CYAddition.m */,
-				4CFE2EF82318B6B4005AD4C4 /* UIColor+CYAddition.h */,
-				4CFE2EF92318B6B4005AD4C4 /* UIImage+CYAddtion.m */,
-				4CFE2EFA2318B6B4005AD4C4 /* UIDevice+CYAddition.h */,
+				4CFE2F002318B6B4005AD4C4 /* NSDate+CYExtend.h */,
 				4CFE2EFB2318B6B4005AD4C4 /* NSDate+CYExtend.m */,
 				4CFE2EFC2318B6B4005AD4C4 /* NSString+CYAddition.h */,
-				4CFE2EFD2318B6B4005AD4C4 /* NSData+CYAddition.h */,
-				4CFE2EFE2318B6B4005AD4C4 /* UIImage+CYAddtion.h */,
+				4CFE2EF62318B6B4005AD4C4 /* NSString+CYAddition.m */,
+				4CFE2EF82318B6B4005AD4C4 /* UIColor+CYAddition.h */,
 				4CFE2EFF2318B6B4005AD4C4 /* UIColor+CYAddition.m */,
-				4CFE2F002318B6B4005AD4C4 /* NSDate+CYExtend.h */,
+				4CFE2EFA2318B6B4005AD4C4 /* UIDevice+CYAddition.h */,
 				4CFE2F012318B6B4005AD4C4 /* UIDevice+CYAddition.m */,
+				4CFE2EFE2318B6B4005AD4C4 /* UIImage+CYAddtion.h */,
+				4CFE2EF92318B6B4005AD4C4 /* UIImage+CYAddtion.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -327,10 +315,8 @@
 				4C3AE1692521D685004545D4 /* CYBaseViewController.h in Headers */,
 				4CFE2F1D2318B6B4005AD4C4 /* NSDate+CYExtend.h in Headers */,
 				4CFE2F192318B6B4005AD4C4 /* NSString+CYAddition.h in Headers */,
-				4CFE2F082318B6B4005AD4C4 /* CYLaunchViewController.h in Headers */,
 				4C3AE1662521D685004545D4 /* CYWeixinLoginViewController.h in Headers */,
 				4CFE2F0B2318B6B4005AD4C4 /* CYCustomTabBar.h in Headers */,
-				4C3AE16B2521D685004545D4 /* CYFeedBackViewController.h in Headers */,
 				4CFE2F152318B6B4005AD4C4 /* UIColor+CYAddition.h in Headers */,
 				4C3AE1752521D685004545D4 /* CYPageMenu.h in Headers */,
 				4CFE2F0C2318B6B4005AD4C4 /* CYCustomTabBarController.h in Headers */,
@@ -484,7 +470,6 @@
 				4C3AE1792521D685004545D4 /* CYPageMenuItem.m in Sources */,
 				4C3AE1742521D685004545D4 /* CYPageScrollView.m in Sources */,
 				4C3AE1622521D685004545D4 /* CYPageMenu.m in Sources */,
-				4C3AE1702521D685004545D4 /* CYFeedBackViewController.m in Sources */,
 				4CFE2F072318B6B4005AD4C4 /* CYCustomTabBarController.m in Sources */,
 				4CFE2F1E2318B6B4005AD4C4 /* UIDevice+CYAddition.m in Sources */,
 				4C3AE1652521D685004545D4 /* CYPageManager.m in Sources */,
@@ -493,7 +478,6 @@
 				4CFE2F1C2318B6B4005AD4C4 /* UIColor+CYAddition.m in Sources */,
 				4C3AE1782521D685004545D4 /* CYRefreshHeader.m in Sources */,
 				4C3AE16C2521D685004545D4 /* CYChangePasswordViewController.m in Sources */,
-				4CFE2F0D2318B6B4005AD4C4 /* CYLaunchViewController.m in Sources */,
 				4CFE2F112318B6B4005AD4C4 /* CYModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
