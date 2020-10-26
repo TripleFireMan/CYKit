@@ -198,6 +198,7 @@
 		4C8AC4341DB0F14100BE5647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C8AC4361DB0F14C00BE5647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4C9520A122D081D0000C5CB2 /* CYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CA51A032533F24100FDC6DB /* CYKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CYKit.podspec; sourceTree = "<group>"; };
 		4CFE2EE02318B664005AD4C4 /* CYKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFE2EE22318B6B3005AD4C4 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		4CFE2EE32318B6B3005AD4C4 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
@@ -251,6 +252,7 @@
 		4C8AC4191DB0F0D300BE5647 = {
 			isa = PBXGroup;
 			children = (
+				4CA51A032533F24100FDC6DB /* CYKit.podspec */,
 				4C8AC4251DB0F0D300BE5647 /* CYKit */,
 				4C8AC4331DB0F14100BE5647 /* Frameworks */,
 				4C9520A122D081D0000C5CB2 /* CYKit.framework */,

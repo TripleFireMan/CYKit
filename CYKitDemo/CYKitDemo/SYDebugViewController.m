@@ -37,7 +37,6 @@
     
     [self setTitle:@"测试界面"];
     [self loadModel];
-    @weakify(self);
 //    UIButton *lf = [UIButton buttonWithType:UIButtonTypeCustom];
 //    lf.frame = CGRectMake(0, 0, 40, 40);
 //    [lf setTitle:@"返回" forState:UIControlStateNormal];

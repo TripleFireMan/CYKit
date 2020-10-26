@@ -17,8 +17,19 @@
 #define CY_IS_IPHONE_Xr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) : NO)  //是否是iphoneXr
 #define CY_IS_IPHONE_Xs_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)//是否是iPhoneXsMax
 
+#define CY_IS_IPHONE_12 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1170, 2532), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define CY_IS_IPHONE_12_Mini ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1080, 2340), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define CY_IS_IPHONE_12_Pro ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1170, 2532), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define CY_IS_IPHONE_12_ProMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1284, 2778), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define CY_IS_Iphone12Series (CY_IS_IPHONE_12 || CY_IS_IPHONE_12_Mini || CY_IS_IPHONE_12_Pro || CY_IS_IPHONE_12_ProMax)
+
 //判断iPhoneX所有系列
-#define CY_IS_PhoneXAll (CY_IsiPhoneX || CY_IS_IPHONE_Xr || CY_IS_IPHONE_Xs_Max)
+#define CY_IS_PhoneXAll (CY_IsiPhoneX || CY_IS_IPHONE_Xr || CY_IS_IPHONE_Xs_Max || CY_IS_Iphone12Series)
+
 #define CY_Height_NavContentBar 44.0f
 #define CY_Height_StatusBar (CY_IS_PhoneXAll? 44.0 : 20.0)
 #define CY_Height_NavBar (CY_IS_PhoneXAll ? 88.0 : 64.0)

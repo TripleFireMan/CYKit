@@ -14,7 +14,6 @@
 #import "HttpTool.h"
 #import "XHToast.h"
 #import "MBProgressHUD.h"
-#import <YYKit.h>
 #define LOG_LEVEL_DEF ddLogLevel
 #import <CocoaLumberjack/CocoaLumberjack.h>
 
