@@ -118,6 +118,7 @@
 - (UIView *) maskview{
     if (!_maskview) {
         _maskview = [UIView new];
+        _maskview.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
     }
     return _maskview;
 }
