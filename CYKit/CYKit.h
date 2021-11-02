@@ -43,6 +43,7 @@
 #import <CYKit/CYUser.h>
 #import <CYKit/NSDateFormatter+CYAddition.h>
 #import <CYKit/UITapGestureRecognizer+CYAddition.h>
+#import <CYKit/CYPrivateView.h>
 #else
 
 #import "CYModel.h"
@@ -79,5 +80,5 @@
 #import "UIResponder+CYAddition.h"
 #import "CYUser.h"
 #import "NSDateFormatter+CYAddition.h"
-
+#import "CYPrivateView.h"
 #endif

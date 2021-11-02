@@ -20,7 +20,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    @weakify(self);
+//    @weakify(self);
 //    [self.segment bk_addEventHandler:^(id sender) {
 //        @strongify(self);
 //        if (self.segment.selectedSegmentIndex == 0) {

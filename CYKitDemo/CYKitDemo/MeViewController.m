@@ -9,13 +9,13 @@
 #import "MeViewController.h"
 #import "CYMeModel.h"
 #import "CYH5ViewController.h"
-#import "CYFeedBackViewController.h"
-#import "CYWeixinLoginViewController.h"
+//#import "CYFeedBackViewController.h"
+//#import "CYWeixinLoginViewController.h"
 #import "CYForgotPasswordViewController.h"
 #import "CYChangePasswordViewController.h"
-#import "CYLaunchViewController.h"
-#import "SYHelpUsViewController.h"
-#import "SYAboutUsViewController.h"
+//#import "CYLaunchViewController.h"
+//#import "SYHelpUsViewController.h"
+//#import "SYAboutUsViewController.h"
 #import "SYCustomScanViewController.h"
 #import "StyleDIY.h"
 #import "SpeechVC.h"
@@ -102,65 +102,65 @@
         [self.navigationController pushViewController:h5 animated:YES];
     }
     else if ([model.title isEqualToString:@"用户反馈"]){
-        CYFeedBackViewController *feedback = [[CYFeedBackViewController alloc] init];
-        [self.navigationController pushViewController:feedback animated:YES];
+//        CYFeedBackViewController *feedback = [[CYFeedBackViewController alloc] init];
+//        [self.navigationController pushViewController:feedback animated:YES];
     }
     else if ([model.title isEqualToString:@"登录"]){
-        CYWeixinLoginViewController *login = [[CYWeixinLoginViewController alloc] init];
-        login.loginBlock = ^(CYWexinLoginType type) {
-            switch (type) {
-                case CYWexinLoginType_FogetPassword:
-                {
-                    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"CYKit" ofType:@"bundle"];
-                    NSLog(@"bundlePath =%@",bundlePath);
-                    CYChangePasswordViewController *forget =  [[CYChangePasswordViewController alloc] initWithNibName:@"CYChangePasswordViewController" bundle:[NSBundle bundleWithPath:bundlePath]];
-                    [self.navigationController pushViewController:forget animated:YES];
-                }
-                    break;
-                    
-                default:
-                    break;
-            }
-        };
-        [self.navigationController pushViewController:login animated:YES];
+//        CYWeixinLoginViewController *login = [[CYWeixinLoginViewController alloc] init];
+//        login.loginBlock = ^(CYWexinLoginType type) {
+//            switch (type) {
+//                case CYWexinLoginType_FogetPassword:
+//                {
+//                    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"CYKit" ofType:@"bundle"];
+//                    NSLog(@"bundlePath =%@",bundlePath);
+//                    CYChangePasswordViewController *forget =  [[CYChangePasswordViewController alloc] initWithNibName:@"CYChangePasswordViewController" bundle:[NSBundle bundleWithPath:bundlePath]];
+//                    [self.navigationController pushViewController:forget animated:YES];
+//                }
+//                    break;
+//
+//                default:
+//                    break;
+//            }
+//        };
+//        [self.navigationController pushViewController:login animated:YES];
     }
-    else if ([model.title isEqualToString:@"启动页"]){
-        CYLaunchViewController *launchVC = [CYLaunchViewController new];
-        [self.navigationController pushViewController:launchVC animated:YES];
-    }
-    else if ([model.title isEqualToString:@"帮助页"]){
-        SYHelpUsViewController *helpUs = [SYHelpUsViewController new];
-        [self.navigationController pushViewController:helpUs animated:YES];
-    }
-    else if ([model.title isEqualToString:@"清除缓存"]){
-        [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [MBProgressHUD hideHUDForView:[UIApplication sharedApplication].keyWindow animated:YES];
-            [XHToast showBottomWithText:@"缓存清除成功"];
-        });
-    }
-    else if ([model.title isEqualToString:@"关于我们"]){
-        SYAboutUsViewController *aboutus = [[SYAboutUsViewController alloc]init];
-        [self.navigationController pushViewController:aboutus animated:YES];
-    }
-    else if ([model.title isEqualToString:@"扫码"]){
-        self.navigationController.navigationBar.hidden = YES;
-        SYCustomScanViewController *scanVC = [SYCustomScanViewController new];
-//        scanVC.navigationController.navigationBar.hidden = YES;
-        scanVC.scanType = SYCustomScanType_ChangeCard;
-        scanVC.style = [StyleDIY weixinStyle];
-        scanVC.delegate = self;
-        scanVC.isOpenInterestRect = YES;
-        [self.navigationController pushViewController:scanVC animated:YES];
-    }
-    else if ([[model title] isEqualToString:@"语音播报"]){
-        SpeechVC *speechVC = [SpeechVC new];
-        [self.navigationController pushViewController:speechVC animated:YES];
-    }
-    else if ([model.title isEqualToString:@"下载"]){
-        CYDownloadViewController *downloadVC = [CYDownloadViewController new];
-        [self.navigationController pushViewController:downloadVC animated:YES];
-    }
+//    else if ([model.title isEqualToString:@"启动页"]){
+//        CYLaunchViewController *launchVC = [CYLaunchViewController new];
+//        [self.navigationController pushViewController:launchVC animated:YES];
+//    }
+//    else if ([model.title isEqualToString:@"帮助页"]){
+//        SYHelpUsViewController *helpUs = [SYHelpUsViewController new];
+//        [self.navigationController pushViewController:helpUs animated:YES];
+//    }
+//    else if ([model.title isEqualToString:@"清除缓存"]){
+//        [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [MBProgressHUD hideHUDForView:[UIApplication sharedApplication].keyWindow animated:YES];
+//            [XHToast showBottomWithText:@"缓存清除成功"];
+//        });
+//    }
+//    else if ([model.title isEqualToString:@"关于我们"]){
+//        SYAboutUsViewController *aboutus = [[SYAboutUsViewController alloc]init];
+//        [self.navigationController pushViewController:aboutus animated:YES];
+//    }
+//    else if ([model.title isEqualToString:@"扫码"]){
+//        self.navigationController.navigationBar.hidden = YES;
+//        SYCustomScanViewController *scanVC = [SYCustomScanViewController new];
+////        scanVC.navigationController.navigationBar.hidden = YES;
+//        scanVC.scanType = SYCustomScanType_ChangeCard;
+//        scanVC.style = [StyleDIY weixinStyle];
+//        scanVC.delegate = self;
+//        scanVC.isOpenInterestRect = YES;
+//        [self.navigationController pushViewController:scanVC animated:YES];
+//    }
+//    else if ([[model title] isEqualToString:@"语音播报"]){
+//        SpeechVC *speechVC = [SpeechVC new];
+//        [self.navigationController pushViewController:speechVC animated:YES];
+//    }
+//    else if ([model.title isEqualToString:@"下载"]){
+//        CYDownloadViewController *downloadVC = [CYDownloadViewController new];
+//        [self.navigationController pushViewController:downloadVC animated:YES];
+//    }
 }
 
 - (void) scanResultWithArray:(NSArray<LBXScanResult *> *)array

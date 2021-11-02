@@ -14,7 +14,7 @@ pod 'Masonry',             '~> 1.0.2'
 
 #pod 'AFNetworking'
 pod 'ReactiveObjC'
-#pod 'YYKit'
+pod 'YYKit'
 pod 'CYKit',:path => '../'
 pod 'XHToast'
 pod 'CocoaLumberjack'

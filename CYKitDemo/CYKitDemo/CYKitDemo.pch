@@ -16,7 +16,7 @@
 #import "MBProgressHUD.h"
 #define LOG_LEVEL_DEF ddLogLevel
 #import <CocoaLumberjack/CocoaLumberjack.h>
-
+#import "YYKit.h"
 #ifdef DEBUG
 static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 #else

@@ -11,7 +11,7 @@
 #import "SYAboutUsModel.h"
 #import "SYAboutUsHeaderView.h"
 #import "SYDebugViewController.h"
-#import "CYWeixinLoginViewController.h"
+//#import "CYWeixinLoginViewController.h"
 #define MAX_COUNT 10
 @interface SYAboutUsViewController ()<
 UITableViewDelegate,
