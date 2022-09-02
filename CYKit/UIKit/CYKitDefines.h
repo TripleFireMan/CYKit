@@ -75,4 +75,8 @@ static bool CYStringIsEmpty(NSString *string){
         return true;
     }
 }
+/// 判断字符串是否为非空
+static bool CYStringIsNotEmpty(NSString *string){
+    return  !CYStringIsEmpty(string);
+}
 #endif /* CYKitDefines_h */

@@ -16,8 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) cy_registeCellClass:(NSString *)classString;
 
+/// 滚动适配
 - (void) cy_adjustForIOS11;
+/// 暗黑模式适配
 - (void) cy_adjustForIOS13;
+/// headerPadding适配
+- (void) cy_adjustForIOS15;
 @end
 
 NS_ASSUME_NONNULL_END

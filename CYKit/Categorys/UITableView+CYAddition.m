@@ -48,4 +48,11 @@
     }
 #endif
 }
+
+- (void) cy_adjustForIOS15{
+    [self cy_adjustForIOS11];
+    if(@available(iOS 15, *)){
+        self.sectionHeaderTopPadding = 0;
+    }
+}
 @end
