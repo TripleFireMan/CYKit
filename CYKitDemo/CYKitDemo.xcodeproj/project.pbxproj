@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		4CD313BD28C1A4F200AAF439 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4CD313BE28C1A4F200AAF439 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				4CD313C128C1A4F900AAF439 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = package;
+			productName = package;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		4C2CC0101E7F6F5E002FFB38 /* CustomTabBarController+Initional.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC00F1E7F6F5E002FFB38 /* CustomTabBarController+Initional.m */; };
 		4C2CC0131E7F7071002FFB38 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CC0121E7F7071002FFB38 /* HomeViewController.m */; };
@@ -71,8 +85,6 @@
 		4CBA916E1E59BE9600AEBC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA916C1E59BE9600AEBC30 /* Main.storyboard */; };
 		4CBA91701E59BE9600AEBC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA916F1E59BE9600AEBC30 /* Assets.xcassets */; };
 		4CBA91731E59BE9600AEBC30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBA91711E59BE9600AEBC30 /* LaunchScreen.storyboard */; };
-		4CE71C342302E6D000D7D00D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4CE71C312302E6CF00D7D00D /* LICENSE */; };
-		4CE71C352302E6D000D7D00D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4CE71C322302E6CF00D7D00D /* README.md */; };
 		4CF9EF392355997B005E71A3 /* CYDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EF372355997B005E71A3 /* CYDownloadViewController.m */; };
 		4CFE2ECF2318AF1C005AD4C4 /* CYMeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE2ECE2318AF1C005AD4C4 /* CYMeModel.m */; };
 		7DF3FE013BAD84D52FCBC28F /* libPods-CYKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1AD689932BA930006EBA9B /* libPods-CYKitDemo.a */; };
@@ -175,8 +187,6 @@
 		4CBA916F1E59BE9600AEBC30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CBA91721E59BE9600AEBC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CBA91741E59BE9600AEBC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CE71C312302E6CF00D7D00D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
-		4CE71C322302E6CF00D7D00D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		4CF9EF362355997B005E71A3 /* CYDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYDownloadViewController.h; sourceTree = "<group>"; };
 		4CF9EF372355997B005E71A3 /* CYDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYDownloadViewController.m; sourceTree = "<group>"; };
 		4CFE2ECD2318AF1C005AD4C4 /* CYMeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYMeModel.h; sourceTree = "<group>"; };
@@ -230,7 +240,6 @@
 		4CBA91571E59BE9600AEBC30 = {
 			isa = PBXGroup;
 			children = (
-				4CE71C302302E6B600D7D00D /* Podspec Metadata */,
 				4CBA91621E59BE9600AEBC30 /* CYKitDemo */,
 				4CBA91611E59BE9600AEBC30 /* Products */,
 				D59C03FF8D8C93C0354E2205 /* Frameworks */,
@@ -338,15 +347,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4CE71C302302E6B600D7D00D /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				4CE71C312302E6CF00D7D00D /* LICENSE */,
-				4CE71C322302E6CF00D7D00D /* README.md */,
-			);
-			path = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
 		4CFE2ECA2318AEE1005AD4C4 /* Me */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +427,11 @@
 						DevelopmentTeam = M99LZTCK8N;
 						ProvisioningStyle = Automatic;
 					};
+					4CD313BD28C1A4F200AAF439 = {
+						CreatedOnToolsVersion = 13.4.1;
+						DevelopmentTeam = M99LZTCK8N;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 4CBA915B1E59BE9600AEBC30 /* Build configuration list for PBXProject "CYKitDemo" */;
@@ -444,6 +449,7 @@
 			projectRoot = "";
 			targets = (
 				4CBA915F1E59BE9600AEBC30 /* CYKitDemo */,
+				4CD313BD28C1A4F200AAF439 /* package */,
 			);
 		};
 /* End PBXProject section */
@@ -480,9 +486,7 @@
 				4C9A54062341A40C003FD736 /* 6.m4a in Resources */,
 				4C9A53FB2341A40C003FD736 /* 万.m4a in Resources */,
 				4CBA91701E59BE9600AEBC30 /* Assets.xcassets in Resources */,
-				4CE71C352302E6D000D7D00D /* README.md in Resources */,
 				4C9A53D723419BAE003FD736 /* SYInterfaceDebugTableViewCell.xib in Resources */,
-				4CE71C342302E6D000D7D00D /* LICENSE in Resources */,
 				4CBA916E1E59BE9600AEBC30 /* Main.storyboard in Resources */,
 				4C9A54092341A40C003FD736 /* 千.m4a in Resources */,
 				4C9A53BE23419B40003FD736 /* SYAboutUsTableViewCell.xib in Resources */,
@@ -495,6 +499,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4CD313C128C1A4F900AAF439 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /Library/Frameworks/Python.framework/Versions/3.7/bin/python3;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# 使用python脚本来实现，每次更改完之后，自动打包，然后发布到kcspec源的功能\n# 步骤\n# 1. 修改podspec的版本号，自增\n# 2. 提交代码并推送到远程\n# 3. 打tag\n# 4. 发布\nimport sys\nimport os\n\n\n\n# 更新pod版本，并\ndef changePodSpecVersion(filename):\n    f = open(filename, \"r+\")\n    print (\"文件名为: \", f.name)\n \n    shouldModifire = '' \n    content = ''\n    str_replace = 's.version      = '\n    print(\"修改的行：\",str_replace)\n    for line in f.readlines():                          #依次读取每行  \n        content = content + line\n        line = line.strip()                             #去掉每行头尾空白\n          \n        if str_replace in line:\n            shouldModifire = line\n    #查找到需要修改的行\n    print('shouldModifire%s'%shouldModifire)\n    items = shouldModifire.split('=')\n    print(items)\n    versions = items[1].split('.')\n    versions_last_length = len(versions[2])\n    versions_last = int(versions[2][:versions_last_length-1])\n    versions_last_int = (versions_last) + 1\n    newVersion = str(versions[0])+'.'+ str(versions[1]) + '.' + str(versions_last_int) + '\"'\n    shouldReplaceItem = items[0] + '=' + newVersion\n\n    #替换相应的版本号，并写入文件\n    replaceed = content.replace(shouldModifire,shouldReplaceItem)\n    print('修改版本号:' + shouldModifire + '=>' +  shouldReplaceItem)\n    \n    #写入文件\n    f.seek(0)\n    f.truncate()    \n    f.write(replaceed)\n    f.flush()\n    #关闭文件\n    f.close()\n    return newVersion\n\nos.chdir('..')\n# 如果工作区是干净的，退出脚本执行\nfor line in os.popen(\"git status\").readlines():\n    if \"nothing to commit, working tree clean\" in line.strip() :\n        sys.exit()\n\n# 获取xcode环境变量，使脚本更加通用化，可以直接复制到任何一个pod子库里面了\npod_file_name = \"CYKit\"\n# 修改版本号\nnewversion = changePodSpecVersion(\"{0}.podspec\".format(pod_file_name))\n# 提交代码\nos.system('git add .')\n# 提交并填写信息\nos.system('git commit -a -m \"脚本自动提交\"')\n# 推送\nos.system('git push origin master')\n# 打tag\nos.system('git tag -a {0} -m \"自动tag\"'.format(newversion))\n# 推送tag\nos.system('git push origin {0}'.format(newversion))\n# 发布版本\nos.system('pod trunk push {0}.podspec --allow-warnings --verbose '.format(pod_file_name))\n# 切换到源目录，并更新\nos.system('pod repo update trunk')\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+		};
 		5CCDC979DE969291E0C604CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -771,6 +792,24 @@
 			};
 			name = Release;
 		};
+		4CD313BF28C1A4F200AAF439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M99LZTCK8N;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4CD313C028C1A4F200AAF439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M99LZTCK8N;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -788,6 +827,15 @@
 			buildConfigurations = (
 				4CBA91781E59BE9600AEBC30 /* Debug */,
 				4CBA91791E59BE9600AEBC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CD313BE28C1A4F200AAF439 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD313BF28C1A4F200AAF439 /* Debug */,
+				4CD313C028C1A4F200AAF439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
