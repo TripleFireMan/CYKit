@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYKit"
-  s.version      = "0.7.36"
+  s.version      = "0.7.37"
   s.summary      = "something useful for daily development"
   s.homepage     = "https://github.com/TripleFireMan"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -32,12 +32,9 @@ Pod::Spec.new do |s|
   s.framework     = "UIKit","WebKit"
   s.requires_arc  = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-#  s.dependency 'FMDB', '~> 2.7'
   s.dependency "Masonry"
   s.dependency "AFNetworking"
   s.dependency "ReactiveObjC"
-  #s.dependency "YYKit"
   s.dependency "XHToast"
   s.dependency "MJExtension",'3.2.2'
   s.dependency "MJRefresh",'3.2.2'
