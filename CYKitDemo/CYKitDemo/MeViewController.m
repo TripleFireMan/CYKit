@@ -11,8 +11,6 @@
 #import "CYH5ViewController.h"
 //#import "CYFeedBackViewController.h"
 //#import "CYWeixinLoginViewController.h"
-#import "CYForgotPasswordViewController.h"
-#import "CYChangePasswordViewController.h"
 //#import "CYLaunchViewController.h"
 //#import "SYHelpUsViewController.h"
 //#import "SYAboutUsViewController.h"
