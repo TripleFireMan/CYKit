@@ -10,7 +10,6 @@
 
 #if __has_include(<CYKit/CYKit.h>)
 
-#import <CYKit/CYModel.h>
 #import <CYKit/NSDate+CYExtend.h>
 #import <CYKit/UIImage+CYAddtion.h>
 #import <CYKit/UIColor+CYAddition.h>
@@ -26,8 +25,6 @@
 #import <CYKit/UIView+CYAddition.h>
 #import <CYKit/CYFingerPrintLock.h>
 #import <CYKit/CYEvaluate.h>
-#import <CYKit/CYForgotPasswordViewController.h>
-#import <CYKit/CYChangePasswordViewController.h>
 #import <CYKit/NSObject+CYAddition.h>
 #import <CYKit/CYCustomTabBarController.h>
 #import <CYKit/CYRefreshHeader.h>
@@ -46,7 +43,6 @@
 #import <CYKit/CYPrivateView.h>
 #else
 
-#import "CYModel.h"
 #import "NSDate+CYExtend.h"
 #import "UIImage+CYAddtion.h"
 #import "UITapGestureRecognizer+CYAddition.h"
@@ -63,14 +59,11 @@
 #import "UIView+CYAddition.h"
 #import "CYFingerPrintLock.h"
 #import "CYEvaluate.h"
-#import "CYForgotPasswordViewController.h"
-#import "CYChangePasswordViewController.h"
 #import "NSObject+CYAddition.h"
 #import "CYCustomTabBarController.h"
 #import "CYNetworkCommand.h"
 #import "CYRefreshFooter.h"
 #import "CYRefreshHeader.h"
-
 #import "CYPageManager.h"
 #import "CYPageMenu.h"
 #import "CYPageMenuButton.h"

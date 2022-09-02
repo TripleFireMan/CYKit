@@ -19,7 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"name = %@",[CYModel className]);
     
     NSString *url = @"https://paytest.sooyie.cn/Controller/service/Client2.ashx?action=GetSplashScreen";
     NSDictionary *param = @{@"scale":@"16_9"};
