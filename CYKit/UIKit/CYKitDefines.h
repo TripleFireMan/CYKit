@@ -79,4 +79,6 @@ static bool CYStringIsEmpty(NSString *string){
 static bool CYStringIsNotEmpty(NSString *string){
     return  !CYStringIsEmpty(string);
 }
+
+
 #endif /* CYKitDefines_h */
