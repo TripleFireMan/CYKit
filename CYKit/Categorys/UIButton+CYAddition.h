@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) cy_gradientLayerWithColor:(UIColor *)fromColor
                            toColor:(UIColor *)toColor
                         Horizontal:(BOOL)isHorizontal;
+
++ (UIButton *) buttonWithTitle:(NSString *)title;
 @end
 
 NS_ASSUME_NONNULL_END

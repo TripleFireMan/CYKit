@@ -6,7 +6,8 @@
 //
 
 #import "UIButton+CYAddition.h"
-
+#import "UIColor+CYAddition.h"
+#import "UIImage+CYAddtion.h"
 @implementation UIButton (CYAddition)
 - (void) cy_gradientLayerWithColor:(UIColor *)fromColor toColor:(UIColor *)toColor Horizontal:(BOOL)isHorizontal
 {
@@ -32,5 +33,18 @@
     gl.colors = @[(__bridge id)fromColor.CGColor,(__bridge id)toColor.CGColor];
     gl.locations = @[@(0),@(1.0f)];
     [self.layer insertSublayer:gl atIndex:0];
+}
+
++ (UIButton *) buttonWithTitle:(NSString *)title{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:title forState:UIControlStateNormal];
+    btn.titleLabel.font = CYPingFangMedium(16);
+    btn.layer.cornerRadius = 22.f;
+    btn.layer.masksToBounds = YES;
+    
+    [btn setTitleColor:[UIColor cy_colorWithHexRGBString:@"#242629"] forState:UIControlStateNormal];
+    [btn setBackgroundImage: [UIImage cy_imageByPureColor:[UIColor cy_colorWithHexRGBString:@"#FFB000"] size:CGSizeZero] forState:UIControlStateNormal];
+    [btn setBackgroundImage: [UIImage cy_imageByPureColor:[[UIColor cy_colorWithHexRGBString:@"#FFB000"] colorWithAlphaComponent:0.8] size:CGSizeZero] forState:UIControlStateHighlighted];
+    return btn;
 }
 @end
