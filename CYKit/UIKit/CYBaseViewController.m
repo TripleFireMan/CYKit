@@ -6,7 +6,7 @@
 //
 
 #import "CYBaseViewController.h"
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 #import "CYKitDefines.h"
 
 
@@ -143,11 +143,11 @@
     self.heaerImageView.hidden = !_shouldShowHeaderImage;
 }
 
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    
-    return UIStatusBarStyleLightContent;
-    
-}
+//- (UIStatusBarStyle)preferredStatusBarStyle {
+//
+//    return UIStatusBarStyleLightContent;
+//
+//}
 
 - (void) p_adjustForIOS13
 {
@@ -170,5 +170,16 @@
     // Pass the selected object to the new view controller.
 }
 */
-
++ (CGFloat) cyStatusBarHeight{
+    return  CY_Height_StatusBar;
+}
++ (CGFloat) cyNavibarHeight{
+    return CY_Height_NavBar;
+}
++ (CGFloat) cyBottomBarHeight{
+    return CY_Height_Bottom_SafeArea;
+}
++ (CGFloat) cyTabbarHeight{
+    return CY_Height_TabBar;
+}
 @end

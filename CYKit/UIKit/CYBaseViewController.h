@@ -27,6 +27,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) setupSubView;
 - (void) addConstraints;
++ (CGFloat) cyStatusBarHeight;
++ (CGFloat) cyNavibarHeight;
++ (CGFloat) cyBottomBarHeight;
++ (CGFloat) cyTabbarHeight;
 
 @end
 
