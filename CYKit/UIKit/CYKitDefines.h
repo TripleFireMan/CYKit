@@ -80,5 +80,12 @@ static bool CYStringIsNotEmpty(NSString *string){
     return  !CYStringIsEmpty(string);
 }
 
+/// 获取资源bundle
+static NSBundle *CYBundle(NSString *podName){
+    NSBundle *main = [NSBundle mainBundle];
+    NSString *path = [main pathForResource:podName ofType:@"bundle"];
+    NSBundle *curp = [NSBundle bundleWithURL:[NSURL fileURLWithPath:path]];
+    return curp;
+}
 
 #endif /* CYKitDefines_h */
