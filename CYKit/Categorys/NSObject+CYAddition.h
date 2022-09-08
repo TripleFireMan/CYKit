@@ -24,4 +24,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) cy_clean;
 @end
 
+/// 获取资源bundle
+static inline NSBundle *CYBundle(NSString *podName){
+    NSBundle *main = [NSBundle mainBundle];
+    NSString *path = [main pathForResource:podName ofType:@"bundle"];
+    NSBundle *curp = [NSBundle bundleWithURL:[NSURL fileURLWithPath:path]];
+    return curp;
+}
+
+
 NS_ASSUME_NONNULL_END
