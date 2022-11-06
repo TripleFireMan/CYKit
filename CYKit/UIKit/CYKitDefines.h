@@ -27,8 +27,11 @@
 
 #define CY_IS_Iphone12Series (CY_IS_IPHONE_12 || CY_IS_IPHONE_12_Mini || CY_IS_IPHONE_12_Pro || CY_IS_IPHONE_12_ProMax)
 
+#define CY_IS_IPHONE14_PRO ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1179, 2556), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define CY_IS_IPHONE14_PROMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1290, 2796), [[UIScreen mainScreen] currentMode].size) : NO)
 //判断iPhoneX所有系列
-#define CY_IS_PhoneXAll (CY_IsiPhoneX || CY_IS_IPHONE_Xr || CY_IS_IPHONE_Xs_Max || CY_IS_Iphone12Series)
+#define CY_IS_PhoneXAll (CY_IsiPhoneX || CY_IS_IPHONE_Xr || CY_IS_IPHONE_Xs_Max || CY_IS_Iphone12Series || CY_IS_IPHONE14_PRO || CY_IS_IPHONE14_PROMax)
 
 #define CY_Height_NavContentBar 44.0f
 #define CY_Height_StatusBar (CY_IS_PhoneXAll? 44.0 : 20.0)
