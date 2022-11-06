@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, GradientType) {
+    GradientTypeTopToBottom = 0,//从上到下
+    GradientTypeLeftToRight = 1,//从左到右
+};
+
 @interface UIImage (CYAddtion)
 
 
@@ -55,4 +60,6 @@
  @return 图片
  */
 + (instancetype) cy_LauchImage;
+
++ (UIImage *)getGradientImageFromColors:(NSArray*)colors gradientType:(GradientType)gradientType imgSize:(CGSize)imgSize;
 @end
