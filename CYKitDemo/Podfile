@@ -23,5 +23,6 @@ pod 'MBProgressHUD'
 pod 'LBXScan', '~> 2.3'
 pod 'FastCoding'
 pod 'ZBarSDK'
+
 end
 
