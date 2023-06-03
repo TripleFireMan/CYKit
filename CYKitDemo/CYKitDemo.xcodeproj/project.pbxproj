@@ -545,14 +545,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CYKitDemo/Pods-CYKitDemo-resources.sh",
-				"${PODS_ROOT}/../../CYKit/Resources/back@2x.png",
-				"${PODS_ROOT}/../../CYKit/Resources/back@3x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/feedback_close@2x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/feedback_close@3x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/feedback_img_add@2x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/feedback_img_add@3x.png",
-				"${PODS_ROOT}/../../CYKit/Resources/image_navigation_close@2x.png",
-				"${PODS_ROOT}/../../CYKit/Resources/image_navigation_close@3x.png",
 				"${PODS_ROOT}/../../CYKit/Resources/CYKit.bundle",
 				"${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
@@ -563,14 +559,10 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback_close@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback_close@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback_img_add@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback_img_add@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/image_navigation_close@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/image_navigation_close@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CYKit.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CodeScan.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",

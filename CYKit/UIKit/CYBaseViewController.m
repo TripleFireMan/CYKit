@@ -36,7 +36,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.headerView = [UIView new];
-    self.headerView.backgroundColor = [UIColor redColor];
+    self.headerView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.headerView];
     [self.headerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.offset(0);
@@ -55,11 +55,12 @@
     
     
     self.backBtn = [[UIButton alloc]initWithFrame:CGRectZero];
-    UIImage *bgImage = [[UIImage imageNamed:@"back"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"CYKit" ofType:@"bundle"]];
+    UIImage *bgImage = [[UIImage imageNamed:@"back" inBundle:bundle compatibleWithTraitCollection:nil] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     [self.backBtn setImage:bgImage forState:UIControlStateNormal];
     [self.backBtn addTarget:self action:@selector(backbtn) forControlEvents:UIControlEventTouchUpInside];
     [self.backBtn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 20)];
-    self.backBtn.tintColor = [UIColor whiteColor];
+    self.backBtn.tintColor = [UIColor blackColor];
     
     [self.headerView addSubview:self.backBtn];
     [self.backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -70,7 +71,7 @@
     
     self.titleLabel = [UILabel new];
     self.titleLabel.font = [UIFont boldSystemFontOfSize:18];
-    self.titleLabel.textColor = [UIColor whiteColor];
+    self.titleLabel.textColor = [UIColor darkTextColor];
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     [self.headerView addSubview:self.titleLabel];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
